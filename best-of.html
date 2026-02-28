@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Best‑Of Guides • AI for QA</title>
+  <meta name="description" content="Browse best-of AI tool guides for QA specialists. Search, filter, and open any guide." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="toolsPage">
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="lines" aria-hidden="true"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brandMark" aria-hidden="true"></span>
+      <span class="brandText">AI for QA</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#list">Guides</a>
+      <a href="#categories">Categories</a>
+      <a href="index.html#principles">Principles</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn ghost" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section tight">
+      <div class="sectionHead">
+        <h1 class="h1">Best‑Of Guides</h1>
+        <p>Search by pharmaceutical QA discipline. Each guide reflects real GMP responsibilities and regulatory expectations.</p>
+      </div>
+
+      <div class="filters" id="list">
+        <div class="searchRow">
+          <input id="q" type="search" placeholder="Search guides… (e.g., triage, visual, validation)" aria-label="Search" />
+          <select id="cat" aria-label="Category">
+            <option value="">All categories</option>
+          </select>
+          <button class="btn ghost" id="clearBtn" type="button">Clear</button>
+        </div>
+
+        <div class="chips" id="chips" aria-label="Quick filters"></div>
+      </div>
+
+      <div class="cards three" id="cards" aria-live="polite"></div>
+
+      <div class="empty" id="empty" hidden>
+        <div class="notice">
+          <div class="noticeDot" aria-hidden="true"></div>
+          <div><strong>No matches.</strong> Try a different keyword or clear filters.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight" id="categories">
+      <div class="sectionHead">
+        <h2>Categories</h2>
+        <p>Browse by discipline—test design, triage, automation, validation evidence, and metrics.</p>
+      </div>
+      <div class="catGrid" id="catGrid"></div>
+    </section>
+
+    </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+  <script src="list.js"></script>
+</body>
+</html>
+
+<footer>
+<p style="font-size:12px;opacity:0.6;">
+Educational content only. This site does not provide regulatory or legal advice. Always follow internal validation and compliance procedures.
+</p>
+</footer>
+
+<footer class="footer">
+  <div class="footInner">
+    <div>
+      <div class="footBrand"><span class="brandMark small" aria-hidden="true"></span>AI for QA</div>
+      <div class="footNote">Educational content only. Not regulatory or legal advice.</div>
+    </div>
+    <div class="footNote">
+      <a class="link" href="about.html">About</a> <span class="sep">•</span>
+      <a class="link" href="affiliate-disclosure.html">Affiliate disclosure</a>
+    </div>
+  </div>
+</footer>
