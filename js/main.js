@@ -1,1 +1,1 @@
-Core functionality
+{"key": "value"}
