@@ -1,1 +1,1 @@
-{"key": "value"}
+// Site-wide helpers (loaded on every page)
