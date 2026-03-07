@@ -1,0 +1,23 @@
+title: AI for QA
+description: "Independent guides comparing the best AI tools for pharmaceutical QA specialists — test design, triage, automation, validation evidence, and more."
+url: "https://calcifergtp-glitch.github.io"
+baseurl: "/AIforQA"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - "*.pdf"
+  - docs/
+  - node_modules/
+  - vendor/

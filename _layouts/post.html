@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title }} • AI for QA</title>
+  <meta name="description" content="{{ page.excerpt | default: page.description | default: site.description }}" />
+  <meta name="robots" content="index, follow" />
+  {% if page.seo.keywords %}<meta name="keywords" content="{{ page.seo.keywords }}" />{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+</head>
+<body class="postPage">
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="lines" aria-hidden="true"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brandMark" aria-hidden="true"></span>
+      <span class="brandText">AI for QA</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="{{ '/index.html' | relative_url }}">Home</a>
+      <a href="#toc">On this page</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn ghost" href="{{ '/index.html' | relative_url }}">← Home</a>
+    </div>
+  </header>
+
+  <main class="wrap postWrap">
+    <article class="post">
+      <div class="postMeta">
+        {% if page.categories %}
+        <div class="pill small">{{ page.categories | join: ", " }}</div>
+        {% endif %}
+        <div class="metaLine">
+          <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+          {% if page.tags %}
+          <span class="sep">•</span>
+          <span>{{ page.tags | join: ", " }}</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="postContent" id="postContent">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+
+      <aside class="toc" id="toc" aria-label="Table of contents">
+        <div class="tocTitle">On this page</div>
+        <div id="tocList" class="tocList"></div>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footInner">
+      <div>
+        <div class="footBrand"><span class="brandMark small" aria-hidden="true"></span>AI for QA</div>
+        <div class="footNote">Educational content only. Not regulatory or legal advice.</div>
+      </div>
+      <div class="footNote">
+        <a class="link" href="{{ '/about.html' | relative_url }}">About</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/affiliate-disclosure.html' | relative_url }}">Affiliate Disclosure</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/terms-and-conditions.html' | relative_url }}">Terms</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/cookie-policy.html' | relative_url }}">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>
