@@ -586,3 +586,45 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
   word-break: normal;
   overflow-wrap: normal;
 }
+
+/* Jekyll post layout styles */
+.post-content{
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 0 1.5rem 3rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #0b1020;
+}
+.post-content h1{ font-size: 2rem; margin-bottom: .5rem; }
+.post-content h2{ font-size: 1.45rem; margin-top: 2rem; margin-bottom: .6rem; }
+.post-content h3{ font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: .4rem; }
+.post-content p{ margin-bottom: 1rem; }
+.post-content ul{ padding-left: 1.6rem; margin-bottom: 1rem; }
+.post-content li{ margin-bottom: .4rem; }
+.post-content table{ width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .92rem; }
+.post-content th, .post-content td{ padding: .55rem .8rem; border: 1px solid #dde1ea; text-align: left; vertical-align: top; }
+.post-content th{ background: #f4f6fa; font-weight: 600; }
+.post-content tr:nth-child(even) td{ background: #f9fafc; }
+.post-content .tool-comparison{ overflow-x: auto; }
+.post-content .references{ padding-left: 1.4rem; }
+.post-content .references li{ margin-bottom: .5rem; }
+.post-content a{ color: #1a56db; text-decoration: underline; }
+.post-content a:hover{ color: #1141b3; }
+
+/* PDF download link */
+.pdf-download-link{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin: 1rem 0 1.5rem;
+  padding: .55rem 1.1rem;
+  background: #1a56db;
+  color: #fff !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: .95rem;
+  text-decoration: none !important;
+  transition: background 150ms;
+}
+.pdf-download-link:hover{ background: #1141b3; }
