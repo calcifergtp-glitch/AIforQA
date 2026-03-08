@@ -28,7 +28,7 @@ AI technologies can streamline compliance processes, but they must adhere to the
 - Conducting regular audits of AI systems.
 
 ### Internal Link Example  
-For further reading, check our article on [Data Integrity in Pharma](../data-integrity-in-pharma.md).
+For further reading, check our article on Data Integrity in Pharma.
 
 ### External Links  
 - [FDA's Guidance on 21 CFR Part 11](https://www.fda.gov/media/135196/download)  
