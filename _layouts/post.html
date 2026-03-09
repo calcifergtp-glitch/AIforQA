@@ -7,26 +7,48 @@
   <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
 </head>
 <body>
+  <div class="bg"><div class="grid"></div><div class="lines" aria-hidden="true"></div></div>
   <header class="topbar">
-    <a class="brand" href="{{ '/' | relative_url }}"><span class="brandText">AI for QA</span></a>
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brandMark" aria-hidden="true"></span><span class="brandText">AI for QA</span></a>
     <nav class="nav" aria-label="Primary">
       <a href="{{ '/#articles' | relative_url }}">Articles</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
     </nav>
+    <div class="actions"><a class="btn" href="{{ '/#articles' | relative_url }}">View Articles</a></div>
   </header>
-  <main class="post-content">
-    <article>
-      <header>
+  <main>
+    <div class="wrap postWrap">
+      <div class="post">
+        <div class="postMeta">
+          <time class="metaLine" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+          <a class="btn ghost" href="{{ '/' | relative_url }}">&larr; Back to Home</a>
+        </div>
         <h1>{{ page.title }}</h1>
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      </header>
-      {{ content }}
-    </article>
-    <p><a href="{{ '/' | relative_url }}">&larr; Back to Home</a></p>
+        {% assign pill_tags = page.tags %}
+        {% if pill_tags == empty %}{% assign pill_tags = page.categories %}{% endif %}
+        {% if pill_tags != empty %}
+        <div class="tagPills">
+          {% for tag in pill_tags %}<span class="tagPill"><span class="dot" aria-hidden="true"></span>{{ tag }}</span>{% endfor %}
+        </div>
+        <div class="neonDivider" aria-hidden="true"></div>
+        {% endif %}
+        <div class="postContent">
+          {{ content }}
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="footInner">
-      <div class="footNote">Educational content only. Not regulatory or legal advice.</div>
+      <div>
+        <div class="footBrand"><span class="brandMark small" aria-hidden="true"></span>AI for QA</div>
+        <div class="footNote">Educational content only. Not regulatory or legal advice.</div>
+      </div>
+      <div class="footNote">
+        <a class="link" href="{{ '/about.html' | relative_url }}">About</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a> <span class="sep">•</span>
+        <a class="link" href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
+      </div>
     </div>
   </footer>
 </body>
