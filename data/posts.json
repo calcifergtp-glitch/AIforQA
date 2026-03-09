@@ -5,7 +5,9 @@
     "summary": "An in-depth analysis of 21 CFR Part 11 regulations and their impact on incorporating AI in pharmaceutical environments.",
     "category": "Compliance",
     "date": "2026-03-07",
-    "readingTime": "15 min read"
+    "readingTime": "15 min read",
+    "published": true,
+    "pdf": "21 CFR Part 11 and AI_ Can Artificial Intelligence Be Used in Compliant Pharmaceutical Systems_.pdf"
   },
   {
     "slug": "best-ai-tools-for-writing-test-cases-from-requirements",

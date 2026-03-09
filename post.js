@@ -5,6 +5,8 @@ const dateEl = document.getElementById('postDate');
 const readEl = document.getElementById('postRead');
 const tocListEl = document.getElementById('tocList');
 const relatedEl = document.getElementById('relatedCards');
+const postTitleEl = document.getElementById('postTitle');
+const pdfBtnEl = document.getElementById('pdfBtn');
 
 function getSlug(){
   const u = new URL(window.location.href);
@@ -65,9 +67,16 @@ async function init(){
   }
 
   setTitle(post.title);
+  if(postTitleEl) postTitleEl.textContent = post.title;
   if(catEl) catEl.textContent = post.category;
   if(dateEl) dateEl.textContent = post.date || '';
   if(readEl) readEl.textContent = post.readingTime || '';
+
+  // PDF download button: only allow safe relative paths (no protocol, absolute paths, or path traversal)
+  if(post.pdf && pdfBtnEl && /^[^/:][^:]*$/.test(post.pdf) && !post.pdf.includes('..')){
+    pdfBtnEl.href = encodeURI(post.pdf);
+    pdfBtnEl.style.display = '';
+  }
 
   // load content fragment
   try{
@@ -82,10 +91,15 @@ async function init(){
   // TOC
   buildTOC(contentEl);
 
-  // Related: same category, else random
-  const same = posts.filter(p=>p.slug!==slug && p.category===post.category);
-  const pool = same.length ? same : posts.filter(p=>p.slug!==slug);
+  // Related: published posts only, same category preferred
+  const published = posts.filter(p => p.published && p.slug !== slug);
+  const same = published.filter(p => p.category === post.category);
+  const pool = same.length ? same : published;
   const related = pool.slice(0, 6);
-  if(relatedEl) relatedEl.innerHTML = related.map(card).join('');
+  if(relatedEl){
+    relatedEl.innerHTML = related.length
+      ? related.map(card).join('')
+      : `<div class="notice"><div class="noticeDot" aria-hidden="true"></div><div>No related guides available yet.</div></div>`;
+  }
 }
 init();
