@@ -445,7 +445,7 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
   background: rgba(0,229,255,.05);
   box-shadow: 0 0 0 1px rgba(0,229,255,.12) inset;
 }
-.postPage .post{ display:block; width:100%; max-width:1300px; margin:0 auto; }
+.postPage .post{ display:block; width:100%; max-width:920px; margin:0 auto; }
 /* Footer */
 .footer{
   border-top: 1px solid var(--stroke);
@@ -493,7 +493,7 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
   .cards{ grid-template-columns: repeat(2, minmax(0,1fr)); }
   .cards.three{ grid-template-columns: repeat(2, minmax(0,1fr)); }
   .catGrid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .postPage .post{ display:block; width:100%; max-width:1300px; margin:0 auto; }
+  .postPage .post{ display:block; width:100%; max-width:920px; margin:0 auto; }
   .toc{ position: relative; top: auto; }
 }
 @media (max-width: 620px){
@@ -644,10 +644,39 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
 }
 
 /* Post typography improvements */
+.postTitle{
+  font-size: clamp(1.8rem, 2.4vw + 1rem, 2.8rem);
+  line-height: 1.12;
+  margin: 0.4rem 0 1rem;
+  background: linear-gradient(135deg, var(--c1), var(--c2));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}
+.pdfBtn{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin: 0 0 1.2rem;
+  padding: .55rem 1.1rem;
+  background: linear-gradient(135deg, rgba(0,229,255,.18), rgba(168,85,247,.14));
+  border: 1px solid rgba(0,229,255,.24);
+  color: rgba(11,16,32,.88);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: box-shadow .12s ease, transform .12s ease;
+}
+.pdfBtn:hover{
+  box-shadow: 0 8px 28px rgba(0,229,255,.14);
+  transform: translateY(-1px);
+  border-color: rgba(0,229,255,.34);
+}
 .postContent{
   font-size: 1.045rem;
   line-height: 1.78;
-  max-width: 72ch;
+  max-width: 100%;
 }
 .postContent h1{ font-size: clamp(1.6rem, 1.8vw + 1rem, 2.2rem); margin-top: .1rem; margin-bottom: .7rem; line-height: 1.15; }
 .postContent h2{ font-size: clamp(1.2rem, 1.2vw + .85rem, 1.55rem); margin-top: 2rem; margin-bottom: .55rem; }
