@@ -27,7 +27,7 @@ function card(p){
       <div class="cardTitle2">${esc(p.title)}</div>
       <p>${esc(p.summary || '')}</p>
       <div class="cardMeta">
-        <span class="link">Open article</span>
+        <span class="link">Open post</span>
       </div>
     </a>
   `;

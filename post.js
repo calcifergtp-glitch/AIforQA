@@ -16,7 +16,7 @@ function esc(s){
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 function setTitle(t){
-  document.title = t ? `${t} • AI for QA` : 'Article • AI for QA';
+  document.title = t ? `${t} • AI for QA` : 'Post • AI for QA';
 }
 
 function buildTOC(root){
@@ -52,7 +52,7 @@ function card(p){
 async function init(){
   const slug = getSlug();
   if(!slug){
-    contentEl && (contentEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Missing article.</strong> Open from the Best‑Of list.</div></div>`);
+    contentEl && (contentEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Missing post.</strong> Open from the Posts list.</div></div>`);
     return;
   }
 
@@ -99,7 +99,7 @@ async function init(){
   if(relatedEl){
     relatedEl.innerHTML = related.length
       ? related.map(card).join('')
-      : `<div class="notice"><div class="noticeDot" aria-hidden="true"></div><div>No related guides available yet.</div></div>`;
+      : `<div class="notice"><div class="noticeDot" aria-hidden="true"></div><div>No related posts available yet.</div></div>`;
   }
 }
 init();

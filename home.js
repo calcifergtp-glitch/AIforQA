@@ -17,7 +17,7 @@ async function initHome(){
           </div>
           <div class="cardTitle2">${esc(p.title)}</div>
           <p>${esc(p.summary || '')}</p>
-          <div class="cardMeta"><span class="link">Read guide</span></div>
+          <div class="cardMeta"><span class="link">Read post</span></div>
         </a>
       `;
     };
@@ -28,7 +28,7 @@ async function initHome(){
   }catch(err){
     console.error(err);
     if(latestEl){
-      latestEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Error:</strong> couldn't load guides.</div></div>`;
+      latestEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Error:</strong> couldn't load posts.</div></div>`;
     }
   }
 
