@@ -1,5 +1,15 @@
 [
   {
+    "slug": "ai-data-integrity-alcoa-plus",
+    "title": "AI and Data Integrity: Enforcing ALCOA+ in Pharmaceutical Systems",
+    "summary": "Practical guidance on using AI to maintain ALCOA+ data integrity principles in pharmaceutical QA systems",
+    "category": "GxP &amp; Validation",
+    "date": "2026-03-10",
+    "readingTime": "14 min read",
+    "published": true,
+    "pdf": "posts/ai-data-integrity-alcoa-plus/document.pdf"
+  },
+  {
     "slug": "ai-in-pharmaceutical-quality-assurance",
     "title": "AI in Pharmaceutical Quality Assurance: Opportunities, Risks, and Real Tools",
     "summary": "A practical guide to where AI genuinely helps pharmaceutical QA teams, where it creates compliance risk, and which tools are plausibly deployable in regulated GxP environments today.",
