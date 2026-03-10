@@ -1,5 +1,15 @@
 [
   {
+    "slug": "ai-in-pharmaceutical-quality-assurance",
+    "title": "AI in Pharmaceutical Quality Assurance: Opportunities, Risks, and Real Tools",
+    "summary": "A practical guide to where AI genuinely helps pharmaceutical QA teams, where it creates compliance risk, and which tools are plausibly deployable in regulated GxP environments today.",
+    "category": "GxP & Validation",
+    "date": "2026-03-10",
+    "readingTime": "18 min read",
+    "published": true,
+    "pdf": "posts/ai-pharmaceutical-quality-assurance/document.pdf"
+  },
+  {
     "slug": "21-cfr-part-11-ai-pharmaceutical-compliance",
     "title": "21 CFR Part 11 and AI in Pharmaceutical Systems",
     "summary": "An in-depth analysis of 21 CFR Part 11 regulations and their impact on incorporating AI in pharmaceutical environments.",
