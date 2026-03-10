@@ -57,8 +57,15 @@ async function init(){
   }
 
   // load metadata
-  const res = await fetch('data/posts.json', {cache:'no-store'});
-  const posts = await res.json();
+  let posts;
+  try{
+    const res = await fetch('data/posts.json', {cache:'no-store'});
+    if(!res.ok) throw new Error(`Failed to fetch posts metadata: HTTP ${res.status}`);
+    posts = await res.json();
+  }catch(err){
+    contentEl && (contentEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Error:</strong> couldn't load post metadata.</div></div>`);
+    return;
+  }
   const post = posts.find(p => p.slug === slug);
 
   if(!post){
@@ -81,6 +88,7 @@ async function init(){
   // load content fragment
   try{
     const c = await fetch(`content/${encodeURIComponent(slug)}.html`, {cache:'no-store'});
+    if(!c.ok) throw new Error(`Failed to fetch content fragment: HTTP ${c.status}`);
     const html = await c.text();
     if(contentEl) contentEl.innerHTML = html;
   }catch(err){
