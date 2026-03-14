@@ -116,7 +116,8 @@ function setCategoryGrid(cats){
 async function init(){
   try{
     const res = await fetch('data/posts.json', {cache:'no-store'});
-    POSTS = await res.json();
+    const all = await res.json();
+    POSTS = all.filter(p => p.published === true);
 
     const cats = [...new Set(POSTS.map(p=>p.category))].sort();
     if(catEl){
@@ -129,14 +130,16 @@ async function init(){
 
     qEl?.addEventListener('input', ()=>{ activeChip=''; render(); });
     catEl?.addEventListener('change', ()=>{ activeChip=''; render(); });
-    clearBtn?.addEventListener('click', ()=>{
+    const doClear = ()=>{
       if(qEl) qEl.value = '';
       if(catEl) catEl.value = '';
       activeChip = '';
       if(chipsEl) [...chipsEl.querySelectorAll('.chipBtn')].forEach(b=>b.classList.remove('active'));
       render();
       window.toast?.('Cleared');
-    });
+    };
+    clearBtn?.addEventListener('click', doClear);
+    document.getElementById('clearBtn2')?.addEventListener('click', doClear);
   }catch(err){
     console.error(err);
     cardsEl && (cardsEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Error:</strong> couldn't load posts.json</div></div>`);
