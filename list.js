@@ -94,7 +94,7 @@ function setCategoryGrid(cats){
       });
     }
     render();
-    window.location.hash = '#list';
+    window.location.hash = '#main';
   };
 
   catGridEl.addEventListener('click', (e)=>{
@@ -115,7 +115,7 @@ function setCategoryGrid(cats){
 
 async function init(){
   try{
-    const res = await fetch('data/posts.json', {cache:'no-store'});
+    const res = await fetch('data/posts.json');
     const all = await res.json();
     POSTS = all.filter(p => p.published === true);
 
