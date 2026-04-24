@@ -15,23 +15,26 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8632401241613937"
        crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Post • AI for QA</title>
-  <meta name="description" content="In-depth post on AI tools for pharmaceutical QA and GMP compliance." />
-  <!-- og:title, og:description, og:url and twitter tags are set dynamically by post.js -->
-  <meta property="og:type" content="article" />
+  <title>Posts • AI for QA</title>
+  <meta name="description" content="31 posts on AI tools and compliance for pharmaceutical QA specialists covering GxP validation, FDA inspections, CAPA systems, and more." />
+  <link rel="canonical" href="https://www.aiforqa.org/articles.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AI for Pharmaceutical QA" />
-  <meta property="og:title" content="Post • AI for QA" />
-  <meta property="og:description" content="In-depth post on AI tools for pharmaceutical QA and GMP compliance." />
+  <meta property="og:title" content="Posts • AI for Pharmaceutical QA" />
+  <meta property="og:description" content="In-depth posts on AI tools and compliance for pharmaceutical QA specialists covering GxP validation, FDA inspections, CAPA systems, and more." />
+  <meta property="og:url" content="https://www.aiforqa.org/articles.html" />
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Post • AI for QA" />
-  <meta name="twitter:description" content="In-depth post on AI tools for pharmaceutical QA and GMP compliance." />
+  <meta name="twitter:title" content="Posts • AI for Pharmaceutical QA" />
+  <meta name="twitter:description" content="In-depth posts on AI tools and compliance for pharmaceutical QA specialists covering GxP validation, FDA inspections, CAPA systems, and more." />
   <!-- Preconnect to third-party origins -->
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="postPage">
+<body class="toolsPage">
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="bg">
     <div class="grid"></div>
@@ -43,15 +46,12 @@
       <span class="brandMark" aria-hidden="true"></span>
       <span class="brandText">AI for QA</span>
     </a>
-
     <nav class="nav" id="mainNav" aria-label="Primary">
-      <a href="best-of.html">Posts</a>
-      <a href="#toc">On this page</a>
-      <a href="#related">Related</a>
+      <a href="articles.html" aria-current="page">Posts</a>
+      <a href="about.html">About</a>
     </nav>
-
     <div class="actions">
-      <a class="btn ghost" href="best-of.html">Back</a>
+      <a class="btn ghost" href="index.html">Home</a>
       <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -60,43 +60,40 @@
     </div>
   </header>
 
-  <main class="wrap postWrap" id="main">
-    <article class="post">
-      <h1 id="postTitle" class="postTitle" aria-busy="true"></h1>
-
-      <div class="postMeta">
-        <div class="pill small" id="postCat">Category</div>
-        <div class="metaLine">
-          <span id="postDate">—</span>
-          <span class="sep">•</span>
-          <span id="postRead">—</span>
-        </div>
+  <main class="wrap" id="main">
+    <section class="section tight">
+      <div class="sectionHead">
+        <h1 class="h1">Posts</h1>
+        <p>Comprehensive posts on AI compliance for pharmaceutical QA environments.</p>
       </div>
 
-      <a id="pdfBtn" class="pdfBtn" href="#" download style="display:none" aria-label="Download PDF version of this post">
-        <span aria-hidden="true">📄</span> Download PDF
-      </a>
-
-      <div id="postContent" class="postContent" aria-live="polite">
-        <div class="notice">
-          <div class="noticeDot" aria-hidden="true"></div>
-          <div>Loading…</div>
-        </div>
+      <div class="searchRow" role="search">
+        <input id="q" type="search" placeholder="Search posts…" aria-label="Search posts" />
+        <select id="cat" aria-label="Filter by category">
+          <option value="">All categories</option>
+        </select>
+        <button id="clearBtn" class="btn ghost" type="button">Clear</button>
       </div>
+    </section>
 
-      <aside class="toc" id="toc" aria-label="Table of contents">
-        <div class="tocTitle">On this page</div>
-        <div id="tocList" class="tocList"></div>
-      </aside>
+    <section class="section tight" aria-label="Category chips">
+      <div id="chips" class="chips" role="group" aria-label="Filter by category"></div>
+    </section>
 
-      <section class="section tight" id="related">
-        <div class="sectionHead">
-          <h2>Related posts</h2>
-          <p>More workflows to speed up QA without losing traceability.</p>
-        </div>
-        <div class="cards three" id="relatedCards"></div>
-      </section>
-    </article>
+    <section class="section tight" aria-label="Posts">
+      <div id="cards" class="cards three" aria-live="polite" aria-atomic="false"></div>
+      <div id="empty" class="empty notice" hidden role="status">
+        <div class="noticeDot" aria-hidden="true"></div>
+        <div>No posts match your search. <button id="clearBtn2" class="link" type="button">Clear filters</button></div>
+      </div>
+    </section>
+
+    <section class="section tight" aria-label="Browse by category">
+      <div class="sectionHead">
+        <h2>Browse by category</h2>
+      </div>
+      <div id="catGrid" class="catGrid" role="list" aria-label="Post categories"></div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -118,6 +115,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
   <script src="script.js"></script>
-  <script src="post.js"></script>
+  <script src="list.js"></script>
 </body>
 </html>
