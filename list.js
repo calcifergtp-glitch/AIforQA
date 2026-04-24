@@ -117,7 +117,7 @@ async function init(){
   try{
     const res = await fetch('data/posts.json');
     const all = await res.json();
-    POSTS = all.filter(p => p.published === true);
+    POSTS = all.filter(p => p.published !== false);
 
     const cats = [...new Set(POSTS.map(p=>p.category))].sort();
     if(catEl){
