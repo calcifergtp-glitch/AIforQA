@@ -3,7 +3,7 @@
   const u = new URL(window.location.href);
   const p = u.searchParams.get('p');
   if(p && /^[a-zA-Z0-9_-]+$/.test(p)){
-    window.location.replace('articles/' + encodeURIComponent(p) + '.html');
+    window.location.replace('/articles/' + encodeURIComponent(p) + '.html');
   }
 })();
 
@@ -68,7 +68,7 @@ function buildTOC(root){
 }
 
 function card(p){
-  const url = `articles/${encodeURIComponent(p.slug)}.html`;
+  const url = `/articles/${encodeURIComponent(p.slug)}.html`;
   return `
     <a class="card" href="${url}">
       <div class="cardMeta">
@@ -152,7 +152,7 @@ async function init(){
   buildTOC(contentEl);
 
   // Related: published posts only, same category preferred
-  const published = posts.filter(p => p.published && p.slug !== slug);
+  const published = posts.filter(p => p.published !== false && p.slug !== slug);
   const same = published.filter(p => p.category === post.category);
   const pool = same.length ? same : published;
   const related = pool.slice(0, 6);
