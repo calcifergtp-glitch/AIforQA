@@ -1,4 +1,12 @@
-// post page: read slug from query param ?p=..., load metadata + content fragment, build TOC + related
+// post page: read slug from query param ?p=..., redirect to static article page if available
+(function(){
+  const u = new URL(window.location.href);
+  const p = u.searchParams.get('p');
+  if(p && /^[a-zA-Z0-9_-]+$/.test(p)){
+    window.location.replace('articles/' + encodeURIComponent(p) + '.html');
+  }
+})();
+
 const contentEl = document.getElementById('postContent');
 const catEl = document.getElementById('postCat');
 const dateEl = document.getElementById('postDate');
@@ -60,7 +68,7 @@ function buildTOC(root){
 }
 
 function card(p){
-  const url = `post.html?p=${encodeURIComponent(p.slug)}`;
+  const url = `articles/${encodeURIComponent(p.slug)}.html`;
   return `
     <a class="card" href="${url}">
       <div class="cardMeta">
