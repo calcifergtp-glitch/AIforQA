@@ -18,6 +18,31 @@ function esc(s){
 function setTitle(t){
   document.title = t ? `${t} • AI for QA` : 'Post • AI for QA';
 }
+function setMeta(nameOrProp, content, isProperty){
+  const attr = isProperty ? 'property' : 'name';
+  let el = document.querySelector(`meta[${attr}="${nameOrProp}"]`);
+  if(!el){
+    el = document.createElement('meta');
+    el.setAttribute(attr, nameOrProp);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content || '');
+}
+function injectArticleSchema(post){
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    'headline': post.title,
+    'description': post.summary || '',
+    'datePublished': post.date || '',
+    'author': { '@type': 'Organization', 'name': 'AI for Pharmaceutical QA', 'url': 'https://www.aiforqa.org/' },
+    'publisher': { '@type': 'Organization', 'name': 'AI for Pharmaceutical QA', 'url': 'https://www.aiforqa.org/' },
+    'url': window.location.href
+  });
+  document.head.appendChild(s);
+}
 
 function buildTOC(root){
   if(!tocListEl || !root) return;
@@ -59,7 +84,7 @@ async function init(){
   // load metadata
   let posts;
   try{
-    const res = await fetch('data/posts.json', {cache:'no-store'});
+    const res = await fetch('data/posts.json');
     if(!res.ok) throw new Error(`Failed to fetch posts metadata: HTTP ${res.status}`);
     posts = await res.json();
   }catch(err){
@@ -74,7 +99,26 @@ async function init(){
   }
 
   setTitle(post.title);
-  if(postTitleEl) postTitleEl.textContent = post.title;
+  setMeta('description', post.summary);
+  setMeta('og:title', `${post.title} • AI for QA`, true);
+  setMeta('og:description', post.summary, true);
+  setMeta('og:url', window.location.href, true);
+  setMeta('twitter:title', `${post.title} • AI for QA`);
+  setMeta('twitter:description', post.summary);
+  // Inject canonical link for the post URL
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if(!canonical){
+    canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    document.head.appendChild(canonical);
+  }
+  canonical.href = window.location.href;
+  injectArticleSchema(post);
+
+  if(postTitleEl){
+    postTitleEl.textContent = post.title;
+    postTitleEl.removeAttribute('aria-busy');
+  }
   if(catEl) catEl.textContent = post.category;
   if(dateEl) dateEl.textContent = post.date || '';
   if(readEl) readEl.textContent = post.readingTime || '';
@@ -87,7 +131,7 @@ async function init(){
 
   // load content fragment
   try{
-    const c = await fetch(`content/${encodeURIComponent(slug)}.html`, {cache:'no-store'});
+    const c = await fetch(`content/${encodeURIComponent(slug)}.html`);
     if(!c.ok) throw new Error(`Failed to fetch content fragment: HTTP ${c.status}`);
     const html = await c.text();
     if(contentEl) contentEl.innerHTML = html;

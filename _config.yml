@@ -1,6 +1,4 @@
-theme: jekyll-theme-minimal
 title: "AI for Pharmaceutical QA"
-description: "Blog with best AI tool for Pharma QA Specialist"
+description: "In-depth posts on AI tools for pharmaceutical QA, GMP compliance, and 21 CFR Part 11."
 url: "https://www.aiforqa.org"
 baseurl: ""
-permalink: /:year/:month/:day/:title/

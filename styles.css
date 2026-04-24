@@ -711,3 +711,134 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
   transform: translateY(-1px);
   border-color: rgba(0,229,255,.34);
 }
+
+/* ─── Skip Link ─── */
+.skip-link{
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 200;
+  padding: .6rem 1.2rem;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 0 0 var(--radius2) var(--radius2);
+  font-weight: 700;
+  transition: top .1s ease;
+  text-decoration: none;
+}
+.skip-link:focus{
+  top: 0;
+  outline: 3px solid var(--c1);
+  outline-offset: 2px;
+}
+
+/* ─── Focus rings ─── */
+:focus-visible{
+  outline: 3px solid var(--c1);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+/* Suppress focus ring only when :focus-visible is supported (pointer users) */
+.btn:focus:not(:focus-visible),
+.nav a:focus:not(:focus-visible),
+.chipBtn:focus:not(:focus-visible),
+.catTile:focus:not(:focus-visible),
+.tocList a:focus:not(:focus-visible),
+.link:focus:not(:focus-visible),
+.glowCard:focus:not(:focus-visible){
+  outline: none;
+}
+
+/* ─── Mobile hamburger / navigation drawer ─── */
+.menuBtn{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  background: none;
+  border: 1px solid var(--stroke);
+  border-radius: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.menuBtn span{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.menuBtn[aria-expanded="true"] span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+.menuBtn[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+.menuBtn[aria-expanded="true"] span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+@media (max-width: 620px){
+  .menuBtn{ display: inline-flex; }
+  .nav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255,255,255,.98);
+    border-bottom: 1px solid var(--stroke);
+    padding: .4rem 1.2rem .8rem;
+    gap: 0;
+    box-shadow: 0 8px 24px rgba(15,30,60,.08);
+  }
+  .nav.navOpen{ display: flex; }
+  .nav a{
+    padding: .75rem .6rem;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    min-height: 44px;
+  }
+}
+
+/* ─── Tap target sizes ─── */
+.nav a{
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.chipBtn{
+  min-height: 44px;
+}
+
+/* ─── Brand flex-overflow fix ─── */
+.brand{ min-width: 0; flex-shrink: 0; }
+
+/* ─── Color contrast improvements ─── */
+/* Raise low-opacity text to ~4.5:1 threshold against white */
+.mHint{ color: rgba(11,16,32,.62); }
+.statHint{ color: rgba(11,16,32,.62); }
+.glowCardLabel{ color: rgba(11,16,32,.62); }
+.fineprint{ color: rgba(11,16,32,.62); }
+.footNote{ color: rgba(11,16,32,.62); }
+.calloutSub{ color: rgba(11,16,32,.62); }
+.glowCardDesc{ color: rgba(11,16,32,.68); }
+/* Post content links: improved contrast (darken from ~1.6:1 to ~3.5:1).
+   The existing underline (border-bottom) satisfies WCAG 1.4.1 non-color distinction. */
+.postContent a{ color: #005a7a; }
+.postContent a:hover{ color: var(--c2); border-bottom-color: rgba(168,85,247,.40); }
+.glowCardCta{ color: #005a7a; }
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce){
+  .pulse{ animation: none; }
+  .bg::before{ animation: none; }
+  .btn,
+  .glowCard,
+  .card,
+  .menuBtn span,
+  .pdfBtn,
+  .tocList a,
+  .postContent a,
+  .postContent .pdf-download-link{ transition: none; }
+}

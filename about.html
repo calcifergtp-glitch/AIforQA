@@ -17,25 +17,61 @@
   <title>About • AI for Pharmaceutical QA</title>
   <meta name="description" content="About the Pharmaceutical QA Specialist behind this AI-focused GMP resource." />
   <link rel="canonical" href="https://www.aiforqa.org/about.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AI for Pharmaceutical QA" />
+  <meta property="og:title" content="About • AI for Pharmaceutical QA" />
+  <meta property="og:description" content="About the Pharmaceutical QA Specialist behind this AI-focused GMP resource." />
+  <meta property="og:url" content="https://www.aiforqa.org/about.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About • AI for Pharmaceutical QA" />
+  <meta name="twitter:description" content="About the Pharmaceutical QA Specialist behind this AI-focused GMP resource." />
+  <!-- Preconnect to third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About • AI for Pharmaceutical QA",
+    "url": "https://www.aiforqa.org/about.html",
+    "description": "About the Pharmaceutical QA Specialist behind this AI-focused GMP resource.",
+    "isPartOf": { "@type": "WebSite", "url": "https://www.aiforqa.org/" }
+  }
+  </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <div class="bg"><div class="grid"></div><div class="lines" aria-hidden="true"></div></div>
 
   <header class="topbar">
     <a class="brand" href="index.html"><span class="brandMark" aria-hidden="true"></span><span class="brandText">AI for QA</span></a>
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" id="mainNav" aria-label="Primary">
       <a href="best-of.html">Posts</a>
       <a href="about.html" aria-current="page">About</a>
     </nav>
-    <div class="actions"><a class="btn ghost" href="index.html">Home</a></div>
+    <div class="actions">
+      <a class="btn ghost" href="index.html">Home</a>
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
     <h1 class="h1">About the Author</h1>
     <p>This website is written by a Pharmaceutical Quality Assurance Specialist with hands-on experience in GMP-regulated manufacturing environments.</p>
     <p>Experience includes deviation management, CAPA investigations, validation (IQ/OQ/PQ), equipment control, regulatory inspection preparation, and data integrity oversight.</p>
     <p>This site provides educational analysis of AI tools used in regulated environments. It does not constitute regulatory advice.</p>
+
+    <h2>Contact</h2>
+    <p>For questions, feedback, or corrections about this site, please <a class="link" href="https://github.com/calcifergtp-glitch/AIforQA/issues" rel="noopener noreferrer" target="_blank">open an issue on GitHub</a>.</p>
   </main>
 
   <footer class="footer">

@@ -1,7 +1,7 @@
 async function initHome(){
   const latestEl = document.getElementById('latestCards');
   try{
-    const res = await fetch('data/posts.json', {cache:'no-store'});
+    const res = await fetch('data/posts.json');
     const posts = await res.json();
 
     const esc = (s)=>String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
