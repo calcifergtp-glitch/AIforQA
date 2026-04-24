@@ -7,7 +7,7 @@
     "date": "2026-03-10",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "posts/ai-data-integrity-alcoa-plus/document.pdf"
+    "pdf": "pdfs/ai-data-integrity-alcoa-plus.pdf"
   },
   {
     "slug": "ai-in-pharmaceutical-quality-assurance",
@@ -17,7 +17,7 @@
     "date": "2026-03-10",
     "readingTime": "18 min read",
     "published": true,
-    "pdf": "posts/ai-pharmaceutical-quality-assurance/document.pdf"
+    "pdf": "pdfs/ai-in-pharmaceutical-quality-assurance.pdf"
   },
   {
     "slug": "21-cfr-part-11-ai-pharmaceutical-compliance",
@@ -27,7 +27,7 @@
     "date": "2026-03-07",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "posts/21-cfr-part-11/document.pdf"
+    "pdf": "pdfs/21-cfr-part-11-ai-pharmaceutical-compliance.pdf"
   },
   {
     "slug": "computer-system-validation-ai-software",
@@ -37,7 +37,7 @@
     "date": "2026-03-14",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "posts/computer-system-validation-ai-software/document.pdf"
+    "pdf": "pdfs/computer-system-validation-ai-software.pdf"
   },
   {
     "slug": "validating-ai-systems-pharma",
@@ -47,7 +47,7 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "posts/validating-ai-systems-pharma/document.pdf"
+    "pdf": "pdfs/validating-ai-systems-pharma.pdf"
   },
   {
     "slug": "ai-equipment-qualification-iq-oq-pq",
@@ -57,7 +57,7 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "posts/ai-equipment-qualification-iq-oq-pq/document.pdf"
+    "pdf": "pdfs/ai-equipment-qualification-iq-oq-pq.pdf"
   },
   {
     "slug": "ai-integration-pharmaceutical-quality-management",
@@ -67,7 +67,7 @@
     "date": "2026-03-14",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "posts/ai-integration-pharmaceutical-quality-management/document.pdf"
+    "pdf": "pdfs/ai-integration-pharmaceutical-quality-management.pdf"
   },
   {
     "slug": "ai-change-control-risk-assessment",
@@ -77,7 +77,7 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "posts/ai-change-control-risk-assessment/document.pdf"
+    "pdf": "pdfs/ai-change-control-risk-assessment.pdf"
   },
   {
     "slug": "preparing-fda-inspections-ai",
@@ -87,7 +87,7 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "posts/preparing-fda-inspections-ai/document.pdf"
+    "pdf": "pdfs/preparing-fda-inspections-ai.pdf"
   },
   {
     "slug": "capa-systems-ai-machine-intelligence",
@@ -97,7 +97,7 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "posts/capa-systems-ai-machine-intelligence/document.pdf"
+    "pdf": "pdfs/capa-systems-ai-machine-intelligence.pdf"
   },
   {
     "slug": "ai-assisted-deviation-investigations-pharma",
@@ -107,7 +107,7 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "posts/ai-assisted-deviation-investigations-pharma/document.pdf"
+    "pdf": "pdfs/ai-assisted-deviation-investigations-pharma.pdf"
   },
   {
     "slug": "best-ai-tools-for-writing-test-cases-from-requirements",
