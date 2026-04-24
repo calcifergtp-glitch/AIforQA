@@ -17,21 +17,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Affiliate Disclosure • AI for Pharmaceutical QA</title>
   <meta name="description" content="Affiliate disclosure for AI for Pharmaceutical QA Specialists." />
+  <link rel="canonical" href="https://www.aiforqa.org/affiliate-disclosure.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AI for Pharmaceutical QA" />
+  <meta property="og:title" content="Affiliate Disclosure • AI for Pharmaceutical QA" />
+  <meta property="og:description" content="Affiliate disclosure for AI for Pharmaceutical QA Specialists." />
+  <meta property="og:url" content="https://www.aiforqa.org/affiliate-disclosure.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Affiliate Disclosure • AI for Pharmaceutical QA" />
+  <meta name="twitter:description" content="Affiliate disclosure for AI for Pharmaceutical QA Specialists." />
+  <!-- Preconnect to third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <div class="bg"><div class="grid"></div><div class="lines" aria-hidden="true"></div></div>
 
   <header class="topbar">
     <a class="brand" href="index.html"><span class="brandMark" aria-hidden="true"></span><span class="brandText">AI for QA</span></a>
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" id="mainNav" aria-label="Primary">
       <a href="best-of.html">Posts</a>
       <a href="about.html">About</a>
     </nav>
-    <div class="actions"><a class="btn ghost" href="index.html">Home</a></div>
+    <div class="actions">
+      <a class="btn ghost" href="index.html">Home</a>
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
     <h1 class="h1">Affiliate disclosure</h1>
     <p>Some links on this site may be affiliate or referral links. If you click and later purchase, we may earn a commission at no extra cost to you.</p>
     <p>We only recommend tools that are relevant to pharmaceutical QA work. Recommendations are editorial and based on workflow fit, evidence needs, and regulatory practicality—not on commissions.</p>
@@ -54,5 +77,8 @@
       </div>
     </div>
   </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
 </body>
 </html>

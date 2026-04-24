@@ -105,6 +105,14 @@ async function init(){
   setMeta('og:url', window.location.href, true);
   setMeta('twitter:title', `${post.title} • AI for QA`);
   setMeta('twitter:description', post.summary);
+  // Inject canonical link for the post URL
+  let canonical = document.querySelector('link[rel="canonical"]');
+  if(!canonical){
+    canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    document.head.appendChild(canonical);
+  }
+  canonical.href = window.location.href;
   injectArticleSchema(post);
 
   if(postTitleEl){

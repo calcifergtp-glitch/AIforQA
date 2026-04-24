@@ -16,10 +16,23 @@
        crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Post • AI for QA</title>
-  <meta name="description" content="Best-of AI tools for QA specialists." />
+  <meta name="description" content="In-depth post on AI tools for pharmaceutical QA and GMP compliance." />
+  <!-- og:title, og:description, og:url and twitter tags are set dynamically by post.js -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AI for Pharmaceutical QA" />
+  <meta property="og:title" content="Post • AI for QA" />
+  <meta property="og:description" content="In-depth post on AI tools for pharmaceutical QA and GMP compliance." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Post • AI for QA" />
+  <meta name="twitter:description" content="In-depth post on AI tools for pharmaceutical QA and GMP compliance." />
+  <!-- Preconnect to third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="postPage">
+  <a href="#main" class="skip-link">Skip to main content</a>
   <div class="bg">
     <div class="grid"></div>
     <div class="lines" aria-hidden="true"></div>
@@ -31,7 +44,7 @@
       <span class="brandText">AI for QA</span>
     </a>
 
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" id="mainNav" aria-label="Primary">
       <a href="best-of.html">Posts</a>
       <a href="#toc">On this page</a>
       <a href="#related">Related</a>
@@ -39,12 +52,17 @@
 
     <div class="actions">
       <a class="btn ghost" href="best-of.html">Back</a>
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
     </div>
   </header>
 
-  <main class="wrap postWrap">
+  <main class="wrap postWrap" id="main">
     <article class="post">
-      <h1 id="postTitle" class="postTitle"></h1>
+      <h1 id="postTitle" class="postTitle" aria-busy="true"></h1>
 
       <div class="postMeta">
         <div class="pill small" id="postCat">Category</div>
