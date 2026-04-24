@@ -15,7 +15,7 @@ function esc(s){
 }
 
 function card(p){
-  const url = `articles/${encodeURIComponent(p.slug)}.html`;
+  const url = `/articles/${encodeURIComponent(p.slug)}.html`;
   return `
     <a class="card" href="${url}">
       <div class="cardMeta">

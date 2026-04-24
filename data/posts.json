@@ -72,7 +72,7 @@
   {
     "slug": "ai-change-control-risk-assessment",
     "title": "AI and Change Control Risk Assessment",
-    "summary": "Using AI tools to streamline change control processes in pharmaceutical operations \u2014 risk scoring, impact assessment automation, and maintaining GMP compliance throughout change management.",
+    "summary": "Using AI tools to streamline change control processes in pharmaceutical operations — risk scoring, impact assessment automation, and maintaining GMP compliance throughout change management.",
     "category": "Compliance",
     "date": "2026-03-14",
     "readingTime": "12 min read",
@@ -82,7 +82,7 @@
   {
     "slug": "preparing-fda-inspections-ai",
     "title": "Preparing for FDA Inspections with AI",
-    "summary": "How pharmaceutical QA teams can leverage AI tools to prepare for FDA inspections \u2014 from document readiness and gap analysis to predictive compliance risk identification.",
+    "summary": "How pharmaceutical QA teams can leverage AI tools to prepare for FDA inspections — from document readiness and gap analysis to predictive compliance risk identification.",
     "category": "Compliance",
     "date": "2026-03-14",
     "readingTime": "13 min read",
@@ -102,7 +102,7 @@
   {
     "slug": "ai-assisted-deviation-investigations-pharma",
     "title": "AI-Assisted Deviation Investigations in Pharma",
-    "summary": "How AI can accelerate pharmaceutical deviation investigations \u2014 from automated root cause analysis and historical pattern matching to documentation support and regulatory-ready reporting.",
+    "summary": "How AI can accelerate pharmaceutical deviation investigations — from automated root cause analysis and historical pattern matching to documentation support and regulatory-ready reporting.",
     "category": "Compliance",
     "date": "2026-03-14",
     "readingTime": "12 min read",
@@ -112,10 +112,11 @@
   {
     "slug": "best-ai-tools-for-writing-test-cases-from-requirements",
     "title": "Best AI Tools for Writing Test Cases from Requirements",
-    "summary": "Compare the top AI tools that turn requirements documents, user stories, and acceptance criteria into structured test cases \u2014 saving hours of manual effort.",
+    "summary": "Compare the top AI tools that turn requirements documents, user stories, and acceptance criteria into structured test cases — saving hours of manual effort.",
     "category": "Test Design",
     "date": "2026-02-28",
-    "readingTime": "9 min read"
+    "readingTime": "9 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-bug-report-summaries-and-repro-steps",
@@ -123,7 +124,8 @@
     "summary": "AI assistants can turn vague defect notes into concise, reproducible bug reports. Here are the tools that do it best for QA teams.",
     "category": "Bug Triage",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-log-analysis-and-root-cause-clues",
@@ -131,7 +133,8 @@
     "summary": "Sifting through thousands of log lines is slow work. These AI tools surface anomalies, correlate events, and help pinpoint the probable root cause faster.",
     "category": "Defect Analysis",
     "date": "2026-02-28",
-    "readingTime": "10 min read"
+    "readingTime": "10 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-visual-regression-testing-ai-screenshot-diff",
@@ -139,7 +142,8 @@
     "summary": "Pixel diffs miss intent; AI-powered visual testing tools catch meaningful UI regressions while ignoring harmless rendering noise.",
     "category": "Test Automation",
     "date": "2026-02-28",
-    "readingTime": "9 min read"
+    "readingTime": "9 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-api-testing-and-contract-validation",
@@ -147,7 +151,8 @@
     "summary": "From generating OpenAPI-aware test suites to catching schema drift early, these AI tools strengthen API coverage without ballooning test-writing time.",
     "category": "Test Automation",
     "date": "2026-02-28",
-    "readingTime": "9 min read"
+    "readingTime": "9 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-generating-test-data-safely",
@@ -155,7 +160,8 @@
     "summary": "Realistic, privacy-safe test data is hard to produce at scale. These tools generate synthetic datasets that respect PII requirements and regulatory constraints.",
     "category": "Test Design",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-exploratory-testing-ideas-and-charters",
@@ -163,7 +169,8 @@
     "summary": "AI can brainstorm edge cases, risk areas, and session charters that human testers might overlook. Here are the tools best suited for exploratory QA work.",
     "category": "Test Design",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-test-automation-self-healing-selectors",
@@ -171,7 +178,8 @@
     "summary": "Brittle locators are a leading cause of flaky tests. These AI-powered frameworks detect selector changes and update tests automatically to keep suites green.",
     "category": "Test Automation",
     "date": "2026-02-28",
-    "readingTime": "10 min read"
+    "readingTime": "10 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-jira-ticket-drafting-and-triage",
@@ -179,7 +187,8 @@
     "summary": "Cut the admin burden: these AI tools auto-draft tickets from session notes, classify severity, suggest assignees, and flag duplicates before they pile up.",
     "category": "Bug Triage",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-regression-test-prioritization-risk-based",
@@ -187,7 +196,8 @@
     "summary": "Running the full regression suite on every build is expensive. These AI tools score test cases by change-impact risk so you run fewer tests without sacrificing coverage.",
     "category": "Test Strategy",
     "date": "2026-02-28",
-    "readingTime": "9 min read"
+    "readingTime": "9 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-requirements-review-and-gap-detection",
@@ -195,7 +205,8 @@
     "summary": "Ambiguous or incomplete requirements cause defects downstream. These AI tools review specs for gaps, contradictions, and missing acceptance criteria before a line of code is written.",
     "category": "Test Design",
     "date": "2026-02-28",
-    "readingTime": "9 min read"
+    "readingTime": "9 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-accessibility-testing-assistance",
@@ -203,7 +214,8 @@
     "summary": "WCAG compliance is non-negotiable for many products. These AI tools help QA teams surface accessibility failures faster and prioritize fixes by severity.",
     "category": "Accessibility",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-performance-testing-insights",
@@ -211,7 +223,8 @@
     "summary": "Load test results are full of noise. These AI tools identify the bottlenecks that matter, correlate metrics across layers, and suggest where to tune first.",
     "category": "Performance",
     "date": "2026-02-28",
-    "readingTime": "9 min read"
+    "readingTime": "9 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-security-testing-support-for-qa-teams",
@@ -219,7 +232,8 @@
     "summary": "QA engineers are increasingly expected to contribute to security coverage. These AI-assisted tools lower the barrier to effective SAST, DAST, and threat modelling.",
     "category": "Security Testing",
     "date": "2026-02-28",
-    "readingTime": "10 min read"
+    "readingTime": "10 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-test-reporting-dashboards-and-narratives",
@@ -227,7 +241,8 @@
     "summary": "Translating pass/fail data into stakeholder-ready summaries takes time. These AI tools generate quality narratives, trend charts, and risk summaries automatically.",
     "category": "Reporting",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-sop-validation-evidence-drafting-gxp-friendly",
@@ -235,7 +250,8 @@
     "summary": "In GxP-regulated environments, documentation is as important as testing. These AI tools help draft SOPs, IQ/OQ/PQ protocols, and validation summaries with the right structure.",
     "category": "GxP & Validation",
     "date": "2026-02-28",
-    "readingTime": "11 min read"
+    "readingTime": "11 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-test-case-maintenance-and-refactoring",
@@ -243,7 +259,8 @@
     "summary": "Test suites grow stale. These AI tools scan for redundant, outdated, or poorly structured test cases and suggest refactors to keep the suite lean and meaningful.",
     "category": "Test Strategy",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-ui-copy-and-error-message-review-qa-ux",
@@ -251,7 +268,8 @@
     "summary": "Bad error messages confuse users and generate support tickets. These AI tools review UI copy for clarity, consistency, and tone as part of your QA workflow.",
     "category": "UX & Copy QA",
     "date": "2026-02-28",
-    "readingTime": "7 min read"
+    "readingTime": "7 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-test-environment-troubleshooting",
@@ -259,7 +277,8 @@
     "summary": "Environment issues are a leading cause of wasted QA time. These AI tools diagnose config drift, dependency conflicts, and infra mismatches before they block a sprint.",
     "category": "Test Strategy",
     "date": "2026-02-28",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "published": true
   },
   {
     "slug": "best-ai-tools-for-qa-managers-metrics-forecasting-staffing",
@@ -267,6 +286,7 @@
     "summary": "QA leads need data-driven insights to justify headcount, forecast release risk, and demonstrate quality ROI. These AI tools make the numbers work for you.",
     "category": "QA Management",
     "date": "2026-02-28",
-    "readingTime": "10 min read"
+    "readingTime": "10 min read",
+    "published": true
   }
 ]
