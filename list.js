@@ -1,4 +1,4 @@
-// best-of page: load posts.json, render cards, search + category filters
+// articles page: load posts.json, render cards, search + category filters
 const cardsEl = document.getElementById('cards');
 const qEl = document.getElementById('q');
 const catEl = document.getElementById('cat');
