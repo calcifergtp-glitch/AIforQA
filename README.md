@@ -1,102 +1,113 @@
-# AI for Pharmaceutical QA
+# AI for QA
 
-A static website publishing in-depth articles on AI tools and regulatory compliance for pharmaceutical QA specialists. Hosted on GitHub Pages at [aiforqa.org](https://www.aiforqa.org).
+Static GitHub Pages website for AI-focused pharmaceutical Quality Assurance content, hosted at https://www.aiforqa.org.
 
----
+## Current site structure
 
-## Repository Structure
-
-```
-AIforQA/
-├── content/                  # Article body fragments — one .html per published post
-│   └── <slug>.html           # Inner HTML injected by post.js (no <html>/<head>/<body> tags)
-├── data/
-│   └── posts.json            # Single source of truth for post metadata
-├── posts/
-│   └── <slug>/
-│       └── document.pdf      # Downloadable PDF for the post (optional)
-├── assets/                   # Site-wide static assets (SVGs, images)
-├── docs/                     # Internal guides (not served as site content)
-│   ├── CONTENT-GUIDE.md      # Detailed content workflow documentation
-│   └── MONETIZATION.md       # Notes on ads/affiliate strategy
-├── index.html                # Homepage (hardcoded featured cards)
-├── best-of.html              # Full posts listing (dynamic via list.js)
-├── post.html                 # Post template (dynamic via post.js)
-├── about.html                # About page
-├── affiliate-disclosure.html # Affiliate disclosure
-├── privacy-policy.html       # Privacy policy
-├── terms-and-conditions.html # Terms and conditions
-├── disclaimer.html           # Disclaimer
-├── cookie-policy.html        # Cookie policy
-├── styles.css                # Shared stylesheet
-├── script.js                 # Shared site-wide helpers (toast, etc.)
-├── post.js                   # Drives post.html — loads metadata + content fragment
-├── list.js                   # Drives best-of.html — search/filter
-├── home.js                   # Utility for dynamic home page cards (see note below)
-├── sitemap.xml               # XML sitemap for search engines
-├── robots.txt                # Crawler instructions
-├── ads.txt                   # AdSense ads.txt
-└── CNAME                     # GitHub Pages custom domain
+```text
+/
+├── index.html                 # Homepage
+├── articles.html              # Static article listing page
+├── resources.html             # PDF/resource download listing
+├── about.html                 # About page
+├── post.html                  # Legacy redirect: post.html?p=slug → /articles/slug.html
+├── best-of.html               # Legacy redirect: /best-of.html → /articles.html
+├── sitemap.xml                # Active canonical URLs
+├── robots.txt                 # Crawl instructions
+├── styles.css                 # Shared styling
+├── script.js                  # Shared mobile menu/toast helper
+├── data/posts.json            # Metadata for existing static articles and related cards
+├── articles/                  # Full static article HTML pages
+├── pdfs/                      # Downloadable article PDF files
+├── assets/                    # Images/icons/background assets
+└── posts/                     # Legacy PDF source folders retained only for safety
 ```
 
----
+## Adding a new article
 
-## Adding a New Article
+1. Create the static article page at:
 
-1. **Add metadata** to `data/posts.json` (insert at the top to appear first):
-   ```json
-   {
-     "slug": "my-post-slug",
-     "title": "My Post Title",
-     "summary": "One-sentence description shown in listing cards.",
-     "category": "GxP & Validation",
-     "date": "YYYY-MM-DD",
-     "readingTime": "X min read",
-     "published": true,
-     "pdf": "posts/my-post-slug/document.pdf"
-   }
-   ```
-   Omit `"published": true` (or set to `false`) to hide the post from listings and related-post suggestions while it is a draft.
+```text
+/articles/my-new-article-slug.html
+```
 
-2. **Create the article body fragment** at `content/<slug>.html`.  
-   The file must contain only the inner HTML (no `<html>`, `<head>`, or `<body>` tags). It is injected verbatim into `<div id="postContent">` by `post.js`.
+2. Add the article card to `articles.html`.
 
-3. **Add the PDF** (optional) at `posts/<slug>/document.pdf` and set the `"pdf"` field in `posts.json`.  
-   A "Download PDF" button appears automatically on the post page.
+3. Add a metadata entry to `data/posts.json` so related-article sections can use it:
 
-4. **Update `sitemap.xml`** — add a new `<url>` entry:
-   ```xml
-   <url><loc>https://www.aiforqa.org/post.html?p=my-post-slug</loc><lastmod>YYYY-MM-DD</lastmod></url>
-   ```
+```json
+{
+  "slug": "my-new-article-slug",
+  "title": "My New Article Title",
+  "summary": "Short article summary.",
+  "category": "GxP & Validation",
+  "date": "YYYY-MM-DD",
+  "readingTime": "10 min read",
+  "published": true,
+  "pdf": "pdfs/my-new-article-slug.pdf"
+}
+```
 
-5. **Update `index.html`** — if you want the new post to appear in the homepage featured cards, edit the hardcoded card entries there.
+4. If a PDF exists, place it here:
 
-### Naming Convention
+```text
+/pdfs/my-new-article-slug.pdf
+```
 
-| Asset | Pattern | Example |
-|---|---|---|
-| Content fragment | `content/<slug>.html` | `content/my-post-slug.html` |
-| PDF download | `posts/<slug>/document.pdf` | `posts/my-post-slug/document.pdf` |
-| Slug | lowercase, hyphens only | `my-post-slug` |
+5. If a PDF exists, add it to `resources.html`.
 
----
+6. Add the article URL to `sitemap.xml` using the canonical domain:
 
-## Adding a PDF Only (no new article)
+```text
+https://www.aiforqa.org/articles/my-new-article-slug.html
+```
 
-Place the file at `posts/<slug>/document.pdf` and make sure the corresponding entry in `data/posts.json` has `"pdf": "posts/<slug>/document.pdf"`.
+## PDF workflow
 
----
+PDF downloads should live in:
 
-## File Rules
+```text
+/pdfs/<article-slug>.pdf
+```
 
-- **One content source per post.** The canonical article body lives in `content/<slug>.html`. Do not create separate full HTML pages for individual articles.
-- **No pdf2htmlEX-generated HTML files.** These are large, redundant, and not used by the site. PDFs go in `posts/<slug>/document.pdf` only.
-- **No duplicate root-level PDFs.** All PDFs live under `posts/<slug>/document.pdf`.
-- **No stub/placeholder files.** Remove any file whose content is empty or a placeholder before committing.
+Article pages should link to PDFs using a relative path from `/articles/`:
 
----
+```html
+<a href="../pdfs/<article-slug>.pdf" download>Download PDF</a>
+```
+
+The Resources page should link to PDFs using:
+
+```html
+<a href="/pdfs/<article-slug>.pdf" download>Download PDF</a>
+```
+
+## Legacy redirects
+
+The old dynamic article system has been deprecated.
+
+- `post.html?p=<slug>` redirects to `/articles/<slug>.html`
+- `/best-of.html` redirects to `/articles.html`
+
+These files are retained only to protect old links that may already exist online.
+
+## Canonical domain
+
+The repository uses the `www` custom domain configured in `CNAME`:
+
+```text
+www.aiforqa.org
+```
+
+Canonical URLs, Open Graph URLs, robots.txt, and sitemap.xml should consistently use:
+
+```text
+https://www.aiforqa.org
+```
 
 ## Notes
 
-- `home.js` exists but is not currently wired into `index.html`. The homepage uses hardcoded featured cards. To switch to dynamic cards, add `<div id="latestCards" class="cards three"></div>` to `index.html` and load `<script src="home.js"></script>` before `</body>`.
-- `_config.yml` sets a Jekyll theme for GitHub Pages. Because all HTML pages have no Jekyll front-matter, the theme does not affect the rendered output — pages are served as plain HTML.
+- Do not use JavaScript-dependent pages for primary article content.
+- Individual articles should remain full static HTML for SEO and reliability.
+- Do not add broken PDF buttons when no PDF exists.
+- Keep the design system in `styles.css` consistent across new pages.

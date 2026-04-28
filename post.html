@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex,follow" />
+  <title>Redirecting… • AI for QA</title>
+  <link rel="canonical" href="https://www.aiforqa.org/articles.html" />
+  <script>
+    (function(){
+      var params = new URLSearchParams(window.location.search);
+      var slug = params.get('p') || params.get('slug');
+      var safe = slug && /^[a-z0-9-]+$/.test(slug) ? slug : '';
+      var target = safe ? '/articles/' + safe + '.html' : '/articles.html';
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to the static article page. <a href="/articles.html">Browse all articles</a>.</p>
+</body>
+</html>
