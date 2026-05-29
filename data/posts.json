@@ -108,5 +108,35 @@
     "readingTime": "12 min read",
     "published": true,
     "pdf": "pdfs/ai-assisted-deviation-investigations-pharma.pdf"
+  },
+  {
+    "slug": "ai-reduce-human-error-gmp-manufacturing",
+    "title": "AI to Reduce Human Error in GMP Manufacturing",
+    "summary": "How AI-powered tools can systematically reduce human error in GMP pharmaceutical manufacturing — from procedural compliance monitoring to real-time operator guidance and error-pattern detection.",
+    "category": "GxP & Validation",
+    "date": "2026-05-01",
+    "readingTime": "14 min read",
+    "published": true,
+    "pdf": "pdfs/ai-reduce-human-error-gmp-manufacturing.pdf"
+  },
+  {
+    "slug": "how-ai-could-improve-fda-inspection-readiness",
+    "title": "How AI Could Improve FDA Inspection Readiness",
+    "summary": "How AI tools can strengthen FDA inspection readiness for pharmaceutical manufacturers — from real-time document gap analysis and audit trail review to mock inspection support and predictive compliance risk scoring.",
+    "category": "Compliance",
+    "date": "2026-05-01",
+    "readingTime": "13 min read",
+    "published": true,
+    "pdf": "pdfs/how-ai-could-improve-fda-inspection-readiness.pdf"
+  },
+  {
+    "slug": "ai-environmental-monitoring-predicting-contamination",
+    "title": "AI in Environmental Monitoring: Predicting Contamination Before It Happens",
+    "summary": "How AI and machine learning are transforming pharmaceutical environmental monitoring programs — enabling early contamination detection, predictive risk scoring, and continuous EM trend analysis.",
+    "category": "GxP & Validation",
+    "date": "2026-05-01",
+    "readingTime": "13 min read",
+    "published": true,
+    "pdf": "pdfs/ai-environmental-monitoring-predicting-contamination.pdf"
   }
 ]
