@@ -1,5 +1,45 @@
 [
   {
+    "slug": "AI for Supplier Quality Management in Pharmaceuticals",
+    "title": "AI for Supplier Quality Management in Pharmaceuticals",
+    "summary": "How AI can strengthen pharmaceutical supplier oversight with continuous risk scoring, audit intelligence, and earlier detection of quality and compliance signals across global supply chains.",
+    "category": "Compliance",
+    "date": "2026-05-29",
+    "readingTime": "15 min read",
+    "published": true,
+    "pdf": "pdfs/AI for Supplier Quality Management in Pharmaceuticals.pdf"
+  },
+  {
+    "slug": "Artificial Intelligence in Stability Programs and Shelf-Life Monitoring",
+    "title": "Artificial Intelligence in Stability Programs and Shelf-Life Monitoring",
+    "summary": "How AI can improve stability programs with predictive degradation modeling, early out-of-trend detection, and stronger shelf-life monitoring aligned with ICH expectations.",
+    "category": "GxP & Validation",
+    "date": "2026-05-29",
+    "readingTime": "16 min read",
+    "published": true,
+    "pdf": "pdfs/Artificial Intelligence in Stability Programs and Shelf-Life Monitoring.pdf"
+  },
+  {
+    "slug": "AI and Audit Trail Review The Next Evolution of Data Integrity",
+    "title": "AI and Audit Trail Review: The Next Evolution of Data Integrity",
+    "summary": "How AI can modernize audit trail review by surfacing unusual user behavior, detecting data integrity risks earlier, and helping teams review high-volume system activity more effectively.",
+    "category": "Compliance",
+    "date": "2026-05-29",
+    "readingTime": "15 min read",
+    "published": true,
+    "pdf": "pdfs/AI and Audit Trail Review The Next Evolution of Data Integrity.pdf"
+  },
+  {
+    "slug": "The Role of AI in Pharmaceutical Training Systems",
+    "title": "The Role of AI in Pharmaceutical Training Systems",
+    "summary": "How AI can make pharmaceutical training systems more adaptive by targeting competency gaps, improving knowledge retention, and supporting role-based GMP learning.",
+    "category": "Compliance",
+    "date": "2026-05-29",
+    "readingTime": "14 min read",
+    "published": true,
+    "pdf": "pdfs/The Role of AI in Pharmaceutical Training Systems.pdf"
+  },
+  {
     "slug": "ai-data-integrity-alcoa-plus",
     "title": "AI and Data Integrity: Enforcing ALCOA+ in Pharmaceutical Systems",
     "summary": "Practical guidance on using AI to maintain ALCOA+ data integrity principles in pharmaceutical QA systems",
