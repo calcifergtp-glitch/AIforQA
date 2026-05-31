@@ -842,3 +842,32 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
   .postContent a,
   .postContent .pdf-download-link{ transition: none; }
 }
+
+/* Tags display */
+.postTags{
+  display:flex; flex-wrap:wrap; gap:.5rem;
+  margin-bottom:1rem;
+}
+.postTags .pill.small{
+  text-decoration:none;
+  transition: background .2s;
+}
+.postTags .pill.small:hover{
+  background:rgba(99,102,241,.15);
+}
+
+/* Tag cloud on tags.html */
+.tagCloud{
+  display:flex; flex-wrap:wrap; gap:.5rem;
+  margin:1.5rem 0 2rem;
+}
+.tagCloud .pill.small{
+  text-decoration:none;
+  transition: background .2s;
+}
+.tagCloud .pill.small:hover{
+  background:rgba(99,102,241,.15);
+}
+.tagCount{
+  opacity:.6; font-size:.85em;
+}

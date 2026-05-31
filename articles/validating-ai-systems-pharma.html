@@ -64,6 +64,7 @@
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
 <a href="../resources.html">Resources</a>
+<a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
 </nav>
@@ -86,6 +87,14 @@
 <span class="sep">•</span>
 <span>13 min read</span>
 </div>
+</div>
+<div class="postTags">
+<a href="../tags.html#validation" class="pill small">Validation</a>
+<a href="../tags.html#ai-governance" class="pill small">AI Governance</a>
+<a href="../tags.html#gxp" class="pill small">GxP</a>
+<a href="../tags.html#computer-system-validation" class="pill small">Computer System Validation</a>
+<a href="../tags.html#risk-assessment" class="pill small">Risk Assessment</a>
+<a href="../tags.html#machine-learning" class="pill small">Machine Learning</a>
 </div>
 <a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/validating-ai-systems-pharma.pdf">
 <span aria-hidden="true">📄</span> Download PDF
@@ -155,7 +164,7 @@
 <h2>Practical Framework for QA/CSV Assessment</h2>
 <p>When evaluating an AI tool for use, QA and CSV professionals should apply a structured framework: 1. Define Context and Risk: Determine the AI tool’s intended use and impact level (see Section 5). Low- risk utilities need simpler controls; high-risk applications need full validation. 2.</p>
 <p>Vendor Assessment: Choose solutions with strong governance. Ensure the vendor provides transparency (model cards, documentation generation) and that you can control updates. 3. Validation Plan: Develop a validation plan analogous to CSV, with AI-specific elements: define performance requirements, testing datasets, acceptance criteria for outputs (e.g. accuracy thresholds), and methods for monitoring drift. 4.</p>
-<p>Documentation: Generate evidence bundles for the model (training data description, model version, hyperparameters, test results) – platforms like DataRobot can automate this. 5. Change Control and Monitoring: Integrate the AI tool into change control. Any model retraining or software update triggers impact assessment.</p>
+<p>Documentation: Generate evidence bundles for the model (training data description, model version, hyperparameters, test results) – platforms like DataRobot can automate this. 5. <a href="ai-change-control-risk-assessment.html">Change Control</a> and Monitoring: Integrate the AI tool into change control. Any model retraining or software update triggers impact assessment.</p>
 <p>Establish key performance indicators (KPIs) for ongoing monitoring (e.g. error rate vs baseline) and set limits for revalidation. 6. Human Oversight: Clearly define how subject-matter experts will review AI outputs. Maintain manuals and training on the tool’s proper use and limitations. 7.</p>
 <p>Periodic Review: Schedule periodic re-evaluation of the AI system. For example, annually assess whether the model is still fit-for-purpose, whether data distribution has changed, and whether retraining or requalification is needed. By applying the same rigor as traditional validation – with adaptations for AI’s dynamic nature – organizations can responsibly leverage AI tools.</p>
 <p>The key is to treat AI models as configurable computerized systems: document every step, control changes tightly, and continuously verify performance. This allows AI to be a validated part of pharmaceutical quality systems, balancing innovation with compliance. Sources: Regulatory guidance (FDA, EMA, ISPE GAMP5) and recent literature on AI/ML in GxP were reviewed.</p>

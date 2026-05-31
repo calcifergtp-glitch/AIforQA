@@ -1,163 +1,291 @@
 [
   {
-    "slug": "AI_in_Pharmaceutical_Maintenance_and_Calibration_Programs",
+    "slug": "ai-in-pharmaceutical-maintenance-and-calibration-programs",
     "title": "AI in Pharmaceutical Maintenance and Calibration Programs",
     "summary": "How predictive analytics, calibration intelligence, and smart equipment monitoring can improve GMP operations and enhance pharmaceutical maintenance and calibration programs.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_in_Pharmaceutical_Maintenance_and_Calibration_Programs.pdf"
+    "pdf": "pdfs/AI_in_Pharmaceutical_Maintenance_and_Calibration_Programs.pdf",
+    "tags": [
+      "GMP",
+      "Validation",
+      "Predictive Analytics",
+      "Equipment Qualification",
+      "GxP",
+      "Calibration"
+    ]
   },
   {
-    "slug": "WHAT HAPPENS WHEN AI MAKES A GMP Mistake",
+    "slug": "what-happens-when-ai-makes-a-gmp-mistake",
     "title": "What Happens When AI Makes a GMP Mistake?",
     "summary": "Navigating regulatory realities, accountability, and governance challenges when AI causes or contributes to a GMP error in pharmaceutical quality assurance.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/WHAT HAPPENS WHEN AI MAKES A GMP Mistake.pdf"
+    "pdf": "pdfs/WHAT HAPPENS WHEN AI MAKES A GMP Mistake.pdf",
+    "tags": [
+      "AI Governance",
+      "GMP",
+      "Compliance",
+      "Risk Assessment",
+      "CAPA",
+      "Accountability"
+    ]
   },
   {
-    "slug": "How_AI_Could_Support_Continued_Process_Verification_CPV",
+    "slug": "how-ai-could-support-continued-process-verification-cpv",
     "title": "How AI Could Support Continued Process Verification (CPV)",
     "summary": "A practical GMP perspective on how AI could enhance process monitoring, trend detection, and APR/PQR integration within the pharmaceutical process validation lifecycle.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/How_AI_Could_Support_Continued_Process_Verification_CPV.pdf"
+    "pdf": "pdfs/How_AI_Could_Support_Continued_Process_Verification_CPV.pdf",
+    "tags": [
+      "Continued Process Verification",
+      "CPV",
+      "Validation",
+      "GMP",
+      "Predictive Analytics",
+      "Process Validation"
+    ]
   },
   {
-    "slug": "AI_for_Change_Control_Impact_Assessments",
+    "slug": "ai-for-change-control-impact-assessments",
     "title": "AI for Change Control Impact Assessments",
     "summary": "How AI can improve risk evaluation and impact assessment quality in pharmaceutical quality systems, enabling faster and more consistent change control decisions.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/AI_for_Change_Control_Impact_Assessments.pdf"
+    "pdf": "pdfs/AI_for_Change_Control_Impact_Assessments.pdf",
+    "tags": [
+      "Change Control",
+      "Risk Assessment",
+      "Quality Management System",
+      "GMP",
+      "CAPA",
+      "Compliance"
+    ]
   },
   {
-    "slug": "AI_GMP_Document_Review_and_Approval_Workflows",
+    "slug": "ai-gmp-document-review-and-approval-workflows",
     "title": "AI in GMP Document Review and Approval Workflows",
     "summary": "How AI can assist SOP review, improve document consistency, and reduce approval bottlenecks in GMP document management and controlled document workflows.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_GMP_Document_Review_and_Approval_Workflows.pdf"
+    "pdf": "pdfs/AI_GMP_Document_Review_and_Approval_Workflows.pdf",
+    "tags": [
+      "GMP",
+      "Quality Management System",
+      "Change Control",
+      "Compliance",
+      "Data Integrity",
+      "SOP Management"
+    ]
   },
   {
-    "slug": "AI_in_Pharmaceutical_Complaint_Trending_and_Signal_Detection",
+    "slug": "ai-in-pharmaceutical-complaint-trending-and-signal-detection",
     "title": "AI in Pharmaceutical Complaint Trending and Signal Detection",
     "summary": "How AI can analyze pharmaceutical complaint data, detect quality signals, and support early warning systems for post-market quality monitoring and pharmacovigilance.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/AI_in_Pharmaceutical_Complaint_Trending_and_Signal_Detection.pdf"
+    "pdf": "pdfs/AI_in_Pharmaceutical_Complaint_Trending_and_Signal_Detection.pdf",
+    "tags": [
+      "CAPA",
+      "Predictive Analytics",
+      "Quality Management System",
+      "Compliance",
+      "Pharmacovigilance",
+      "Risk Assessment"
+    ]
   },
   {
-    "slug": "Using_AI_for_Regulatory_Intelligence",
+    "slug": "using-ai-for-regulatory-intelligence",
     "title": "Using AI for Regulatory Intelligence",
     "summary": "How AI can help pharmaceutical QA and regulatory affairs teams track FDA, EMA, and global GMP guidance updates more efficiently and respond to regulatory changes faster.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/Using_AI_for_Regulatory_Intelligence.pdf"
+    "pdf": "pdfs/Using_AI_for_Regulatory_Intelligence.pdf",
+    "tags": [
+      "FDA",
+      "EMA",
+      "Compliance",
+      "GMP",
+      "Regulatory Intelligence",
+      "ICH Q10"
+    ]
   },
   {
-    "slug": "AI_Assisted_Root_Cause_Analysis_Pharmaceutical_Investigations",
+    "slug": "ai-assisted-root-cause-analysis-pharmaceutical-investigations",
     "title": "AI-Assisted Root Cause Analysis in Pharmaceutical Investigations",
     "summary": "How AI can improve pharmaceutical deviation investigations through pattern recognition, automated root cause analysis support, and more effective CAPA development.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_Assisted_Root_Cause_Analysis_Pharmaceutical_Investigations.pdf"
+    "pdf": "pdfs/AI_Assisted_Root_Cause_Analysis_Pharmaceutical_Investigations.pdf",
+    "tags": [
+      "Root Cause Analysis",
+      "CAPA",
+      "Deviations",
+      "GMP",
+      "Predictive Analytics",
+      "Compliance"
+    ]
   },
   {
-    "slug": "AI_for_Batch_Record_Review_by_Exception",
+    "slug": "ai-for-batch-record-review-by-exception",
     "title": "AI for Batch Record Review by Exception",
     "summary": "How AI can transform pharmaceutical batch record review by focusing human attention on exceptions, improving electronic batch record oversight, and supporting timely batch release decisions.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/AI_for_Batch_Record_Review_by_Exception.pdf"
+    "pdf": "pdfs/AI_for_Batch_Record_Review_by_Exception.pdf",
+    "tags": [
+      "Batch Record Review",
+      "GMP",
+      "Data Integrity",
+      "Audit Trail Review",
+      "Quality Management System",
+      "Manufacturing"
+    ]
   },
   {
-    "slug": "Artificial_Intelligence_and_GMP_Knowledge_Management",
+    "slug": "ai-and-gmp-knowledge-management",
     "title": "Artificial Intelligence and GMP Knowledge Management",
     "summary": "How AI can help pharmaceutical organizations preserve critical expertise, capture institutional knowledge, and build more resilient GMP knowledge management systems.",
     "category": "Compliance",
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/Artificial_Intelligence_and_GMP_Knowledge_Management.pdf"
+    "pdf": "pdfs/Artificial_Intelligence_and_GMP_Knowledge_Management.pdf",
+    "tags": [
+      "Knowledge Management",
+      "GMP",
+      "Training",
+      "Quality Management System",
+      "Technology Transfer",
+      "Compliance"
+    ]
   },
   {
-    "slug": "AI_for_Pharmaceutical_Risk_Management_ICH_Q9",
+    "slug": "ai-for-pharmaceutical-risk-management-ich-q9",
     "title": "AI for Pharmaceutical Risk Management Under ICH Q9",
     "summary": "How AI can support quality risk management frameworks, FMEA, CAPA, and predictive risk analytics aligned with ICH Q9(R1) in pharmaceutical manufacturing and QA systems.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_for_Pharmaceutical_Risk_Management_ICH_Q9.pdf"
+    "pdf": "pdfs/AI_for_Pharmaceutical_Risk_Management_ICH_Q9.pdf",
+    "tags": [
+      "Risk Assessment",
+      "ICH Q9",
+      "CAPA",
+      "Quality Management System",
+      "GMP",
+      "Predictive Analytics"
+    ]
   },
   {
-    "slug": "AI_and_Pharmaceutical_Technology_Transfer",
+    "slug": "ai-and-pharmaceutical-technology-transfer",
     "title": "AI and Pharmaceutical Technology Transfer",
     "summary": "How AI can improve knowledge transfer and process understanding during pharmaceutical technology transfer, supporting scale-up and site-to-site manufacturing transfers.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_and_Pharmaceutical_Technology_Transfer.pdf"
+    "pdf": "pdfs/AI_and_Pharmaceutical_Technology_Transfer.pdf",
+    "tags": [
+      "Technology Transfer",
+      "GMP",
+      "Validation",
+      "Knowledge Management",
+      "Process Validation",
+      "Risk Assessment"
+    ]
   },
   {
-    "slug": "AI for Supplier Quality Management in Pharmaceuticals",
+    "slug": "ai-for-supplier-quality-management-in-pharmaceuticals",
     "title": "AI for Supplier Quality Management in Pharmaceuticals",
     "summary": "How AI can strengthen pharmaceutical supplier oversight with continuous risk scoring, audit intelligence, and earlier detection of quality and compliance signals across global supply chains.",
     "category": "Compliance",
     "date": "2026-05-29",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "pdfs/AI for Supplier Quality Management in Pharmaceuticals.pdf"
+    "pdf": "pdfs/AI for Supplier Quality Management in Pharmaceuticals.pdf",
+    "tags": [
+      "Supplier Quality",
+      "Risk Assessment",
+      "Audit Trail Review",
+      "CAPA",
+      "Compliance",
+      "GMP"
+    ]
   },
   {
-    "slug": "Artificial Intelligence in Stability Programs and Shelf-Life Monitoring",
+    "slug": "ai-in-stability-programs-and-shelf-life-monitoring",
     "title": "Artificial Intelligence in Stability Programs and Shelf-Life Monitoring",
     "summary": "How AI can improve stability programs with predictive degradation modeling, early out-of-trend detection, and stronger shelf-life monitoring aligned with ICH expectations.",
     "category": "GxP & Validation",
     "date": "2026-05-29",
     "readingTime": "16 min read",
     "published": true,
-    "pdf": "pdfs/Artificial Intelligence in Stability Programs and Shelf-Life Monitoring.pdf"
+    "pdf": "pdfs/Artificial Intelligence in Stability Programs and Shelf-Life Monitoring.pdf",
+    "tags": [
+      "Stability Programs",
+      "GMP",
+      "Predictive Analytics",
+      "ICH Guidelines",
+      "Validation",
+      "Data Integrity"
+    ]
   },
   {
-    "slug": "AI and Audit Trail Review The Next Evolution of Data Integrity",
+    "slug": "ai-and-audit-trail-review-data-integrity",
     "title": "AI and Audit Trail Review: The Next Evolution of Data Integrity",
     "summary": "How AI can modernize audit trail review by surfacing unusual user behavior, detecting data integrity risks earlier, and helping teams review high-volume system activity more effectively.",
     "category": "Compliance",
     "date": "2026-05-29",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "pdfs/AI and Audit Trail Review The Next Evolution of Data Integrity.pdf"
+    "pdf": "pdfs/AI and Audit Trail Review The Next Evolution of Data Integrity.pdf",
+    "tags": [
+      "Audit Trail Review",
+      "Data Integrity",
+      "21 CFR Part 11",
+      "ALCOA+",
+      "Compliance",
+      "Annex 11"
+    ]
   },
   {
-    "slug": "The Role of AI in Pharmaceutical Training Systems",
+    "slug": "ai-in-pharmaceutical-training-systems",
     "title": "The Role of AI in Pharmaceutical Training Systems",
     "summary": "How AI can make pharmaceutical training systems more adaptive by targeting competency gaps, improving knowledge retention, and supporting role-based GMP learning.",
     "category": "Compliance",
     "date": "2026-05-29",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/The Role of AI in Pharmaceutical Training Systems.pdf"
+    "pdf": "pdfs/The Role of AI in Pharmaceutical Training Systems.pdf",
+    "tags": [
+      "Training",
+      "GMP",
+      "Human Error",
+      "Knowledge Management",
+      "Compliance",
+      "Quality Management System"
+    ]
   },
   {
     "slug": "ai-data-integrity-alcoa-plus",
@@ -167,7 +295,15 @@
     "date": "2026-03-10",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/ai-data-integrity-alcoa-plus.pdf"
+    "pdf": "pdfs/ai-data-integrity-alcoa-plus.pdf",
+    "tags": [
+      "Data Integrity",
+      "ALCOA+",
+      "21 CFR Part 11",
+      "Audit Trail Review",
+      "GxP",
+      "Computer System Validation"
+    ]
   },
   {
     "slug": "ai-in-pharmaceutical-quality-assurance",
@@ -177,7 +313,15 @@
     "date": "2026-03-10",
     "readingTime": "18 min read",
     "published": true,
-    "pdf": "pdfs/ai-in-pharmaceutical-quality-assurance.pdf"
+    "pdf": "pdfs/ai-in-pharmaceutical-quality-assurance.pdf",
+    "tags": [
+      "Quality Management System",
+      "GxP",
+      "AI Governance",
+      "Compliance",
+      "Risk Assessment",
+      "FDA"
+    ]
   },
   {
     "slug": "21-cfr-part-11-ai-pharmaceutical-compliance",
@@ -187,7 +331,15 @@
     "date": "2026-03-07",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "pdfs/21-cfr-part-11-ai-pharmaceutical-compliance.pdf"
+    "pdf": "pdfs/21-cfr-part-11-ai-pharmaceutical-compliance.pdf",
+    "tags": [
+      "21 CFR Part 11",
+      "Data Integrity",
+      "FDA",
+      "Electronic Records",
+      "Compliance",
+      "Validation"
+    ]
   },
   {
     "slug": "computer-system-validation-ai-software",
@@ -197,7 +349,15 @@
     "date": "2026-03-14",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/computer-system-validation-ai-software.pdf"
+    "pdf": "pdfs/computer-system-validation-ai-software.pdf",
+    "tags": [
+      "Computer System Validation",
+      "CSV",
+      "GxP",
+      "Validation",
+      "Risk Assessment",
+      "21 CFR Part 11"
+    ]
   },
   {
     "slug": "validating-ai-systems-pharma",
@@ -207,7 +367,15 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/validating-ai-systems-pharma.pdf"
+    "pdf": "pdfs/validating-ai-systems-pharma.pdf",
+    "tags": [
+      "Validation",
+      "AI Governance",
+      "GxP",
+      "Computer System Validation",
+      "Risk Assessment",
+      "Machine Learning"
+    ]
   },
   {
     "slug": "ai-equipment-qualification-iq-oq-pq",
@@ -217,7 +385,14 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "pdfs/ai-equipment-qualification-iq-oq-pq.pdf"
+    "pdf": "pdfs/ai-equipment-qualification-iq-oq-pq.pdf",
+    "tags": [
+      "Validation",
+      "GxP",
+      "GMP",
+      "Risk Assessment",
+      "Computer System Validation"
+    ]
   },
   {
     "slug": "ai-integration-pharmaceutical-quality-management",
@@ -227,27 +402,50 @@
     "date": "2026-03-14",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/ai-integration-pharmaceutical-quality-management.pdf"
+    "pdf": "pdfs/ai-integration-pharmaceutical-quality-management.pdf",
+    "tags": [
+      "Quality Management System",
+      "QMS",
+      "CAPA",
+      "Deviations",
+      "Change Control",
+      "Compliance"
+    ]
   },
   {
     "slug": "ai-change-control-risk-assessment",
     "title": "AI and Change Control Risk Assessment",
-    "summary": "Using AI tools to streamline change control processes in pharmaceutical operations — risk scoring, impact assessment automation, and maintaining GMP compliance throughout change management.",
+    "summary": "Using AI tools to streamline change control processes in pharmaceutical operations \u2014 risk scoring, impact assessment automation, and maintaining GMP compliance throughout change management.",
     "category": "Compliance",
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "pdfs/ai-change-control-risk-assessment.pdf"
+    "pdf": "pdfs/ai-change-control-risk-assessment.pdf",
+    "tags": [
+      "Change Control",
+      "Risk Assessment",
+      "GMP",
+      "Quality Management System",
+      "Compliance"
+    ]
   },
   {
     "slug": "preparing-fda-inspections-ai",
     "title": "Preparing for FDA Inspections with AI",
-    "summary": "How pharmaceutical QA teams can leverage AI tools to prepare for FDA inspections — from document readiness and gap analysis to predictive compliance risk identification.",
+    "summary": "How pharmaceutical QA teams can leverage AI tools to prepare for FDA inspections \u2014 from document readiness and gap analysis to predictive compliance risk identification.",
     "category": "Compliance",
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/preparing-fda-inspections-ai.pdf"
+    "pdf": "pdfs/preparing-fda-inspections-ai.pdf",
+    "tags": [
+      "Inspection Readiness",
+      "FDA",
+      "Audit Trail Review",
+      "CAPA",
+      "Data Integrity",
+      "Compliance"
+    ]
   },
   {
     "slug": "capa-systems-ai-machine-intelligence",
@@ -257,46 +455,86 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/capa-systems-ai-machine-intelligence.pdf"
+    "pdf": "pdfs/capa-systems-ai-machine-intelligence.pdf",
+    "tags": [
+      "CAPA",
+      "Deviations",
+      "Root Cause Analysis",
+      "Quality Management System",
+      "Predictive Analytics",
+      "GMP"
+    ]
   },
   {
     "slug": "ai-assisted-deviation-investigations-pharma",
     "title": "AI-Assisted Deviation Investigations in Pharma",
-    "summary": "How AI can accelerate pharmaceutical deviation investigations — from automated root cause analysis and historical pattern matching to documentation support and regulatory-ready reporting.",
+    "summary": "How AI can accelerate pharmaceutical deviation investigations \u2014 from automated root cause analysis and historical pattern matching to documentation support and regulatory-ready reporting.",
     "category": "Compliance",
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "pdfs/ai-assisted-deviation-investigations-pharma.pdf"
+    "pdf": "pdfs/ai-assisted-deviation-investigations-pharma.pdf",
+    "tags": [
+      "Deviations",
+      "CAPA",
+      "Root Cause Analysis",
+      "GMP",
+      "Compliance",
+      "Predictive Analytics"
+    ]
   },
   {
     "slug": "ai-reduce-human-error-gmp-manufacturing",
     "title": "AI to Reduce Human Error in GMP Manufacturing",
-    "summary": "How AI-powered tools can systematically reduce human error in GMP pharmaceutical manufacturing — from procedural compliance monitoring to real-time operator guidance and error-pattern detection.",
+    "summary": "How AI-powered tools can systematically reduce human error in GMP pharmaceutical manufacturing \u2014 from procedural compliance monitoring to real-time operator guidance and error-pattern detection.",
     "category": "GxP & Validation",
     "date": "2026-05-01",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/ai-reduce-human-error-gmp-manufacturing.pdf"
+    "pdf": "pdfs/ai-reduce-human-error-gmp-manufacturing.pdf",
+    "tags": [
+      "GMP",
+      "Human Error",
+      "Training",
+      "Quality Management System",
+      "Risk Assessment",
+      "Manufacturing"
+    ]
   },
   {
     "slug": "how-ai-could-improve-fda-inspection-readiness",
     "title": "How AI Could Improve FDA Inspection Readiness",
-    "summary": "How AI tools can strengthen FDA inspection readiness for pharmaceutical manufacturers — from real-time document gap analysis and audit trail review to mock inspection support and predictive compliance risk scoring.",
+    "summary": "How AI tools can strengthen FDA inspection readiness for pharmaceutical manufacturers \u2014 from real-time document gap analysis and audit trail review to mock inspection support and predictive compliance risk scoring.",
     "category": "Compliance",
     "date": "2026-05-01",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/how-ai-could-improve-fda-inspection-readiness.pdf"
+    "pdf": "pdfs/how-ai-could-improve-fda-inspection-readiness.pdf",
+    "tags": [
+      "Inspection Readiness",
+      "FDA",
+      "Audit Trail Review",
+      "Data Integrity",
+      "Compliance",
+      "21 CFR Part 11"
+    ]
   },
   {
     "slug": "ai-environmental-monitoring-predicting-contamination",
     "title": "AI in Environmental Monitoring: Predicting Contamination Before It Happens",
-    "summary": "How AI and machine learning are transforming pharmaceutical environmental monitoring programs — enabling early contamination detection, predictive risk scoring, and continuous EM trend analysis.",
+    "summary": "How AI and machine learning are transforming pharmaceutical environmental monitoring programs \u2014 enabling early contamination detection, predictive risk scoring, and continuous EM trend analysis.",
     "category": "GxP & Validation",
     "date": "2026-05-01",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/ai-environmental-monitoring-predicting-contamination.pdf"
+    "pdf": "pdfs/ai-environmental-monitoring-predicting-contamination.pdf",
+    "tags": [
+      "Environmental Monitoring",
+      "GMP",
+      "Sterile Manufacturing",
+      "Predictive Analytics",
+      "Risk Assessment",
+      "Annex 1"
+    ]
   }
 ]

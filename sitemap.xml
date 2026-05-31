@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.aiforqa.org/</loc><lastmod>2026-04-28</lastmod></url>
+  <url><loc>https://www.aiforqa.org/</loc><lastmod>2026-05-31</lastmod></url>
   <url><loc>https://www.aiforqa.org/articles.html</loc><lastmod>2026-05-31</lastmod></url>
   <url><loc>https://www.aiforqa.org/resources.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_in_Pharmaceutical_Maintenance_and_Calibration_Programs.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/WHAT%20HAPPENS%20WHEN%20AI%20MAKES%20A%20GMP%20Mistake.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/How_AI_Could_Support_Continued_Process_Verification_CPV.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_for_Change_Control_Impact_Assessments.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_GMP_Document_Review_and_Approval_Workflows.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_in_Pharmaceutical_Complaint_Trending_and_Signal_Detection.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/Using_AI_for_Regulatory_Intelligence.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_Assisted_Root_Cause_Analysis_Pharmaceutical_Investigations.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_for_Batch_Record_Review_by_Exception.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/Artificial_Intelligence_and_GMP_Knowledge_Management.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_for_Pharmaceutical_Risk_Management_ICH_Q9.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI_and_Pharmaceutical_Technology_Transfer.html</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI%20for%20Supplier%20Quality%20Management%20in%20Pharmaceuticals.html</loc><lastmod>2026-05-29</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/Artificial%20Intelligence%20in%20Stability%20Programs%20and%20Shelf-Life%20Monitoring.html</loc><lastmod>2026-05-29</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/AI%20and%20Audit%20Trail%20Review%20The%20Next%20Evolution%20of%20Data%20Integrity.html</loc><lastmod>2026-05-29</lastmod></url>
-  <url><loc>https://www.aiforqa.org/articles/The%20Role%20of%20AI%20in%20Pharmaceutical%20Training%20Systems.html</loc><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://www.aiforqa.org/tags.html</loc><lastmod>2026-05-31</lastmod></url>
   <url><loc>https://www.aiforqa.org/about.html</loc><lastmod>2026-03-07</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-in-pharmaceutical-maintenance-and-calibration-programs.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/what-happens-when-ai-makes-a-gmp-mistake.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/how-ai-could-support-continued-process-verification-cpv.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-for-change-control-impact-assessments.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-gmp-document-review-and-approval-workflows.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-in-pharmaceutical-complaint-trending-and-signal-detection.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/using-ai-for-regulatory-intelligence.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-assisted-root-cause-analysis-pharmaceutical-investigations.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-for-batch-record-review-by-exception.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-and-gmp-knowledge-management.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-for-pharmaceutical-risk-management-ich-q9.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-and-pharmaceutical-technology-transfer.html</loc><lastmod>2026-05-31</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-for-supplier-quality-management-in-pharmaceuticals.html</loc><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-in-stability-programs-and-shelf-life-monitoring.html</loc><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-and-audit-trail-review-data-integrity.html</loc><lastmod>2026-05-29</lastmod></url>
+  <url><loc>https://www.aiforqa.org/articles/ai-in-pharmaceutical-training-systems.html</loc><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://www.aiforqa.org/articles/ai-data-integrity-alcoa-plus.html</loc><lastmod>2026-03-10</lastmod></url>
   <url><loc>https://www.aiforqa.org/articles/ai-in-pharmaceutical-quality-assurance.html</loc><lastmod>2026-03-10</lastmod></url>
   <url><loc>https://www.aiforqa.org/articles/21-cfr-part-11-ai-pharmaceutical-compliance.html</loc><lastmod>2026-03-07</lastmod></url>
