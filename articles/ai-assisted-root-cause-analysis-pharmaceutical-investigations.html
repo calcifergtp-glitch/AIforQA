@@ -67,8 +67,7 @@
 <a href="../articles.html">Articles</a>
 <a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
-<a href="#toc">On this page</a>
-<a href="#related">Related</a>
+<a href="../about.html">About</a>
 </nav>
 <div class="actions">
 <a class="btn ghost" href="../articles.html">All Articles</a>
@@ -144,7 +143,21 @@
 <p>If AI is used inside a GMP QMS, deviation system, CAPA system, or investigation workflow, validation and <a href="ai-data-integrity-alcoa-plus.html">data integrity</a> controls may apply. FDA Part 11 requires controls for closed systems that create, modify, maintain, or transmit electronic records, including validation for accuracy, reliability, consistent intended performance, and the ability to detect invalid or altered records. It also requires access limitation, audit trails, and controls over system documentation (FDA, <a href="21-cfr-part-11-ai-pharmaceutical-compliance.html">21 CFR Part 11</a>). For AI-assisted RCA, validation should address: Validation Area Practical Question Intended use Is AI retrieving records, suggesting causes, drafting text, or ranking CAPA risk? Source systems Does AI search approved QMS records, LIMS, MES, CMMS, complaints, APR/PQR? Data integrity Are source records complete, accurate, and audit-trailed? Output traceability Can users see which records support the AI suggestion? Model version Is the AI model/configuration controlled? Performance testing Can AI retrieve known similar historical investigations? False negatives Does AI miss relevant similar events? False positives Does AI overwhelm users with irrelevant results? Human override Can investigators reject AI suggestions with rationale? Audit trail Are AI outputs, human decisions, and final conclusions retained? Periodic review Is AI performance reviewed over time? FDA Part 11 also requires secure, computer-generated, time-stamped audit trails that record operator actions creating, modifying, or deleting electronic records without obscuring previous information. If AI output influences a GMP investigation, the system should retain enough information to reconstruct the decision.</p>
 <h2>Human Review Expectations</h2>
 <p>AI should not own root cause conclusions. A safe oversight model looks like this: AI retrieves evidence ↓ Investigator evaluates evidence ↓</p>
-<p>SMEs confirm technical plausibility ↓ QA challenges logic and product impact ↓ CAPA owner defines actions ↓ QA approves final investigation and CAPA Human oversight is especially important when investigations involve:  Batch rejection or release  Sterility assurance  OOS results  Aseptic processing  Cleaning validation  Equipment failure  Data integrity  Repeated deviations  Complaint trends  Field alert or recall considerations  Regulatory commitments EMA’s AI reflection paper states that AI risk depends not only on technology and data quality, but also on context of use and degree of influence. It also states that manufacturers are responsible for ensuring algorithms, models, datasets, and pipelines are fit for purpose and aligned with legal, ethical, technical, scientific, regulatory, and GxP standards (EMA, 2024). That principle fits AI-assisted investigations perfectly: the more influence AI has on the RCA conclusion, the stronger the controls must be.</p>
+<p>SMEs confirm technical plausibility ↓ QA challenges logic and product impact ↓ CAPA owner defines actions ↓ QA approves final investigation and CAPA Human oversight is especially important when investigations involve:</p>
+<ul>
+<li>Batch rejection or release</li>
+<li>Sterility assurance</li>
+<li>OOS results</li>
+<li>Aseptic processing</li>
+<li>Cleaning validation</li>
+<li>Equipment failure</li>
+<li>Data integrity</li>
+<li>Repeated deviations</li>
+<li>Complaint trends</li>
+<li>Field alert or recall considerations</li>
+<li>Regulatory commitments</li>
+</ul>
+<p>EMA’s AI reflection paper states that AI risk depends not only on technology and data quality, but also on context of use and degree of influence. It also states that manufacturers are responsible for ensuring algorithms, models, datasets, and pipelines are fit for purpose and aligned with legal, ethical, technical, scientific, regulatory, and GxP standards (EMA, 2024). That principle fits AI-assisted investigations perfectly: the more influence AI has on the RCA conclusion, the stronger the controls must be.</p>
 <h2>Implementation Roadmap for AI-Assisted RCA</h2>
 <h3>Step 1: Start With Similar-Event Retrieval</h3>
 <p>The lowest-risk, highest-value starting point is using AI to find similar deviations, complaints, CAPAs, OOS events, equipment failures, and change controls.</p>
@@ -185,9 +198,23 @@
 <p>AI-assisted root cause analysis has strong potential in pharmaceutical investigations because RCA is evidence-heavy, pattern-heavy, and vulnerable to human bias. AI can help retrieve similar events, detect recurring patterns, challenge weak logic, support CAPA effectiveness review, and make investigations more complete. But AI should not become the investigator. FDA requires thorough investigation of unexplained discrepancies and batch failures, including extension to other potentially associated batches or</p>
 <p>products and written conclusions and follow-up (FDA, 21 CFR 211.192). ICH Q10 expects structured investigations to determine root cause, with effort, formality, and documentation commensurate with risk. The realistic future is not AI automatically deciding root cause. The realistic future is AI helping investigators see what they might otherwise miss. For AIforQA.org, this is a powerful cornerstone article because it addresses one of the most common weaknesses in pharmaceutical quality systems: not documenting the deviation, but understanding it deeply enough to prevent it from happening again.</p>
 <h2>References</h2>
-<p>FDA. 21 CFR 211.192 - Production Record Review. Requires production and control records to be reviewed and approved by the Quality Control Unit before batch release or distribution, and requires unexplained discrepancies or batch/component failures to be thoroughly investigated, including potentially associated batches or products, with written conclusions and follow-up. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.192 FDA. 21 CFR 211.180 - General Requirements. Establishes record retention and inspection availability requirements and requires written records to be maintained so they can be used for annual evaluation of drug product quality standards. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.180 FDA. Guidance for Industry: Quality Systems Approach to Pharmaceutical CGMP Regulations. Discusses quality systems, CAPA, quality risk management, discrepancy investigations, trend analysis, and the importance of documenting investigation conclusions and follow-up. https://www.fda.gov/media/71023/download ICH. Q10 Pharmaceutical Quality System. Describes CAPA as a pharmaceutical quality system element and states that structured investigation should be used to determine root cause, with effort, formality, and documentation commensurate with risk. https://database.ich.org/sites/default/files/Q10%20Guideline.pdf ICH. Q9(R1) Quality Risk Management. Provides principles and tools for quality risk management, including root cause analysis, subjectivity management, risk assessment, interdisciplinary teams, and proportionality of effort, formality, and documentation. https://database.ich.org/sites/default/files/ICH_Q9%28R1%29_Guideline_Step4_2023_0126.pdf FDA. 21 CFR Part 11 - Electronic Records; Electronic Signatures. Establishes requirements for trustworthy electronic records and electronic signatures, including validation, access controls, audit trails, authority checks, record retention, and electronic signature accountability. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11</p>
-<p>EMA. Reflection Paper on the Use of Artificial Intelligence in the Medicinal Product Lifecycle. Discusses AI/ML risk-based lifecycle management, context of use, model performance, data integrity, traceability, and manufacturer responsibility for algorithms, models, datasets, and data processing pipelines. https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use- artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf</p>
-</section>
+<ol class="references">
+<li>FDA. 21 CFR 211.192 - Production Record</li>
+<li>Review. Requires production and control records to be reviewed and approved by the Quality Control Unit before batch release or distribution, and requires unexplained discrepancies or batch/component failures to be thoroughly investigated, including potentially associated batches or products, with written conclusions and follow-up. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.192" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>FDA. 21 CFR 211.180 - General</li>
+<li>Requirements. Establishes record retention and inspection availability requirements and requires written records to be maintained so they can be used for annual evaluation of drug product quality standards. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.180" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>FDA. Guidance for Industry: Quality Systems Approach to Pharmaceutical CGMP</li>
+<li>Regulations. Discusses quality systems,</li>
+<li>CAPA, quality risk management, discrepancy investigations, trend analysis, and the importance of documenting investigation conclusions and follow-up. <a href="https://www.fda.gov/media/71023/download" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>ICH. Q10 Pharmaceutical Quality</li>
+<li>System. Describes CAPA as a pharmaceutical quality system element and states that structured investigation should be used to determine root cause, with effort, formality, and documentation commensurate with risk. <a href="https://database.ich.org/sites/default/files/Q10%20Guideline.pdf" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>ICH. Q9(R1) Quality Risk</li>
+<li>Management. Provides principles and tools for quality risk management, including root cause analysis, subjectivity management, risk assessment, interdisciplinary teams, and proportionality of effort, formality, and documentation. <a href="https://database.ich.org/sites/default/files/ICH_Q9%28R1%29_Guideline_Step4_2023_0126.pdf" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>FDA. 21 CFR Part 11 - Electronic Records; Electronic</li>
+<li>Signatures. Establishes requirements for trustworthy electronic records and electronic signatures, including validation, access controls, audit trails, authority checks, record retention, and electronic signature accountability. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>EMA. Reflection Paper on the Use of Artificial Intelligence in the Medicinal Product</li>
+<li>Lifecycle. Discusses AI/ML risk-based lifecycle management, context of use, model performance, data integrity, traceability, and manufacturer responsibility for algorithms, models, datasets, and data processing pipelines. https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use- artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf</li>
+</ol></section>
 </div>
 <aside aria-label="Table of contents" class="toc" id="toc">
 <div class="tocTitle">On this page</div>
@@ -196,7 +223,7 @@
 <section class="section tight" id="related">
 <div class="sectionHead">
 <h2>Related Articles</h2>
-<p>More on AI in pharmaceutical quality and compliance.</p>
+<p>Explore more articles on AI applications in pharmaceutical quality assurance and GMP compliance.</p>
 </div>
 <div class="cards three" id="relatedCards"></div>
 </section>
