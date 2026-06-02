@@ -111,6 +111,7 @@
 <li>Reproducibility Issues: Even if an AI model is fixed, small changes (like different hardware or library versions) can yield slight output variations. This undermines the exact reproducibility principle of validation.</li>
 <li>Configurable vs Adaptive Systems: Many AI tools have tunable parameters or self-adaptive features. Each configuration change can alter behavior. Validation must account for possible settings, leading to a combinatorial explosion of test cases if not well controlled. In summary, AI’s “continuous learning and opacity” run counter to GMP’s emphasis on fixed, reproducible systems</li>
 </ul>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>Regulatory and Industry Expectations</h2>
 <p>Regulators currently apply GxP principles to AI systems with an emphasis on risk and documentation:</p>
 <ul>
@@ -203,7 +204,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

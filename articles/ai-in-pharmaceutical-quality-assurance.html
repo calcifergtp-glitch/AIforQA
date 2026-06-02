@@ -117,6 +117,7 @@
 <p>Third is <strong>limited visibility for trending and recurrence detection</strong>. ICH Q10's "process performance and product quality monitoring system" is conceptually straightforward, but in practice many organizations struggle to extract cross-event insight because data is locked across systems or written into narrative records that are hard to analyze consistently. Retaining and leveraging institutional quality knowledge is equally challenging; <a href="ai-and-gmp-knowledge-management.html">AI-driven GMP knowledge management</a> addresses how organisations can capture and reuse this expertise systematically.</p>
 <p>Fourth is <strong>manual cross-checking and reconciliation across disconnected systems</strong> (e.g., QMS ↔ <a href="ai-in-pharmaceutical-training-systems.html">training system</a> ↔ document management ↔ MES/eBR ↔ LIMS), which increases cycle time and introduces avoidable inconsistency. Regulators expect that electronic systems and recordkeeping practices prevent data from being lost or obscured and support documentation-at-time-of-performance; QA often becomes the "human integration layer" when systems do not.</p>
 <p>Finally, <strong>audit preparation burden and <a href="how-ai-could-improve-fda-inspection-readiness.html">inspection readiness</a> stress</strong> frequently comes from the need to rapidly assemble coherent record "stories" (what happened, why, who decided what, and what evidence supports the decision), while ensuring all records relied upon to demonstrate compliance are actually within the inspected system of records.</p>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>AI Use Cases Across QA with Realistic Risk Boundaries</h2>
 <p>AI can support QA work in regulated environments, but the central design constraint is this: if an AI output becomes part of your GMP record or directly drives a regulated decision, the credibility, traceability, and change-control burden increases sharply. A practical way to operationalize this is to classify AI use cases as (1) drafting/assistive, (2) triage/priority-setting, or (3) decisioning.</p>
 <p>The table below maps common QA activities to realistic AI augmentation patterns, and flags where the "human QA reviewer" must remain clearly in control.</p>
@@ -351,7 +352,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

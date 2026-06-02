@@ -208,7 +208,7 @@
 <p>A CAPA was implemented to reduce label peeling complaints. Three months later, complaint counts appear reduced overall. AI detects that complaints persist only in refrigerated distribution markets. AI value: It identifies a partial CAPA effectiveness issue. Human action: QA revisits the CAPA effectiveness check and evaluates cold-chain label adhesion conditions.</p>
 <h2>Quality Signal Case Studies</h2>
 <h3>Case Study 1: Early Detection of a Stopper Defect</h3>
-<p>A sterile injectable manufacturer receives scattered complaints of “loose cap,” “wet vial,” and “solution around stopper.” The complaint categories differ, and individual lots do not exceed action limits. AI clusters the narratives and identifies a common link to one stopper supplier lot. It also finds a packaging deviation related to slightly elevated reject rates during the same period. QA initiates a signal investigation. Retain samples are inspected, supplier records are reviewed, and container closure integrity risk is assessed. The investigation determines that a supplier process variation contributed to intermittent sealing weakness.</p>
+<p>A sterile injectable manufacturer receives scattered complaints of “loose cap,” “wet vial,” and “solution around stopper.” The complaint categories differ, and individual lots do not exceed action limits. AI clusters the narratives and identifies a common link to one stopper supplier lot. It also finds a packaging <a href="ai-assisted-deviation-investigations-pharma.html">deviation</a> related to slightly elevated reject rates during the same period. QA initiates a signal investigation. Retain samples are inspected, supplier records are reviewed, and container closure integrity risk is assessed. The investigation determines that a supplier process variation contributed to intermittent sealing weakness.</p>
 <p>Lesson: AI did not prove the defect. It found the pattern earlier.</p>
 <h3>Case Study 2: False Signal From Increased Market Volume</h3>
 <p>A product launch expands into a new market, and complaint counts double. AI flags a possible signal for “missing dose.” QA reviews normalized complaint rates and confirms the complaint rate per units distributed is unchanged. Lesson: AI signal detection must normalize data by sales volume, batch size, distribution, and market exposure. Raw complaint counts can mislead.</p>
@@ -410,7 +410,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

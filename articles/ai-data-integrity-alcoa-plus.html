@@ -125,6 +125,7 @@
 <p>Available means authorized reviewers and inspectors can retrieve the full record set when needed, in a usable format. EU GMP Annex 11 requires stored data be accessible and readable throughout retention, and FDA emphasizes that CGMP records must be readily available for inspection within the required retention period.</p>
 <h3>Application Across Manufacturing, Laboratories, Documentation/Training, and Hybrid Workflows</h3>
 <p>ALCOA+ applies across both manual and computerized activities. EMA explicitly states data integrity applies equally to manual and electronic systems, and provides Q&amp;As that connect ALCOA principles to EU GMP references. FDA similarly treats electronic data and its metadata (including audit trails) as CGMP records when generated to satisfy CGMP requirements, and it rejects practices like recording on scrap paper that will be discarded after transcription.</p><p>MHRA and WHO both recognize hybrid systems as legitimate but high-risk unless it is clearly documented what constitutes the whole dataset and controls ensure review and retention of all elements. PIC/S reinforces that hybrid systems may be used if they achieve equivalence to an integrated audit trail approach and if procedures clearly govern review of both electronic and paper components.</p>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>Common Data Integrity Failure Modes Seen in Real Operations</h2>
 <p>Data integrity failures tend to repeat across companies because they arise from common vulnerabilities: human incentives, workload pressure, weak procedural control, and system designs that allow poor traceability. The FDA states its CGMP data integrity guidance was developed in response to increased findings of data integrity lapses, and it identifies multiple risk points tied to controls, retention, and review. MHRA and PIC/S similarly frame DI failures as recurring inspection findings that can lead to regulatory action and require risk-based governance responses.</p>
 <h3>Backdating and Falsification</h3>
@@ -299,7 +300,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

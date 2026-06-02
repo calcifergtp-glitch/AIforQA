@@ -799,15 +799,15 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
   .menuBtn span,
 
 /* Tags display */
-.postTags{
+.articleTags{
   display:flex; flex-wrap:wrap; gap:.5rem;
   margin-bottom:1rem;
 }
-.postTags .pill.small{
+.articleTags .pill.small{
   text-decoration:none;
   transition: background .2s;
 }
-.postTags .pill.small:hover{
+.articleTags .pill.small:hover{
   background:rgba(99,102,241,.15);
 }
 

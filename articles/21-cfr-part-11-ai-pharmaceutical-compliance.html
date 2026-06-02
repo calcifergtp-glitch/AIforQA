@@ -153,6 +153,7 @@
 <p>A frequently misunderstood element is certification to FDA regarding electronic signatures as legally binding equivalents (commonly operationalized through letters of non-repudiation for certain FDA submission contexts). FDA has an explicit mechanism and instructions for non-repudiation agreement letters in its submission infrastructure context, and §11.100 references this certification requirement.</p>
 <h3>Open Systems</h3>
 <p>For open systems, Part 11 requires the §11.10 controls plus additional measures as needed (commonly interpreted as encryption and/or digital signature safeguards) to ensure authenticity, integrity, and appropriate confidentiality across the record lifecycle.</p>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>Practical Implementation Patterns in Pharmaceutical Computerized Systems</h2>
 <p>Part 11 compliance is rarely delivered by "a feature"; it is delivered by a validated workflow + configured controls + SOP governance + QA oversight that collectively ensure record trustworthiness and attribution.</p>
 <h3>QMS Platforms</h3>
@@ -440,7 +441,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

@@ -104,6 +104,7 @@
 <h2>Traditional CSV Documentation</h2>
 <p>Key deliverables in CSV include: - Validation Master Plan: Defines scope, roles, and approach for all validation activities. - User Requirements Specification (URS) / Functional Requirements (FRS) / Design Specifications (DS): Documents what the system must do (URS/FRS) and how it is implemented (DS). These trace to tests. - Risk Assessment: Evaluates how failures could impact quality/patients and determines the validation rigor needed. - Test Protocols (IQ, OQ, PQ): Step-by-step test plans and acceptance criteria for installation, functionality and performance tests. - Traceability Matrix: A table linking each requirement to one or more test cases, ensuring full coverage. - Validation Report: Summarizes all validation activities, test results, deviations and final conclusions about the system’s fitness. - SOPs and Training: Operating procedures for the system and documented training of users and operators.</p>
 <p>These documents provide the evidence that the system was built and tested according to GxP standards, with all deviations handled.</p>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>How AI Complicates CSV</h2>
 <p>AI-based software challenges these norms in several ways: - Variable, Non-Deterministic Outputs: Unlike fixed logic software, AI (especially machine learning models) can produce different results on the same input, especially if there are elements of randomness. This makes it impossible to define a single “expected result” ahead of time for every test. - Learning Models: Models that are retrained or continuously updated during use can change behavior post-deployment.</p>
 <p>Traditional validation assumes the code under test is static; AI models may adapt over time, invalidating earlier test evidence. - Vendor Opacity: Many AI tools (particularly cloud AI services) are proprietary “black boxes.” The user may not know exactly how the model works internally, which conflicts with the transparency needed for CSV. - Impossible to Predefine All Outputs: For something like a language model or recommendation engine, the range of possible outputs is enormous.</p>
@@ -188,7 +189,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

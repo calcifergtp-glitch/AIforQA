@@ -111,6 +111,7 @@
 <li>Deviations During Qualification: If a test fails or an unexpected issue arises (e.g. instrument out of tolerance, utilities unstable), it is recorded as a <a href="ai-assisted-deviation-investigations-pharma.html">deviation</a>. These must be investigated and resolved before qualification can be signed off. Proper deviation handling ensures no hidden problems remain.</li>
 <li>Requalification: Equipment may require periodic requalification or revalidation triggers. Typical triggers include major changes (e.g. relocation, major repair, change in usage), or after a set time interval (e.g. every 1–3 years). Requalification repeats key IQ/OQ/PQ checks to ensure continued performance. Throughout, traceability is essential: each test step should reference the requirement it verifies, and all results must be logged. The overall goal is a clear <a href="ai-and-audit-trail-review-data-integrity.html">audit trail</a> linking user requirements → qualification tests → results.</li>
 </ul>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>QA Role</h2>
 <p><a href="ai-in-pharmaceutical-quality-assurance.html">Quality Assurance</a> (QA) plays an oversight role in equipment qualification. QA personnel typically review and approve the qualification protocols (ensuring tests and acceptance criteria are appropriate) before execution. QA also reviews the completed qualification reports, verifying that all steps were executed and all data are documented.</p>
 <p>Any deviations encountered during IQ/OQ/PQ are overseen by QA, who ensures proper investigations and corrective actions. Additionally, QA ensures that qualification activities are tied into the overall quality system – for example, linking equipment changes to <a href="ai-change-control-risk-assessment.html">change control</a>, and making sure calibration and maintenance records are in place. In summary, QA ensures the qualification process is compliant, thorough and that documentation meets regulatory standards.</p>
@@ -199,7 +200,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){
