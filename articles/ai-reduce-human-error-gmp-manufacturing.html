@@ -50,7 +50,7 @@
 }
   </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -63,7 +63,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -77,10 +77,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">AI to Reduce Human Error in GMP Manufacturing</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">AI to Reduce Human Error in GMP Manufacturing</h1>
+<div class="articleMeta">
 <div class="pill small">GxP &amp; Validation</div>
 <div class="metaLine">
 <span>2026-05-01</span>
@@ -88,7 +88,7 @@
 <span>14 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#gmp" class="pill small">GMP</a>
 <a href="../tags.html#human-error" class="pill small">Human Error</a>
 <a href="../tags.html#training" class="pill small">Training</a>
@@ -96,10 +96,7 @@
 <a href="../tags.html#risk-assessment" class="pill small">Risk Assessment</a>
 <a href="../tags.html#manufacturing" class="pill small">Manufacturing</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/ai-reduce-human-error-gmp-manufacturing.pdf">
-<span aria-hidden="true">📄</span> Download PDF
-      </a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <h2>Human Error in GMP Manufacturing: The Persistent Risk</h2>
 <p>Human error remains one of the most consistently cited root causes in pharmaceutical manufacturing deviations, out-of-specification (OOS) results, and regulatory observations. U.S. CGMP regulations (21 CFR Parts 210 and 211) require that manufacturing operations be performed by qualified personnel, using written procedures followed at the time of performance, with contemporaneous documentation to demonstrate compliance. Yet even well-trained personnel in well-designed systems make errors — particularly under conditions of high complexity, task repetition, fatigue, or time pressure.</p>
@@ -189,7 +186,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

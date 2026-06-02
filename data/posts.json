@@ -7,7 +7,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_in_Pharmaceutical_Maintenance_and_Calibration_Programs.pdf",
     "tags": [
       "GMP",
       "Validation",
@@ -25,7 +24,6 @@
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/WHAT HAPPENS WHEN AI MAKES A GMP Mistake.pdf",
     "tags": [
       "AI Governance",
       "GMP",
@@ -43,7 +41,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/How_AI_Could_Support_Continued_Process_Verification_CPV.pdf",
     "tags": [
       "Continued Process Verification",
       "CPV",
@@ -61,7 +58,6 @@
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/AI_for_Change_Control_Impact_Assessments.pdf",
     "tags": [
       "Change Control",
       "Risk Assessment",
@@ -79,7 +75,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_GMP_Document_Review_and_Approval_Workflows.pdf",
     "tags": [
       "GMP",
       "Quality Management System",
@@ -97,7 +92,6 @@
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/AI_in_Pharmaceutical_Complaint_Trending_and_Signal_Detection.pdf",
     "tags": [
       "CAPA",
       "Predictive Analytics",
@@ -115,7 +109,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/Using_AI_for_Regulatory_Intelligence.pdf",
     "tags": [
       "FDA",
       "EMA",
@@ -133,7 +126,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_Assisted_Root_Cause_Analysis_Pharmaceutical_Investigations.pdf",
     "tags": [
       "Root Cause Analysis",
       "CAPA",
@@ -151,7 +143,6 @@
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/AI_for_Batch_Record_Review_by_Exception.pdf",
     "tags": [
       "Batch Record Review",
       "GMP",
@@ -169,7 +160,6 @@
     "date": "2026-05-31",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/Artificial_Intelligence_and_GMP_Knowledge_Management.pdf",
     "tags": [
       "Knowledge Management",
       "GMP",
@@ -187,7 +177,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_for_Pharmaceutical_Risk_Management_ICH_Q9.pdf",
     "tags": [
       "Risk Assessment",
       "ICH Q9",
@@ -205,7 +194,6 @@
     "date": "2026-05-31",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/AI_and_Pharmaceutical_Technology_Transfer.pdf",
     "tags": [
       "Technology Transfer",
       "GMP",
@@ -223,7 +211,6 @@
     "date": "2026-05-29",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "pdfs/AI for Supplier Quality Management in Pharmaceuticals.pdf",
     "tags": [
       "Supplier Quality",
       "Risk Assessment",
@@ -241,7 +228,6 @@
     "date": "2026-05-29",
     "readingTime": "16 min read",
     "published": true,
-    "pdf": "pdfs/Artificial Intelligence in Stability Programs and Shelf-Life Monitoring.pdf",
     "tags": [
       "Stability Programs",
       "GMP",
@@ -259,7 +245,6 @@
     "date": "2026-05-29",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "pdfs/AI and Audit Trail Review The Next Evolution of Data Integrity.pdf",
     "tags": [
       "Audit Trail Review",
       "Data Integrity",
@@ -277,7 +262,6 @@
     "date": "2026-05-29",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/The Role of AI in Pharmaceutical Training Systems.pdf",
     "tags": [
       "Training",
       "GMP",
@@ -295,7 +279,6 @@
     "date": "2026-03-10",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/ai-data-integrity-alcoa-plus.pdf",
     "tags": [
       "Data Integrity",
       "ALCOA+",
@@ -313,7 +296,6 @@
     "date": "2026-03-10",
     "readingTime": "18 min read",
     "published": true,
-    "pdf": "pdfs/ai-in-pharmaceutical-quality-assurance.pdf",
     "tags": [
       "Quality Management System",
       "GxP",
@@ -331,7 +313,6 @@
     "date": "2026-03-07",
     "readingTime": "15 min read",
     "published": true,
-    "pdf": "pdfs/21-cfr-part-11-ai-pharmaceutical-compliance.pdf",
     "tags": [
       "21 CFR Part 11",
       "Data Integrity",
@@ -349,7 +330,6 @@
     "date": "2026-03-14",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/computer-system-validation-ai-software.pdf",
     "tags": [
       "Computer System Validation",
       "CSV",
@@ -367,7 +347,6 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/validating-ai-systems-pharma.pdf",
     "tags": [
       "Validation",
       "AI Governance",
@@ -385,7 +364,6 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "pdfs/ai-equipment-qualification-iq-oq-pq.pdf",
     "tags": [
       "Validation",
       "GxP",
@@ -402,7 +380,6 @@
     "date": "2026-03-14",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/ai-integration-pharmaceutical-quality-management.pdf",
     "tags": [
       "Quality Management System",
       "QMS",
@@ -420,7 +397,6 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "pdfs/ai-change-control-risk-assessment.pdf",
     "tags": [
       "Change Control",
       "Risk Assessment",
@@ -437,7 +413,6 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/preparing-fda-inspections-ai.pdf",
     "tags": [
       "Inspection Readiness",
       "FDA",
@@ -455,7 +430,6 @@
     "date": "2026-03-14",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/capa-systems-ai-machine-intelligence.pdf",
     "tags": [
       "CAPA",
       "Deviations",
@@ -473,7 +447,6 @@
     "date": "2026-03-14",
     "readingTime": "12 min read",
     "published": true,
-    "pdf": "pdfs/ai-assisted-deviation-investigations-pharma.pdf",
     "tags": [
       "Deviations",
       "CAPA",
@@ -491,7 +464,6 @@
     "date": "2026-05-01",
     "readingTime": "14 min read",
     "published": true,
-    "pdf": "pdfs/ai-reduce-human-error-gmp-manufacturing.pdf",
     "tags": [
       "GMP",
       "Human Error",
@@ -509,7 +481,6 @@
     "date": "2026-05-01",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/how-ai-could-improve-fda-inspection-readiness.pdf",
     "tags": [
       "Inspection Readiness",
       "FDA",
@@ -527,7 +498,6 @@
     "date": "2026-05-01",
     "readingTime": "13 min read",
     "published": true,
-    "pdf": "pdfs/ai-environmental-monitoring-predicting-contamination.pdf",
     "tags": [
       "Environmental Monitoring",
       "GMP",

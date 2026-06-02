@@ -52,7 +52,7 @@
 }
 </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -65,7 +65,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -79,10 +79,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">AI in GMP Document Review and Approval Workflows</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">AI in GMP Document Review and Approval Workflows</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-05-31</span>
@@ -90,7 +90,7 @@
 <span>14 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#gmp" class="pill small">GMP</a>
 <a href="../tags.html#quality-management-system" class="pill small">Quality Management System</a>
 <a href="../tags.html#change-control" class="pill small">Change Control</a>
@@ -98,10 +98,7 @@
 <a href="../tags.html#data-integrity" class="pill small">Data Integrity</a>
 <a href="../tags.html#sop-management" class="pill small">SOP Management</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/AI_GMP_Document_Review_and_Approval_Workflows.pdf">
-<span aria-hidden="true">&#128196;</span> Download PDF
-</a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <p>How AI Could Transform GMP Document Review and Approval Workflows A Practical Pharmaceutical QA Perspective on AI-Assisted SOP Review, Document Consistency, and Approval Bottlenecks GMP document review is one of the most important quality assurance activities in pharmaceutical manufacturing, but it is also one of the most repetitive, delayed, and error-prone workflows in the quality system. SOPs, forms, batch records, validation protocols, reports, specifications, work instructions, logbooks, and policies all require careful review before approval. Each document must be technically accurate, aligned with current procedures, compliant with GMP expectations, properly version-controlled, and understandable to the people who will use it. That is a lot to ask from human reviewers who may already be overloaded with deviations, <a href="capa-systems-ai-machine-intelligence.html">CAPA</a>s, <a href="ai-change-control-risk-assessment.html">change control</a>s, audits, batch release, APR/PQR work, training, and <a href="how-ai-could-improve-fda-inspection-readiness.html">inspection readiness</a>. Artificial intelligence could help transform GMP document review by acting as a structured review assistant. AI can support cross-reference checks, consistency review, duplicate content detection, regulatory reference verification, review comment generation, and comparison against similar procedures. But AI should not approve GMP documents independently. The final responsibility must remain with qualified human reviewers, document owners, subject matter experts, and the Quality Unit. FDA requires written production and process control procedures to be drafted, reviewed, and approved by appropriate organizational units and reviewed and approved by the Quality Control Unit; it also requires those procedures to be followed and deviations recorded and justified (FDA, 21 CFR 211.100). That regulatory expectation creates the foundation for any AI-assisted document workflow: AI may help reviewers work better, but it cannot replace formal GMP review and approval.</p>
 <h2>Why GMP Document Review Is So Difficult</h2>
@@ -318,7 +315,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

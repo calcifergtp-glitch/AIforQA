@@ -50,7 +50,7 @@
 }
   </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -63,7 +63,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -77,10 +77,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">AI Integration in Pharmaceutical Quality Management Systems</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">AI Integration in Pharmaceutical Quality Management Systems</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-03-14</span>
@@ -88,7 +88,7 @@
 <span>14 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#quality-management-system" class="pill small">Quality Management System</a>
 <a href="../tags.html#qms" class="pill small">QMS</a>
 <a href="../tags.html#capa" class="pill small">CAPA</a>
@@ -96,15 +96,13 @@
 <a href="../tags.html#change-control" class="pill small">Change Control</a>
 <a href="../tags.html#compliance" class="pill small">Compliance</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/ai-integration-pharmaceutical-quality-management.pdf">
-<span aria-hidden="true">📄</span> Download PDF
-      </a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <h2>What is a QMS?</h2>
 <p>A pharmaceutical Quality Management System (QMS) is a structured framework of processes, procedures, and responsibilities designed to ensure that products are consistently produced to meet quality, safety and regulatory requirements 2 (development through commercialization) and enforces cGMP standards (e.g. FDA 21 CFR 210/211, ICH Q10,</p>
 <h2>EU GMP) at every step</h2>
 <p>2 <a href="ai-change-control-risk-assessment.html">change control</a>, <a href="capa-systems-ai-machine-intelligence.html">CAPA</a> (Corrective/Preventive Action), deviations, audits, complaints, training management, <a href="ai-for-supplier-quality-management-in-pharmaceuticals.html">supplier quality</a>, equipment management, management review and quality metrics 5 traceable records of decisions and controls, supporting inspections and continual improvement. Implementing an electronic QMS (eQMS) further streamlines processes, enhances visibility and traceability, and helps meet compliance requirements more efficiently 2 .</p>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>Core QMS Processes</h2>
 <p>A QMS organizes all quality processes within a unified system:</p>
 <ul>
@@ -210,7 +208,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

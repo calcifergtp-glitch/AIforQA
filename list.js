@@ -1,4 +1,4 @@
-// articles page: load posts.json, render cards, search + category filters
+// articles page: load articles.json, render cards, search + category filters
 const cardsEl = document.getElementById('cards');
 const qEl = document.getElementById('q');
 const catEl = document.getElementById('cat');
@@ -27,7 +27,7 @@ function card(p){
       <div class="cardTitle2">${esc(p.title)}</div>
       <p>${esc(p.summary || '')}</p>
       <div class="cardMeta">
-        <span class="link">Open post</span>
+        <span class="link">Read article</span>
       </div>
     </a>
   `;
@@ -79,7 +79,7 @@ function setCategoryGrid(cats){
   catGridEl.innerHTML = cats.map(c => `
     <div class="catTile" role="button" tabindex="0" data-cat="${esc(c)}">
       <div class="catName">${esc(c)}</div>
-      <div class="catCount">${counts[c]} posts</div>
+      <div class="catCount">${counts[c]} articles</div>
     </div>
   `).join('');
 
@@ -115,7 +115,7 @@ function setCategoryGrid(cats){
 
 async function init(){
   try{
-    const res = await fetch('data/posts.json');
+    const res = await fetch('data/articles.json');
     const all = await res.json();
     POSTS = all.filter(p => p.published !== false);
 
@@ -142,7 +142,7 @@ async function init(){
     document.getElementById('clearBtn2')?.addEventListener('click', doClear);
   }catch(err){
     console.error(err);
-    cardsEl && (cardsEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Error:</strong> couldn't load posts.json</div></div>`);
+    cardsEl && (cardsEl.innerHTML = `<div class="notice"><div class="noticeDot"></div><div><strong>Error:</strong> couldn't load articles.json</div></div>`);
   }
 }
 init();

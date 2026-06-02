@@ -52,7 +52,7 @@
 }
 </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -65,7 +65,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -79,10 +79,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">AI in Pharmaceutical Complaint Trending and Signal Detection</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">AI in Pharmaceutical Complaint Trending and Signal Detection</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-05-31</span>
@@ -90,7 +90,7 @@
 <span>13 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#capa" class="pill small">CAPA</a>
 <a href="../tags.html#predictive-analytics" class="pill small">Predictive Analytics</a>
 <a href="../tags.html#quality-management-system" class="pill small">Quality Management System</a>
@@ -98,10 +98,7 @@
 <a href="../tags.html#pharmacovigilance" class="pill small">Pharmacovigilance</a>
 <a href="../tags.html#risk-assessment" class="pill small">Risk Assessment</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/AI_in_Pharmaceutical_Complaint_Trending_and_Signal_Detection.pdf">
-<span aria-hidden="true">&#128196;</span> Download PDF
-</a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <p>: Finding Risks Earlier A Practical GMP Perspective on AI Complaint Analysis, Quality Signals, and Early Warning Systems Pharmaceutical complaints are not just customer service records. They are post-market quality signals. A single complaint may represent an isolated event, but a pattern of complaints may reveal a product defect, process weakness, packaging issue, labeling problem, supplier variation, distribution failure, or emerging patient risk. That is why complaint trending is such an important quality system activity. FDA requires written procedures for handling all written and oral complaints regarding a drug product, including Quality Control Unit review of complaints involving possible product failure and a determination of whether an investigation is needed. FDA also requires complaint records to include, where known, information such as product name and strength, lot number, complainant name, nature of complaint, and reply to complainant; if an investigation is performed, the record must include investigation findings and follow-up (FDA, 21 CFR 211.198). Artificial intelligence could significantly improve complaint trending and signal detection by helping quality teams classify complaint narratives, detect recurring themes, connect complaints with deviations and <a href="capa-systems-ai-machine-intelligence.html">CAPA</a>s, and identify weak signals earlier. But AI should not replace complaint investigation ownership, medical safety review, regulatory reporting decisions, or Quality Unit oversight. The best use of AI is as an early-warning and decision-support tool.</p>
 <h2>Why Complaint Trending Matters in Pharmaceutical Quality Systems</h2>
@@ -211,7 +208,7 @@
 <p>A CAPA was implemented to reduce label peeling complaints. Three months later, complaint counts appear reduced overall. AI detects that complaints persist only in refrigerated distribution markets. AI value: It identifies a partial CAPA effectiveness issue. Human action: QA revisits the CAPA effectiveness check and evaluates cold-chain label adhesion conditions.</p>
 <h2>Quality Signal Case Studies</h2>
 <h3>Case Study 1: Early Detection of a Stopper Defect</h3>
-<p>A sterile injectable manufacturer receives scattered complaints of “loose cap,” “wet vial,” and “solution around stopper.” The complaint categories differ, and individual lots do not exceed action limits. AI clusters the narratives and identifies a common link to one stopper supplier lot. It also finds a packaging deviation related to slightly elevated reject rates during the same period. QA initiates a signal investigation. Retain samples are inspected, supplier records are reviewed, and container closure integrity risk is assessed. The investigation determines that a supplier process variation contributed to intermittent sealing weakness.</p>
+<p>A sterile injectable manufacturer receives scattered complaints of “loose cap,” “wet vial,” and “solution around stopper.” The complaint categories differ, and individual lots do not exceed action limits. AI clusters the narratives and identifies a common link to one stopper supplier lot. It also finds a packaging <a href="ai-assisted-deviation-investigations-pharma.html">deviation</a> related to slightly elevated reject rates during the same period. QA initiates a signal investigation. Retain samples are inspected, supplier records are reviewed, and container closure integrity risk is assessed. The investigation determines that a supplier process variation contributed to intermittent sealing weakness.</p>
 <p>Lesson: AI did not prove the defect. It found the pattern earlier.</p>
 <h3>Case Study 2: False Signal From Increased Market Volume</h3>
 <p>A product launch expands into a new market, and complaint counts double. AI flags a possible signal for “missing dose.” QA reviews normalized complaint rates and confirms the complaint rate per units distributed is unchanged. Lesson: AI signal detection must normalize data by sales volume, batch size, distribution, and market exposure. Raw complaint counts can mislead.</p>
@@ -413,7 +410,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

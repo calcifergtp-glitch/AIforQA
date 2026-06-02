@@ -50,7 +50,7 @@
 }
   </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -63,7 +63,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -77,10 +77,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">CAPA Systems and AI: Can Machine Intelligence Prevent Recurring Issues?</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">CAPA Systems and AI: Can Machine Intelligence Prevent Recurring Issues?</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-03-14</span>
@@ -88,7 +88,7 @@
 <span>13 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#capa" class="pill small">CAPA</a>
 <a href="../tags.html#deviations" class="pill small">Deviations</a>
 <a href="../tags.html#root-cause-analysis" class="pill small">Root Cause Analysis</a>
@@ -96,10 +96,7 @@
 <a href="../tags.html#predictive-analytics" class="pill small">Predictive Analytics</a>
 <a href="../tags.html#gmp" class="pill small">GMP</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/capa-systems-ai-machine-intelligence.pdf">
-<span aria-hidden="true">📄</span> Download PDF
-      </a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <h2>CAPA fundamentals in pharmaceutical quality systems</h2>
 <p>CAPA stands for Corrective and Preventive Action. In regulated manufacturing it is the systematic process for collecting and analyzing quality data, investigating product or process problems, and taking actions to prevent their recurrence 2 root cause) and “preventive action” aims to avert similar future problems pharmaceutical quality systems because regulators (FDA, EMA, etc.) require documented CAPA processes to ensure that any <a href="ai-assisted-deviation-investigations-pharma.html">deviations</a>, out-of-specifications, or quality escapes are investigated and prevented from recurring.</p>
@@ -222,7 +219,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

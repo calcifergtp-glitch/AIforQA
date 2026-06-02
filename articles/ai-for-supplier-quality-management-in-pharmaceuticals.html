@@ -52,7 +52,7 @@
 }
 </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -65,7 +65,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -79,10 +79,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">AI for Supplier Quality Management in Pharmaceuticals</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">AI for Supplier Quality Management in Pharmaceuticals</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-05-29</span>
@@ -90,7 +90,7 @@
 <span>15 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#supplier-quality" class="pill small">Supplier Quality</a>
 <a href="../tags.html#risk-assessment" class="pill small">Risk Assessment</a>
 <a href="../tags.html#audit-trail-review" class="pill small">Audit Trail Review</a>
@@ -98,10 +98,7 @@
 <a href="../tags.html#compliance" class="pill small">Compliance</a>
 <a href="../tags.html#gmp" class="pill small">GMP</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/AI for Supplier Quality Management in Pharmaceuticals.pdf">
-<span aria-hidden="true">&#128196;</span> Download PDF
-</a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <p>: Transforming Risk-Based Oversight</p>
 <h2>Abstract</h2>
@@ -252,7 +249,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

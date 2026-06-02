@@ -50,7 +50,7 @@
 }
   </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -63,7 +63,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -77,10 +77,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">Preparing for FDA Inspections with AI</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">Preparing for FDA Inspections with AI</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-03-14</span>
@@ -88,7 +88,7 @@
 <span>13 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#inspection-readiness" class="pill small">Inspection Readiness</a>
 <a href="../tags.html#fda" class="pill small">FDA</a>
 <a href="../tags.html#audit-trail-review" class="pill small">Audit Trail Review</a>
@@ -96,10 +96,7 @@
 <a href="../tags.html#data-integrity" class="pill small">Data Integrity</a>
 <a href="../tags.html#compliance" class="pill small">Compliance</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/preparing-fda-inspections-ai.pdf">
-<span aria-hidden="true">📄</span> Download PDF
-      </a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <h2>FDA inspection basics</h2>
 <p>FDA inspections are on-site reviews by agency inspectors to verify a facility’s compliance with regulations like the Food, Drug &amp; Cosmetic Act and CGMP (21 CFR parts 210/211). They protect public health by ensuring products meet safety and quality standards 2 planned, risk-based audits of operations and quality systems – or for-cause/direct inspections triggered by specific concerns (e.g. adverse events, complaints, previous violations) 4 include pre-approval (application-based) inspections (to verify a facility’s ability to consistently manufacture a new drug as submitted) 6 warning letter or Form 483).</p>
@@ -197,7 +194,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

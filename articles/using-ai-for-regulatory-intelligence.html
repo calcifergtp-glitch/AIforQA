@@ -52,7 +52,7 @@
 }
 </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -65,7 +65,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -79,10 +79,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">Using AI for Regulatory Intelligence</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">Using AI for Regulatory Intelligence</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-05-31</span>
@@ -90,7 +90,7 @@
 <span>14 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#fda" class="pill small">FDA</a>
 <a href="../tags.html#ema" class="pill small">EMA</a>
 <a href="../tags.html#compliance" class="pill small">Compliance</a>
@@ -98,15 +98,12 @@
 <a href="../tags.html#regulatory-intelligence" class="pill small">Regulatory Intelligence</a>
 <a href="../tags.html#ich-q10" class="pill small">ICH Q10</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/Using_AI_for_Regulatory_Intelligence.pdf">
-<span aria-hidden="true">&#128196;</span> Download PDF
-</a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
-<p>: Tracking FDA, EMA, and Global GMP Guidance More Efficiently A practical pharmaceutical compliance article for QA, Regulatory Affairs, and quality system teams Regulatory intelligence is no longer a nice-to-have activity in pharmaceutical quality systems. FDA guidances, EMA scientific guidelines, MHRA updates, WHO guidance, PIC/S GMP revisions, ICH updates, inspection trends, <a href="ai-data-integrity-alcoa-plus.html">data integrity</a> expectations, and emerging AI policy documents can all influence how a pharmaceutical company interprets GMP requirements. For Quality Assurance and Regulatory Affairs teams, the challenge is not just finding guidance. The challenge is knowing what changed, why it matters, who needs to assess it, and whether the change affects procedures, validation, training, regulatory commitments, or quality system controls. Artificial intelligence can help regulatory intelligence programs become more systematic. AI can monitor official agency websites, detect new or revised guidance, compare document versions, summarize key changes, map updates to internal procedures, and support impact assessments. But AI should not replace regulatory judgment. In a GMP environment, AI should function as a controlled monitoring and triage tool, while qualified humans make final compliance decisions. FDA&#x27;s guidance database is already designed to let users search guidance documents by keyword and filter by product, issue date, FDA organizational unit, document type, topic, draft/final status, and comment period; FDA also provides email updates for newly issued guidances (FDA, Search for FDA Guidance Documents). AI can build on that kind of official source monitoring, but it must remain traceable, validated where applicable, and governed by human review.</p>
+<p>: Tracking FDA, EMA, and Global GMP Guidance More Efficiently A practical pharmaceutical compliance article for QA, Regulatory Affairs, and quality system teams Regulatory intelligence is no longer a nice-to-have activity in pharmaceutical quality systems. FDA guidances, EMA scientific guidelines, MHRA updates, WHO guidance, PIC/S GMP revisions, ICH updates, inspection trends, <a href="ai-data-integrity-alcoa-plus.html">data integrity</a> expectations, and emerging AI policy documents can all influence how a pharmaceutical company interprets GMP requirements. For Quality Assurance and Regulatory Affairs teams, the challenge is not just finding guidance. The challenge is knowing what changed, why it matters, who needs to assess it, and whether the change affects procedures, <a href="validating-ai-systems-pharma.html">validation</a>, training, regulatory commitments, or quality system controls. Artificial intelligence can help regulatory intelligence programs become more systematic. AI can monitor official agency websites, detect new or revised guidance, compare document versions, summarize key changes, map updates to internal procedures, and support impact assessments. But AI should not replace regulatory judgment. In a GMP environment, AI should function as a controlled monitoring and triage tool, while qualified humans make final compliance decisions. FDA&#x27;s guidance database is already designed to let users search guidance documents by keyword and filter by product, issue date, FDA organizational unit, document type, topic, draft/final status, and comment period; FDA also provides email updates for newly issued guidances (FDA, Search for FDA Guidance Documents). AI can build on that kind of official source monitoring, but it must remain traceable, validated where applicable, and governed by human review.</p>
 <h2>What Is Regulatory Intelligence in Pharmaceutical Compliance?</h2>
 <p>Regulatory intelligence is the structured process of collecting, reviewing, interpreting, and acting on regulatory information that may affect pharmaceutical development, manufacturing, quality systems, submissions, inspections, and post-approval obligations. A strong regulatory intelligence program typically monitors: <div class="tableWrap"> <table> <thead> <tr> <th>Source</th> <th>Examples of Content to Monitor</th> </tr> </thead> <tbody> <tr> <td>FDA</td> <td>Guidance documents, draft guidance, final guidance, warning letters, inspection trends, compliance policy, CGMP updates</td> </tr> <tr> <td>EMA</td> <td>Scientific guidelines, quality guidelines, reflection papers, Q&amp;A documents, CHMP updates, AI-related policy</td> </tr> <tr> <td>European Commission</td> <td>EudraLex Volume 4, EU GMP Annex updates</td> </tr> <tr> <td>MHRA</td> <td>GMP guidance, data integrity guidance, inspection expectations, regulatory updates</td> </tr> <tr> <td>WHO</td> <td>GMP guidance, technical reports, international standards</td> </tr> <tr> <td>PIC/S</td> <td>PIC/S GMP Guide updates, annex revisions, inspection guidance</td> </tr> <tr> <td>ICH</td> <td>Q-series, M-series, E-series, S-series guideline updates</td> </tr> <tr> <td>National authorities</td> <td>Health Canada, TGA, PMDA, Swissmedic, ANVISA and other regional updates</td> </tr> <tr> <td>Industry bodies</td> <td>ISPE, PDA, RAPS, DIA, ISO, ASTM, USP, Ph. Eur.</td> </tr> </tbody> </table> </div> For a pharmaceutical site, regulatory intelligence should not stop at &quot;we saw the update.&quot; The useful output is an actionable impact assessment.</p>
-<p>Question Practical Meaning What changed? New guidance, revised guidance, draft guidance, withdrawn document, new Q&amp;A Is it applicable? Product type, dosage form, market, site activity, quality system area What is the impact? SOPs, validation, training, regulatory submissions, QMS workflows Who owns the assessment? QA, RA, validation, manufacturing, QC, engineering, IT/CSV What action is needed? No action, monitoring, gap assessment, <a href="ai-change-control-risk-assessment.html">change control</a>, <a href="capa-systems-ai-machine-intelligence.html">CAPA</a>, training, submission strategy How is it documented? Regulatory intelligence log, impact assessment, change control, meeting minutes, training record</p>
+<p>Question Practical Meaning What changed? New guidance, revised guidance, draft guidance, withdrawn document, new Q&amp;A Is it applicable? Product type, dosage form, market, site activity, quality system area What is the impact? SOPs, validation, training, regulatory submissions, QMS workflows Who owns the assessment? QA, RA, validation, manufacturing, QC, engineering, IT/CSV What action is needed? No action, monitoring, gap assessment, <a href="ai-change-control-risk-assessment.html">change control</a>, <a href="capa-systems-ai-machine-intelligence.html">CAPA</a>, training, submission strategy How is it documented? Regulatory intelligence log, impact assessment, <a href="ai-for-change-control-impact-assessments.html">change control</a>, meeting minutes, training record</p>
 <h2>Why Regulatory Intelligence Programs Struggle</h2>
 <p>Regulatory monitoring is difficult because the pharmaceutical regulatory landscape is fragmented, fast-moving, and global. <div class="tableWrap"> <table> <thead> <tr> <th>Challenge</th> <th>Practical GMP Risk</th> </tr> </thead> <tbody> <tr> <td>Too many sources</td> <td>Important updates may be missed</td> </tr> <tr> <td>Manual monitoring</td> <td>Teams rely on memory, bookmarks, email alerts, or informal networks</td> </tr> <tr> <td>Duplicate updates</td> <td>Same topic appears across FDA, EMA, ICH, WHO, and PIC/S with different wording</td> </tr> <tr> <td>Draft vs final confusion</td> <td>Teams may overreact to drafts or ignore important drafts</td> </tr> <tr> <td>Weak ownership</td> <td>Updates are seen but not assigned to a functional owner</td> </tr> <tr> <td>Poor impact assessment</td> <td>New guidance is read but not mapped to SOPs, validation, training, or filings</td> </tr> <tr> <td>No change control linkage</td> <td>Required procedural updates are delayed or undocumented</td> </tr> <tr> <td>No audit trail</td> <td>Company cannot prove it monitored or assessed relevant updates</td> </tr> <tr> <td>Alert fatigue</td> <td>Teams receive too many low-value notifications</td> </tr> </tbody> </table> </div> The risk is not only that a company misses a new regulation. The bigger risk is that the company sees the update but fails to translate it into controlled quality system action.</p>
 <h2>FDA, EMA, MHRA, WHO, and PIC/S Monitoring: What Should Be Tracked?</h2>
@@ -223,7 +220,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){

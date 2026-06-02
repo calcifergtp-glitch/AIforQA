@@ -50,7 +50,7 @@
 }
   </script>
 </head>
-<body class="postPage">
+<body class="articlePage">
 <a class="skip-link" href="#main">Skip to main content</a>
 <div class="bg">
 <div class="grid"></div>
@@ -63,7 +63,7 @@
 </a>
 <nav aria-label="Primary" class="nav" id="mainNav">
 <a href="../articles.html">Articles</a>
-<a href="../resources.html">Resources</a>
+<a href="../tools/index.html">Tools</a>
 <a href="../tags.html">Tags</a>
 <a href="#toc">On this page</a>
 <a href="#related">Related</a>
@@ -77,10 +77,10 @@
 </button>
 </div>
 </header>
-<main class="wrap postWrap" id="main">
-<article class="post">
-<h1 class="postTitle">AI and Change Control Risk Assessment</h1>
-<div class="postMeta">
+<main class="wrap articleWrap" id="main">
+<article class="article">
+<h1 class="articleTitle">AI and Change Control Risk Assessment</h1>
+<div class="articleMeta">
 <div class="pill small">Compliance</div>
 <div class="metaLine">
 <span>2026-03-14</span>
@@ -88,17 +88,14 @@
 <span>12 min read</span>
 </div>
 </div>
-<div class="postTags">
+<div class="articleTags">
 <a href="../tags.html#change-control" class="pill small">Change Control</a>
 <a href="../tags.html#risk-assessment" class="pill small">Risk Assessment</a>
 <a href="../tags.html#gmp" class="pill small">GMP</a>
 <a href="../tags.html#quality-management-system" class="pill small">Quality Management System</a>
 <a href="../tags.html#compliance" class="pill small">Compliance</a>
 </div>
-<a aria-label="Download PDF version of this article" class="pdfBtn" download="" href="../pdfs/ai-change-control-risk-assessment.pdf">
-<span aria-hidden="true">📄</span> Download PDF
-      </a>
-<div class="postContent">
+<div class="articleContent">
 <section class="article-body">
 <h2>Change Control Lifecycle</h2>
 <p>A robust change-control system follows formal steps from initiation to closure. First, a Change Proposal is submitted (often via a Change Request Form) that documents what is changing, why (justification), scope and affected systems or products QA, in which subject-matter experts review the proposed change against processes, SOPs, equipment, and regulatory commitments 5 <a href="validating-ai-systems-pharma.html">validation</a> protocols, <a href="ai-for-supplier-quality-management-in-pharmaceuticals.html">supplier</a> specs, etc.). Then a Risk Assessment is performed (often using <a href="ai-for-pharmaceutical-risk-management-ich-q9.html">ICH Q9</a> tools like FMEA or risk matrices) to estimate severity and probability of any adverse effects 11.</p>
@@ -106,6 +103,7 @@
 <h2>QA’s Role in Change Control</h2>
 <p>QA is deeply involved at every stage. QA ensures that each change request is complete – with a clear description, rationale, and list of affected items (documents, systems, <a href="ai-in-pharmaceutical-training-systems.html">training</a>) the cross-functional team for impact analysis and risk evaluation 4 assessment to ensure it is justified by data. During approval, QA provides quality oversight and final sign- off, liaising with Regulatory Affairs if filings are needed.</p>
 <p>QA also ensures that any changes requiring re- validation trigger the appropriate protocols 10 curricula are updated. In implementation and review, QA verifies that the change was executed properly and that outcomes meet specifications 18 completeness of risk analysis, documentation and follow-through 5 .</p>
+<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
 <h2>Common Change Control Issues</h2>
 <p>Even with procedures in place, companies often see gaps in practice. Some frequent problems include:</p>
 <ul>
@@ -186,7 +184,7 @@
   // Build TOC from embedded headings
   (function(){
     var tocListEl = document.getElementById('tocList');
-    var contentEl = document.querySelector('.postContent');
+    var contentEl = document.querySelector('.articleContent');
     if(!tocListEl || !contentEl) return;
     var hs = Array.from(contentEl.querySelectorAll('h2'));
     if(hs.length === 0){
