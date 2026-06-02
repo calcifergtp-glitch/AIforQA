@@ -163,8 +163,9 @@
 <li>Distribution lane</li>
 <li>Time since release</li>
 <li>Related deviations or CAPAs</li>
-<li>Similar historical events The goal is not to treat every signal as a crisis. The goal is to identify the signals that deserve investigation before they become larger quality events. FDA&#x27;s quality systems guidance notes that trends should be continually identified and evaluated, and that trend information can help monitor quality, identify potential variances before they become problems, support annual review data, and facilitate lifecycle improvement (FDA, Quality Systems Approach to Pharmaceutical CGMP Regulations).</li>
+<li>Similar historical events</li>
 </ul>
+<p>The goal is not to treat every signal as a crisis. The goal is to identify the signals that deserve investigation before they become larger quality events. FDA&#x27;s quality systems guidance notes that trends should be continually identified and evaluated, and that trend information can help monitor quality, identify potential variances before they become problems, support annual review data, and facilitate lifecycle improvement (FDA, Quality Systems Approach to Pharmaceutical CGMP Regulations).</p>
 <h2>How AI Can Support Complaint Trending</h2>
 <p>AI can support complaint trending by analyzing large numbers of structured and unstructured complaint records. The most useful applications are classification, clustering, similarity search, anomaly detection, correlation analysis, and prediction. <div class="tableWrap"> <table> <thead> <tr> <th>AI Capability</th> <th>Complaint Trending Use</th> </tr> </thead> <tbody> <tr> <td>Natural language processing</td> <td>Extract defect terms from complaint narratives</td> </tr> <tr> <td>Complaint categorization</td> <td>Assign consistent complaint categories</td> </tr> <tr> <td>Similarity matching</td> <td>Identify complaints that describe the same issue in different language</td> </tr> <tr> <td>Clustering</td> <td>Group related complaints by product, lot, market, defect, or narrative</td> </tr> <tr> <td>Anomaly detection</td> <td>Flag unusual increases or new patterns</td> </tr> <tr> <td>Predictive analysis</td> <td>Estimate which signals may escalate</td> </tr> <tr> <td>Cross-system correlation</td> <td>Link complaints to deviations, CAPAs, changes, suppliers, and manufacturing events</td> </tr> <tr> <td>Draft summaries</td> <td>Prepare trend summaries for QA review</td> </tr> <tr> <td>Early warning dashboards</td> <td>Highlight products/lots/defects requiring review</td> </tr> </tbody> </table> </div> A practical AI complaint system should not simply count complaints. It should help reviewers interpret complaint patterns in context.</p>
 <h2>Natural Language Processing for Complaint Narratives</h2>
@@ -260,8 +261,10 @@
 <li>Manufacturing site or line</li>
 <li>Product age or stability data</li>
 <li>Time since launch</li>
-<li>Market or country An early warning dashboard may show: <div class="tableWrap"> <table> <thead> <tr> <th>Signal</th> <th>AI Risk Indicator</th> <th>Human Review</th> </tr> </thead> <tbody> <tr> <td>Rising leakage complaints</td> <td>Same packaging line and supplier lot</td> <td>QA/Packaging review</td> </tr> <tr> <td>Increasing no effect complaints</td> <td>Same strength and market</td> <td>Medical/QA review</td> </tr> <tr> <td>Repeated foreign matter descriptions</td> <td>Similar color and dosage form</td> <td>QC investigation</td> </tr> <tr> <td>Label adhesion complaints</td> <td>Cold-chain markets only</td> <td>Packaging/supplier review</td> </tr> <tr> <td>Device malfunction complaints</td> <td>Similar use-step language</td> <td>Engineering review</td> </tr> </tbody> </table> </div></li>
+<li>Market or country</li>
 </ul>
+<p>An early warning dashboard may show:</p>
+<div class="tableWrap"> <table> <thead> <tr> <th>Signal</th> <th>AI Risk Indicator</th> <th>Human Review</th> </tr> </thead> <tbody> <tr> <td>Rising leakage complaints</td> <td>Same packaging line and supplier lot</td> <td>QA/Packaging review</td> </tr> <tr> <td>Increasing no effect complaints</td> <td>Same strength and market</td> <td>Medical/QA review</td> </tr> <tr> <td>Repeated foreign matter descriptions</td> <td>Similar color and dosage form</td> <td>QC investigation</td> </tr> <tr> <td>Label adhesion complaints</td> <td>Cold-chain markets only</td> <td>Packaging/supplier review</td> </tr> <tr> <td>Device malfunction complaints</td> <td>Similar use-step language</td> <td>Engineering review</td> </tr> </tbody> </table> </div>
 <p>The key is not to overload QA with alarms. The key is to rank signals so that high-risk patterns receive timely review.</p>
 <h2>Implementation Roadmap</h2>
 <h3>Step 1: Standardize Complaint Taxonomy</h3>
@@ -356,8 +359,9 @@
 <li>Were any complaint records excluded from trending?</li>
 <li>Was the AI model version controlled?</li>
 <li>Were post-hoc edits audit-trailed?</li>
-<li>Are complaint files readily available for inspection? FDA requires complaint records to be maintained and readily available for inspection under the complaint file requirements and general record expectations (FDA, 21 CFR 211.198; FDA, 21 CFR 211.180). A compliant AI-enabled complaint system should preserve original complaint data and clearly distinguish between original reporter statements, AI-generated classifications, human-reviewed conclusions, investigation findings, and CAPA decisions.</li>
+<li>Are complaint files readily available for inspection?</li>
 </ul>
+<p>FDA requires complaint records to be maintained and readily available for inspection under the complaint file requirements and general record expectations (FDA, 21 CFR 211.198; FDA, 21 CFR 211.180). A compliant AI-enabled complaint system should preserve original complaint data and clearly distinguish between original reporter statements, AI-generated classifications, human-reviewed conclusions, investigation findings, and CAPA decisions.</p>
 <h2>Regulatory Concerns</h2>
 <p>Regulators are likely to ask practical questions about AI complaint trending: <div class="tableWrap"> <table> <thead> <tr> <th>Regulatory Question</th> <th>Expected Company Answer</th> </tr> </thead> <tbody> <tr> <td>What does the AI do?</td> <td>Clear intended use statement</td> </tr> <tr> <td>Does AI make final complaint decisions?</td> <td>No; qualified humans review and approve</td> </tr> <tr> <td>How was the system validated?</td> <td>Risk-based validation with known historical signals</td> </tr> <tr> <td>How are AI errors handled?</td> <td>Deviation/CAPA or system issue process as appropriate</td> </tr> <tr> <td>How are complaint records protected?</td> <td>Access control, audit trail, retention, data integrity</td> </tr> <tr> <td>How are model changes controlled?</td> <td>Change control and revalidation assessment</td> </tr> <tr> <td>Can inspectors see source data?</td> <td>Yes, original complaint and AI/human review history are retained</td> </tr> <tr> <td>How are adverse event signals handled?</td> <td>Medical safety/regulatory reporting process remains controlled</td> </tr> </tbody> </table> </div></p>
 <p>EMA’s AI reflection paper emphasizes that AI/ML risk depends on context of use, data quality, and the degree of influence the AI has, and that manufacturers remain responsible for ensuring algorithms, models, datasets, and data pipelines are fit for purpose and aligned with GxP standards (EMA, Reflection Paper on AI in the Medicinal Product Lifecycle).</p>
@@ -436,20 +440,13 @@
 <p>For AIforQA.org, this is a strong cornerstone article because it addresses a real pharmaceutical QA challenge: complaints are not isolated records - they are external signals of how the product performs in the real world. AI can help find those signals earlier, but only if the quality system remains in control.</p>
 <h2>References</h2>
 <ol class="references">
-<li>FDA. 21 CFR 211.198 - Complaint</li>
-<li>Files. Establishes requirements for written complaint handling procedures, Quality Control Unit review, investigation decisions, complaint records, investigation findings, follow-up, and no-investigation rationale. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.198" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>FDA. 21 CFR 211.180 - General</li>
-<li>Requirements. Establishes record retention and inspection availability expectations for records required under Part 211. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.180" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>FDA. Guidance for Industry: Quality Systems Approach to Pharmaceutical CGMP</li>
-<li>Regulations. Discusses quality systems, management review, data trending,</li>
+<li>FDA. 21 CFR 211.198 - Complaint Files. Establishes requirements for written complaint handling procedures, Quality Control Unit review, investigation decisions, complaint records, investigation findings, follow-up, and no-investigation rationale. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.198" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>FDA. 21 CFR 211.180 - General Requirements. Establishes record retention and inspection availability expectations for records required under Part 211. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.180" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>FDA. Guidance for Industry: Quality Systems Approach to Pharmaceutical CGMP Regulations. Discusses quality systems, management review, data trending,</li>
 <li>CAPA, complaints, and proactive identification of quality issues. <a href="https://www.fda.gov/media/71023/download" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>ICH. Q10 Pharmaceutical Quality</li>
-<li>System. Identifies complaints as external feedback for process performance and product quality monitoring,</li>
+<li>ICH. Q10 Pharmaceutical Quality System. Identifies complaints as external feedback for process performance and product quality monitoring,</li>
 <li>CAPA, management review, and continual improvement. <a href="https://database.ich.org/sites/default/files/Q10%20Guideline.pdf" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>EMA. Reflection Paper on the Use of Artificial Intelligence in the Medicinal Product</li>
-<li>Lifecycle. Discusses AI/ML context of use, risk- based controls, data integrity, lifecycle management, and manufacturer responsibility for algorithms, models, datasets, and pipelines. https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal- product-lifecycle_en.pdf</li>
-<li>Johner, C. Validation of Artificial Intelligence Containing Products Across the Regulated Healthcare</li>
-<li>Industries. Discusses validation challenges for AI/ML products across pharmaceutical, medical device, and diagnostic regulated contexts. <a href="https://arxiv.org/abs/2302.07103" target="_blank" rel="noopener noreferrer">Source</a></li>
+<li>EMA. Reflection Paper on the Use of Artificial Intelligence in the Medicinal Product Lifecycle. Discusses AI/ML context of use, risk- based controls, data integrity, lifecycle management, and manufacturer responsibility for algorithms, models, datasets, and pipelines. https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal- product-lifecycle_en.pdf Johner, C. Validation of Artificial Intelligence Containing Products Across the Regulated Healthcare Industries. Discusses validation challenges for AI/ML products across pharmaceutical, medical device, and diagnostic regulated contexts. <a href="https://arxiv.org/abs/2302.07103" target="_blank" rel="noopener noreferrer">Source</a></li>
 </ol></section>
 </div>
 <aside aria-label="Table of contents" class="toc" id="toc">
