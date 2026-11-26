@@ -138,10 +138,10 @@
   {
     "slug": "ai-for-batch-record-review-by-exception",
     "title": "AI for Batch Record Review by Exception",
-    "summary": "How AI can transform pharmaceutical batch record review by focusing human attention on exceptions, improving electronic batch record oversight, and supporting timely batch release decisions.",
+    "summary": "How AI can flag unusual batch-record entries and help focus review while preserving complete records, required Quality Unit approval, and human batch decisions.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
-    "readingTime": "13 min read",
+    "readingTime": "6 min read",
     "published": true,
     "tags": [
       "Batch Record Review",

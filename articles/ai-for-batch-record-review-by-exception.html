@@ -14,17 +14,17 @@
 <script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8632401241613937"></script>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>AI for Batch Record Review by Exception &bull; AI for QA</title>
-<meta content="How AI can transform pharmaceutical batch record review by focusing human attention on exceptions, improving electronic batch record oversight, and supporting t" name="description"/>
+<meta content="A practical GMP guide to AI-assisted batch-record review, exception flags, required Quality Unit approval, data integrity, and human oversight." name="description"/>
   <meta name="robots" content="index, follow" />
 <link href="https://www.aiforqa.org/articles/ai-for-batch-record-review-by-exception.html" rel="canonical"/>
 <meta content="article" property="og:type"/>
 <meta content="AI for Pharmaceutical QA" property="og:site_name"/>
 <meta content="AI for Batch Record Review by Exception &bull; AI for QA" property="og:title"/>
-<meta content="How AI can transform pharmaceutical batch record review by focusing human attention on exceptions, improving electronic batch record oversight, and supporting t" property="og:description"/>
+<meta content="A practical GMP guide to AI-assisted batch-record review, exception flags, required Quality Unit approval, data integrity, and human oversight." property="og:description"/>
 <meta content="https://www.aiforqa.org/articles/ai-for-batch-record-review-by-exception.html" property="og:url"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="AI for Batch Record Review by Exception &bull; AI for QA" name="twitter:title"/>
-<meta content="How AI can transform pharmaceutical batch record review by focusing human attention on exceptions, improving electronic batch record oversight, and supporting t" name="twitter:description"/>
+<meta content="A practical GMP guide to AI-assisted batch-record review, exception flags, required Quality Unit approval, data integrity, and human oversight." name="twitter:description"/>
 <!-- Preconnect to third-party origins -->
 <link href="https://www.googletagmanager.com" rel="preconnect"/>
 <link href="https://pagead2.googlesyndication.com" rel="preconnect"/>
@@ -35,8 +35,9 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "AI for Batch Record Review by Exception",
-  "description": "How AI can transform pharmaceutical batch record review by focusing human attention on exceptions, improving electronic batch record oversight, and supporting timely batch release decisions.",
+  "description": "A practical GMP guide to AI-assisted batch-record review, exception flags, required Quality Unit approval, data integrity, and human oversight.",
   "datePublished": "2026-05-31",
+  "dateModified": "2026-11-26",
   "author": {
     "@type": "Organization",
     "name": "AI for Pharmaceutical QA",
@@ -85,7 +86,9 @@
 <div class="articleMeta">
 <div class="pill small">GxP &amp; Validation</div>
 <div class="metaLine">
-<span>2026-05-31</span>
+<span>Published 2026-05-31</span>
+<span class="sep">&bull;</span>
+<span>Reviewed 2026-11-26</span>
 <span class="sep">&bull;</span>
 <span>13 min read</span>
 </div>
@@ -100,230 +103,69 @@
 </div>
 <div class="articleContent">
 <section class="article-body">
-<p>: The Future of Pharmaceutical Batch Release? A Practical GMP Perspective on AI Batch Review, Electronic Batch Records, and Quality Oversight Batch record review is one of the most important and time-sensitive activities in <a href="ai-in-pharmaceutical-quality-assurance.html">pharmaceutical Quality Assurance</a>. Before a batch can be released or distributed, the Quality Unit must review production and control records to determine whether the batch was manufactured according to approved procedures and whether any discrepancies, deviations, or failures were properly investigated. This is not optional. FDA requires batch production and control records to be prepared for each batch and to include complete information related to the production and control of that batch, including equipment used, components, in-process and laboratory control results, yields, labeling records, sampling, checks, and investigations where applicable (FDA, 21 CFR 211.188). FDA also requires all drug product production and control records, including packaging and labeling records, to be reviewed and approved by the Quality Control Unit before batch release or distribution (FDA, 21 CFR 211.192). The challenge is that traditional batch record review is slow, repetitive, and heavily dependent on human attention. Reviewers must examine pages of entries, signatures, calculations, timestamps, corrections, attachments, alarms, deviations, equipment IDs, reconciliation records, and procedural confirmations. In paper or hybrid systems, this can take hours or days per batch. Even in electronic batch record systems, reviewers may still spend significant time verifying routine steps that were already executed within validated workflows. This is where review by exception becomes attractive. Instead of manually reviewing every routine entry with equal intensity, QA focuses on exceptions: deviations, missing entries, invalid signatures, parameter excursions, yield discrepancies, unapproved interventions, late entries, alarm events, reconciliation mismatches, and unusual process patterns. AI could take this concept further by helping detect anomalies, prioritize batch review risks, correlate process data, and identify records that deserve deeper QA attention. But AI should not become the batch release decision-maker. In GMP, batch disposition remains a Quality Unit responsibility.</p>
-<h2>What Is Batch Record Review?</h2>
-<p>Batch record review is the process of verifying that the batch was manufactured, processed, packed, tested, and documented according to approved procedures and specifications. <div class="tableWrap"> <table> <thead> <tr> <th>Review Area</th> <th>Examples</th> </tr> </thead> <tbody> <tr> <td>Manufacturing steps</td> <td>Verification that each required step was completed</td> </tr> <tr> <td>Equipment and line use</td> <td>Correct equipment ID, line clearance, cleaning status, setup</td> </tr> </tbody> </table> </div></p>
-<p>Materials and components Correct lot numbers, quantities, reconciliation, expiry status Process parameters Temperature, pressure, speed, time, mixing, hold times In-process controls Fill weight, pH, bioburden, appearance, torque, hardness Laboratory results Finished product testing, in-process testing, stability if applicable Yield reconciliation Actual yield, theoretical yield, acceptable yield range Packaging and labeling Label reconciliation, specimen labels, coding, line clearance Deviations Investigation, product impact, <a href="capa-systems-ai-machine-intelligence.html">CAPA</a>, batch disposition support Signatures and checks Operator entries, supervisor checks, QA verifications <a href="ai-data-integrity-alcoa-plus.html">Data integrity</a> Corrections, late entries, audit trails, missing data, unexplained changes The purpose is not paperwork perfection. The purpose is documented assurance that the batch was made correctly and that any unexplained discrepancy or failure was investigated before release.</p>
-<h2>Why Traditional Batch Record Review Is So Difficult</h2>
-<p>Traditional batch review is difficult because it combines compliance review, technical review, documentation review, and product quality assessment. <div class="tableWrap"> <table> <thead> <tr> <th>Challenge</th> <th>Practical Impact</th> </tr> </thead> <tbody> <tr> <td>Large record volume</td> <td>QA spends time reviewing routine entries instead of focusing on risk</td> </tr> <tr> <td>Paper-based records</td> <td>Manual page-by-page review increases cycle time</td> </tr> <tr> <td>Hybrid records</td> <td>Paper, MES, LIMS, SCADA, QMS, and spreadsheets must be reconciled</td> </tr> <tr> <td>Human fatigue</td> <td>Reviewers may miss small but important errors</td> </tr> <tr> <td>Manual calculations</td> <td>Yield, reconciliation, and in-process calculations may be error-prone</td> </tr> <tr> <td>Late deviations</td> <td>Issues may be found at final QA review instead of during manufacturing</td> </tr> <tr> <td>Missing attachments</td> <td>Cleaning records, labels, printouts, or logs may delay release</td> </tr> <tr> <td><a href="ai-and-audit-trail-review-data-integrity.html">Audit trail</a> review burden</td> <td>Electronic data require meaningful audit trail review</td> </tr> <tr> <td>Unclear exceptions</td> <td>Not all deviations carry equal product risk</td> </tr> <tr> <td>Release pressure</td> <td>Commercial demand may create pressure to complete review quickly</td> </tr> </tbody> </table> </div> The problem is not that QA reviewers are careless. The problem is that batch records contain a large volume of repetitive data, while the most important risks may be hidden in small exceptions.</p>
-<h2>What Is Review by Exception?</h2>
-<p>Review by exception is a quality review model where routine, compliant, system-verified entries receive less manual attention, while exceptions receive focused review.</p>
-<div class="callout" style="margin:2rem 0; padding:1.25rem; border-left:4px solid var(--accent, #6366f1); background:rgba(99,102,241,0.04); border-radius:0.5rem;">
-<div class="calloutTitle" style="font-weight:600; margin-bottom:0.5rem;">📋 Related Tool: AI-Generated Content Review Checklist</div>
-<div class="calloutSub">Download our free <strong>AI-Generated Content Review Checklist</strong> (DOCX & PDF) to support this process in your organization.</div>
-<a class="btn ghost" href="../tools/ai-generated-content-review-checklist.html" style="margin-top:0.75rem; display:inline-block;">View Tool →</a>
-</div>
-
-<p>In an electronic batch record environment, review by exception may involve system rules such as:</p>
+<p>Batch records help show what happened while a medicine was made. AI can help find missing entries, unusual values, or records that may need closer attention. But an alert is only a lead for review. It does not prove there is a problem, and it cannot approve or release a batch.</p>
+<p class="notice"><strong>In plain words:</strong> AI can point to a page or entry worth checking. The Quality Unit still reviews the records and makes the batch decision.</p>
+<h2>What “review by exception” means</h2>
+<p>Review by exception means using defined rules or checks to bring unusual, missing, or out-of-range information to a reviewer’s attention. Some electronic batch record systems can already flag simple conditions, such as a required field left blank or a process step completed out of sequence. AI may add help with text searches, summaries, or patterns across multiple records.</p>
+<p>Exception flags can help organize work. They do not change the underlying records or erase the need to review the complete information required by the site’s procedures and applicable regulations. A “no alert” result is not proof that a batch is acceptable.</p>
+<h2>What U.S. rules say</h2>
+<p>For drug products subject to 21 CFR Part 211, section 211.188 describes batch production and control records. Section 211.192 requires production and control records, including packaging and labeling records, to be reviewed and approved by the Quality Control Unit before a batch is released or distributed. It also requires unexplained discrepancies and failures to meet specifications to be thoroughly investigated, whether or not the batch has already been distributed.</p>
+<p>These rules assign responsibilities to the Quality Unit. They do not approve a particular AI tool, make an AI alert a required batch record, or let software make the final release decision. FDA’s data-integrity guidance says firms should use meaningful, risk-based strategies to ensure data are reliable and accurate. The details depend on the actual process and system.</p>
+<p>In the European Union or another jurisdiction, assess the applicable GMP and computerized-system requirements separately. Do not assume one country’s rules apply everywhere.</p>
+<h2>Where AI may assist</h2>
 <ul>
-<li>Required field not completed</li>
-<li>Step performed out of sequence</li>
-<li>Parameter outside approved range</li>
-<li>Missing electronic signature</li>
-<li>Unauthorized user action</li>
-<li>Late entry</li>
-<li>Manual override</li>
-<li>Equipment not qualified or available</li>
-<li>Material lot not approved</li>
-<li>Yield outside expected range</li>
-<li>Alarm during critical step</li>
-<li>Deviation linked to batch</li>
-<li>Audit trail event requiring review</li>
+<li><strong>Find missing information:</strong> Point to required fields, attachments, signatures, or linked records that appear absent.</li>
+<li><strong>Compare records:</strong> Help check batch identifiers, material lots, equipment IDs, and timestamps across approved systems.</li>
+<li><strong>Surface unusual values:</strong> Flag values or sequences that differ from defined limits or an approved comparison method.</li>
+<li><strong>Search and summarize:</strong> Prepare a source-linked summary of exceptions, related deviations, and open actions for a reviewer to verify.</li>
+<li><strong>Group similar items:</strong> Suggest that several entries may share a theme, while leaving the reviewer to confirm whether they are truly related.</li>
 </ul>
-<p>Instead of asking QA to manually confirm every expected entry, the system highlights what is unusual, incomplete, or potentially GMP-impacting. Manufacturing executes batch ↓ Electronic system captures steps, parameters, signatures, and timestamps ↓ System applies predefined exception rules ↓ Exceptions are flagged in real time or during review ↓ Manufacturing/QA resolve or investigate exceptions ↓ QA reviews exception summary plus required critical records ↓ Quality Unit approves or rejects batch disposition This model can reduce review time, but only if the system is validated, the exception rules are scientifically justified, and QA retains final release authority.</p>
-<h2>Why AI Could Improve Review by Exception</h2>
-<p>Traditional review-by-exception systems depend on predefined rules. These rules are valuable, but they often detect only known issues. AI can potentially strengthen review by exception by detecting unusual patterns that may not be captured by fixed rules. <div class="tableWrap"> <table> <thead> <tr> <th>Traditional Rule</th> <th>AI-Enhanced Detection</th> </tr> </thead> <tbody> <tr> <td>Temperature exceeded limit</td> <td>Temperature remained within limit but showed abnormal oscillation</td> </tr> <tr> <td>Yield outside range</td> <td>Yield within range but trending lower across recent batches</td> </tr> <tr> <td>Step completed late</td> <td>Multiple small delays occurred in the same process phase</td> </tr> <tr> <td>Deviation opened</td> <td>Similar near-miss patterns occurred without formal deviation</td> </tr> <tr> <td>Alarm triggered</td> <td>Alarm pattern resembles prior batch failure signature</td> </tr> <tr> <td>Manual override used</td> <td>Override occurred under unusual</td> </tr> </tbody> </table> </div></p>
-<p>operator/equipment/context pattern Missing signature Signature present but timing pattern suggests review after-the-fact In-process result within limit Result is within specification but statistically unusual for this product The value of AI is not simply faster review. The value is more intelligent review: helping QA focus attention where product quality risk may be higher.</p>
-<h2>AI Anomaly Detection in Batch Records</h2>
-<p>AI anomaly detection can identify batch record events or data patterns that differ from expected behavior. <div class="tableWrap"> <table> <thead> <tr> <th>Anomaly Type</th> <th>Example</th> </tr> </thead> <tbody> <tr> <td>Process anomaly</td> <td>Mixing time normal, but torque profile unusual</td> </tr> <tr> <td>Timing anomaly</td> <td>Step duration significantly longer than historical norm</td> </tr> <tr> <td>Operator anomaly</td> <td>Unusual number of corrections by one operator or shift</td> </tr> <tr> <td>Equipment anomaly</td> <td>Higher frequency of minor alarms on same filling line</td> </tr> <tr> <td>Material anomaly</td> <td>Specific component lot linked to repeated adjustments</td> </tr> <tr> <td>Documentation anomaly</td> <td>Entries completed unusually late compared with process timestamps</td> </tr> <tr> <td>Yield anomaly</td> <td>Yield still within limits but drifting downward over multiple batches</td> </tr> <tr> <td>Audit trail anomaly</td> <td>Repeated value changes before final entry acceptance</td> </tr> </tbody> </table> </div> For example, a batch may have no formal deviation and all parameters may remain within approved limits. However, AI may detect that the batch required more manual interventions than typical batches, had longer setup time, and showed slightly increased yield loss. Individually, these may not trigger exceptions. Together, they may justify deeper review. That is the realistic value of AI in batch record review: identifying combinations of weak signals.</p>
-<h2>Electronic Batch Records and AI</h2>
-<p>AI works best when batch data are structured, time-stamped, and electronically available. Electronic batch record systems can capture data from:</p>
+<p>A flag should state what it found, where it found it, which data it used, and any limits or missing information. The reviewer should be able to open the original record. If the output cannot be traced to its source, treat it as unverified.</p>
+<h2>Example: a signal that needs checking</h2>
+<p><strong>Illustrative example only; this is not a real company or reported result.</strong> During a review, an AI tool highlights that one batch had more equipment pauses than recent comparable batches. It links each pause to a timestamp and equipment log. A QA reviewer checks the logs, the approved batch record, and any related deviation. The pauses turn out to have different causes, and the reviewer follows the existing procedure to document the assessment. The AI identified a pattern to examine; it did not determine product impact or batch disposition.</p>
+<h2>A controlled review process</h2>
+<ol>
+<li><strong>Define the task.</strong> State exactly what the tool should flag or summarize. For example: “List missing attachments required by this approved checklist.”</li>
+<li><strong>Confirm the data.</strong> Check that the records belong to the correct product, batch, equipment, and time period. Identify missing or delayed data before interpreting an alert.</li>
+<li><strong>Review the source.</strong> A qualified person opens the original record and checks whether the AI summary is accurate and complete.</li>
+<li><strong>Follow approved procedures.</strong> Investigate discrepancies and assess product impact using the existing quality system. The authorized Quality Unit makes and documents the batch decision.</li>
+<li><strong>Keep the trail.</strong> Retain the relevant output, source references, corrections, system or model version, reviewer, and rationale as required by the applicable procedure and recordkeeping rules.</li>
+</ol>
+<h2>Controls to consider before use</h2>
+<p>First write down the intended use: what the tool does, which records it reads, and how its output may affect the review. Then assess the risk of a wrong, missed, incomplete, or late flag. Controls should match the effect a mistake could have on product quality and patient safety.</p>
 <ul>
-<li>MES</li>
-<li>EBR workflows</li>
-<li>LIMS</li>
-<li>SCADA</li>
-<li>PLCs</li>
-<li>Equipment historians</li>
-<li>Weighing and dispensing systems</li>
-<li>Barcode systems</li>
-<li>Labeling systems</li>
-<li><a href="ai-environmental-monitoring-predicting-contamination.html">Environmental monitoring</a> systems</li>
+<li>Test with approved, representative records, including known missing entries, discrepancies, and unusual cases.</li>
+<li>Check both missed flags and unnecessary flags. Too many alerts can cause reviewers to overlook the important ones.</li>
+<li>Verify that the system links the right batch, product, equipment, and source record.</li>
+<li>Set access limits and protect confidential records. Use only services approved for the information involved.</li>
+<li>Document who reviews outputs and how corrections, overrides, and escalation are handled.</li>
+<li>Control changes to the model, prompts, data connections, and workflow. Reassess whether the tool still works for its intended use after a meaningful change.</li>
+<li>Assess applicable computerized-system, electronic-record, signature, and validation requirements for the actual use. Do not assume the same requirements apply to every AI tool.</li>
 </ul>
+<p>EMA’s 2024 reflection paper on AI in the medicinal-product lifecycle discusses risk-based development and use, data quality, and the context in which a system is used. It is a reflection paper, not a product-specific approval or permission to automate batch release.</p>
+<h2>Common mistakes</h2>
 <ul>
-<li>QMS deviations and CAPAs</li>
-<li>CMMS and calibration systems</li>
+<li><strong>Treating “no alert” as “no issue”:</strong> The tool may miss a problem or lack access to a needed record.</li>
+<li><strong>Letting a score decide:</strong> An anomaly score does not establish a deviation, product impact, or release status.</li>
+<li><strong>Ignoring source records:</strong> Fluent summaries can still be wrong or omit context.</li>
+<li><strong>Making exception rules too narrow:</strong> A rule catches only what it was designed to catch. Keep required review and investigation procedures active.</li>
+<li><strong>Assuming every AI use has the same compliance impact:</strong> Assess the real intended use, records, workflow, and decision influence.</li>
 </ul>
-<p>A mature AI-assisted review-by-exception program could analyze:</p>
-<div class="tableWrap"> <table> <thead> <tr> <th>Data Source</th> <th>AI Review Use</th> </tr> </thead> <tbody> <tr> <td>MES/EBR</td> <td>Step execution, signatures, timing, sequence</td> </tr> <tr> <td>LIMS</td> <td>In-process and finished product test results</td> </tr> <tr> <td>SCADA/historian</td> <td>Process parameter profiles and alarms</td> </tr> <tr> <td>QMS</td> <td>Deviations, investigations, CAPAs linked to batch</td> </tr> <tr> <td>CMMS</td> <td>Equipment maintenance history relevant to batch</td> </tr> <tr> <td>Calibration system</td> <td>Instrument status during batch execution</td> </tr> <tr> <td>EM system</td> <td>Environmental conditions during sterile manufacturing</td> </tr> <tr> <td>Labeling system</td> <td>Label reconciliation and coding verification</td> </tr> <tr> <td>ERP/material system</td> <td>Material status, supplier lot, inventory movement</td> </tr> </tbody> </table> </div>
-<p>The major challenge is integration. If systems do not share clean master data, AI may connect the wrong equipment, batch, room, material, or process step. AI for batch review depends heavily on good data governance.</p>
-<h2>Manufacturing Examples</h2>
-<h3>Example 1: AI Flags a Subtle Filling Line Pattern</h3>
-<p>A sterile filling batch has no critical deviations. Fill weights are within limits. However, AI detects that the line had more micro-stoppages than usual, increased operator interventions during stopper feeding, and a slightly wider fill-weight distribution than the product baseline. QA reviews the AI signal and requests additional review of interventions, EM data, equipment alarms, and rejected units. No product impact is identified, but engineering opens a maintenance work order for stopper bowl adjustment. GMP value: AI identifies a weak operational signal before it becomes a deviation trend.</p>
-<h3>Example 2: AI Detects a Documentation Timing Issue</h3>
-<p>An EBR shows all required signatures completed. AI compares process timestamps with signature timestamps and flags that multiple checks were signed significantly later than expected, all by the same shift. QA reviews the audit trail and determines whether this represents acceptable delayed documentation, a procedural gap, or a data integrity concern. GMP value: AI supports meaningful review of documentation behavior, not just completion status.</p>
-<h3>Example 3: AI Connects Yield Drift With Equipment History</h3>
-<p>A tablet compression process remains within yield limits, but AI detects a downward yield trend across five batches. It correlates the trend with increased reject counts and a recent tooling change. QA and manufacturing review batch data, equipment setup, and <a href="ai-change-control-risk-assessment.html">change control</a> records. The issue is corrected before a batch falls outside expected yield.</p>
-<p>GMP value: AI strengthens review by exception by detecting trends that are not yet formal exceptions.</p>
-<h3>Example 4: AI Prioritizes Batch Review Workload</h3>
-<p>A QA team has ten batches awaiting review. AI ranks them based on exception count, deviation severity, audit trail events, parameter anomalies, and unresolved linked records. Batches with no exceptions and low-risk profiles are reviewed efficiently. Batches with unusual patterns receive deeper QA review. GMP value: AI helps allocate reviewer attention based on risk.</p>
-<h2>Regulatory Analysis: FDA Expectations</h2>
-<p>AI-assisted batch review must begin with the basic regulatory expectation: batch production and control records must be complete and reviewed before release. FDA’s 21 CFR 211.188 requires batch production and control records for each batch and lists required record content such as equipment used, component lots, weights and measures, in-process and lab results, packaging and labeling inspection, yields, labeling records, sampling, checks, and investigations (FDA, 21 CFR 211.188). FDA’s 21 CFR 211.192 requires all drug product production and control records, including packaging and labeling records, to be reviewed and approved by the Quality Control Unit before a batch is released or distributed. It also requires unexplained discrepancies or batch/component failures to be thoroughly investigated, even if the batch has already been distributed (FDA, 21 CFR 211.192). That means AI can assist review, but it cannot remove the Quality Unit’s responsibility. A company must still demonstrate:</p>
-<ul>
-<li>Required records exist</li>
-<li>Records are complete</li>
-<li>Exceptions are identified</li>
-<li>Discrepancies are investigated</li>
-<li>Product impact is assessed</li>
-<li>Batch disposition is justified</li>
-<li>Quality Unit approval occurs before release</li>
-</ul>
-<p>AI may help make this review more efficient, but it does not weaken the regulatory obligation.</p>
-<h2>Data Integrity and Audit Trail Implications</h2>
-<p>Batch record review by exception becomes more complex when records are electronic. FDA Part 11 establishes requirements for electronic records and electronic signatures, including controls intended to ensure records are trustworthy and reliable (FDA, <a href="21-cfr-part-11-ai-pharmaceutical-compliance.html">21 CFR Part 11</a>). FDA’s data integrity guidance also emphasizes that CGMP records must be complete and accurate, and the guidance is specifically focused on data integrity and compliance with drug CGMP (FDA, 2018). Data Integrity Question Why It Matters</p>
-<div class="tableWrap">
-<table>
-<thead>
-<tr>
-<th>What source data did AI review?</th>
-<th>QA must know whether EBR, LIMS, SCADA, QMS, and audit trails were included</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Was source data complete?</td>
-<td>Missing historian or LIMS data could hide exceptions</td>
-</tr>
-<tr>
-<td>Was the AI output retained?</td>
-<td>Batch review rationale must be reconstructable</td>
-</tr>
-<tr>
-<td>Were AI flags accepted or rejected?</td>
-<td>Human review decisions should be documented</td>
-</tr>
-<tr>
-<td>Was the model version controlled?</td>
-<td>Different model versions may flag different exceptions</td>
-</tr>
-<tr>
-<td>Were audit trail events reviewed?</td>
-<td>AI should not replace required audit trail review strategy</td>
-</tr>
-<tr>
-<td>Can inspectors see the evidence?</td>
-<td>Inspection readiness requires traceability</td>
-</tr>
-</tbody>
-</table>
-</div>
- A strong AI review system should preserve original records, AI-generated findings, human reviewer decisions, and final batch disposition rationale.
-<h2>EMA and EU GMP Considerations</h2>
-<p>EU GMP Annex 11 applies to computerized systems used as part of GMP-regulated activities. It was revised in response to increased use and complexity of computerized systems (European Commission, Annex 11). If an AI-enabled EBR or review-by-exception tool is part of GMP batch review, Annex 11 expectations around <a href="computer-system-validation-ai-software.html">validation</a>, control, access, data integrity, and system lifecycle should be considered. EMA’s reflection paper on AI states that AI/ML tools can support acquisition, transformation, analysis, and interpretation of data when developed and used correctly. It also emphasizes a risk-based approach for development, deployment, and performance monitoring, and states that risk depends not only on the technology and data quality, but also on context of use and the degree of influence the AI exerts (EMA, 2024). <div class="tableWrap"> <table> <thead> <tr> <th>AI Use</th> <th>Regulatory Risk</th> </tr> </thead> <tbody> <tr> <td>AI highlights possible exceptions for QA review</td> <td>Moderate, if controlled and validated</td> </tr> <tr> <td>AI prioritizes review workload</td> <td>Moderate, depending on impact</td> </tr> <tr> <td>AI drafts batch review summary</td> <td>Moderate to high, if used in release documentation</td> </tr> <tr> <td>AI determines whether a deviation is needed</td> <td>High</td> </tr> <tr> <td>AI recommends batch release</td> <td>Very high</td> </tr> <tr> <td>AI automatically releases batch</td> <td>Not appropriate under current GMP expectations</td> </tr> </tbody> </table> </div> The closer AI gets to batch disposition, the stronger the validation, governance, and human oversight requirements must be.</p>
-<h2>Validation Requirements for AI Batch Review</h2>
-<p>An AI-assisted batch review system should be validated according to intended use and risk. <div class="tableWrap"> <table> <thead> <tr> <th>Validation Element</th> <th>Practical Question</th> </tr> </thead> <tbody> <tr> <td>Intended use</td> <td>Is AI advisory, prioritizing, summarizing, or decision- making?</td> </tr> <tr> <td>Data inputs</td> <td>Which systems feed the model: MES, LIMS, QMS, SCADA, CMMS?</td> </tr> <tr> <td>Data mapping</td> <td>Are batch IDs, equipment IDs, material lots, and timestamps correctly linked?</td> </tr> </tbody> </table> </div></p>
-<p>Exception rules Are rule-based exceptions scientifically justified and tested? AI anomaly detection Can the model detect known historical anomalies? False negatives Could AI miss a critical exception? False positives Could excessive alerts create review fatigue? Audit trail Are AI outputs and human decisions retained? Model version control Are model/configuration updates controlled? Access control Can only authorized personnel approve batch review? Electronic signatures Are signatures compliant with applicable requirements? Periodic review Is performance monitored after deployment? The validation approach should be proportional. An AI tool used only for optional dashboard visualization is lower risk than an AI tool that determines review status or generates batch disposition recommendations.</p>
-<h2>Risk Assessment Table</h2>
-<div class="tableWrap">
-<table>
-<thead>
-<tr>
-<th>AI Batch Review Use Case</th>
-<th>GMP Risk</th>
-<th>Potential Impact</th>
-<th>Required Control</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AI flags missing entries</td>
-<td>False negative misses incomplete record</td>
-<td>Batch released with incomplete documentation</td>
-<td>Rule validation and QA review</td>
-</tr>
-<tr>
-<td>AI detects process anomaly</td>
-<td>False positive creates unnecessary investigation</td>
-<td>Release delay and investigation burden</td>
-<td>SME triage and alert thresholds</td>
-</tr>
-<tr>
-<td>AI ranks batches by review priority</td>
-<td>High-risk batch incorrectly ranked low</td>
-<td>QA attention misallocated</td>
-<td>Conservative ranking rules and reviewer override</td>
-</tr>
-<tr>
-<td>AI reviews audit trail patterns</td>
-<td>Important audit trail event missed</td>
-<td>Data integrity issue overlooked</td>
-<td>Defined audit trail review strategy</td>
-</tr>
-<tr>
-<td>AI drafts batch release summary</td>
-<td>Summary omits key exception</td>
-<td>Misleading disposition rationale</td>
-<td>Human verification against source records</td>
-</tr>
-<tr>
-<td>AI links deviations to batch</td>
-<td>Incorrect linkage</td>
-<td>Wrong product impact assessment</td>
-<td>Validated data mapping</td>
-</tr>
-<tr>
-<td>AI predicts batch quality risk</td>
-<td>Overreliance on prediction</td>
-<td>Incorrect release confidence</td>
-<td>Advisory-only use and QA approval</td>
-</tr>
-<tr>
-<td>AI recommends release</td>
-<td>AI conclusion accepted without review</td>
-<td>Serious GMP compliance risk</td>
-<td>Do not allow autonomous release</td>
-</tr>
-</tbody>
-</table>
-</div>
- The safest model is AI-assisted review, not AI batch disposition.
-<h2>Practical AI-Assisted Batch Review Workflow</h2>
-<p>Batch executed in MES/EBR ↓ Data captured from EBR, LIMS, SCADA, QMS, and related systems ↓ System applies predefined exception rules ↓ AI performs anomaly detection and pattern comparison ↓ Exception dashboard generated ↓ Manufacturing resolves operational/documentation exceptions ↓</p>
-<p>QA reviews critical records, exceptions, deviations, audit trails, and AI findings ↓ QA accepts/rejects AI findings with rationale ↓ Any discrepancy is investigated under approved procedure ↓ Quality Unit approves or rejects batch release ↓ AI model performance reviewed periodically This workflow keeps the Quality Unit in control while making the review process more targeted.</p>
-<h2>Future Adoption Barriers</h2>
-<p>AI batch review by exception sounds attractive, but adoption will not be easy. <div class="tableWrap"> <table> <thead> <tr> <th>Barrier</th> <th>Explanation</th> </tr> </thead> <tbody> <tr> <td>Paper batch records</td> <td>AI needs structured electronic data to perform well</td> </tr> <tr> <td>Hybrid systems</td> <td>Data spread across paper, EBR, LIMS, QMS, and spreadsheets</td> </tr> <tr> <td>Poor master data</td> <td>Inconsistent equipment, material, and batch identifiers</td> </tr> <tr> <td>Weak exception definitions</td> <td>System cannot flag risk if rules are poorly designed</td> </tr> <tr> <td>Validation burden</td> <td>AI tools require intended-use-based validation</td> </tr> <tr> <td>Regulatory uncertainty</td> <td>Companies may hesitate to use AI near batch release</td> </tr> <tr> <td>Data integrity concerns</td> <td>AI outputs must be traceable and reviewable</td> </tr> <tr> <td>Cultural resistance</td> <td>QA may not trust automated review support</td> </tr> <tr> <td>Vendor black boxes</td> <td>Explainability and documentation may be limited</td> </tr> <tr> <td>Alert fatigue</td> <td>Too many AI findings can slow review instead of improving it</td> </tr> </tbody> </table> </div> The best path is gradual adoption: start with advisory exception dashboards and anomaly detection, not AI release recommendations. FAQ: AI for Batch Record Review by Exception</p>
-<h3>Can AI release pharmaceutical batches?</h3>
-<p>No. AI should not independently release pharmaceutical batches. FDA requires production and control records to be reviewed and approved by the Quality Control Unit before release or distribution (FDA, 21 CFR 211.192). AI can support review, but the Quality Unit must retain batch disposition authority.</p>
-<h2>What is review by exception?</h2>
-<p>Review by exception means focusing QA review on exceptions, discrepancies, missing data, deviations, parameter excursions, audit trail concerns, and unusual patterns rather than manually reviewing every routine compliant entry with the same intensity.</p>
-<h2>Is review by exception allowed in GMP?</h2>
-<p>Review by exception can be used when the system is validated, records remain complete, exceptions are properly defined, discrepancies are investigated, and the Quality Unit still reviews and approves</p>
-<p>the batch before release. The company must be able to demonstrate control and compliance with applicable GMP requirements.</p>
-<h3>What is the best first AI use case for batch review?</h3>
-<p>The best first use case is AI-assisted anomaly detection or exception prioritization in an electronic batch record environment. AI can flag unusual patterns for QA review without making release decisions.</p>
-<h2>Does Part 11 apply to AI batch review?</h2>
-<p>Part 11 may apply if the system creates, modifies, maintains, retrieves, or transmits electronic records required under FDA regulations, or uses electronic signatures. AI-enabled EBR workflows should be assessed for Part 11 applicability and validated accordingly (FDA, 21 CFR Part 11).</p>
-<h3>What is the biggest risk?</h3>
-<p>The biggest risk is overreliance. If QA assumes “no AI exception” means “no problem,” critical issues may be missed. Traditional GMP review responsibilities and human judgment must remain active.</p>
-<h3>Can AI help with audit trail review?</h3>
-<p>Yes, AI can help identify unusual audit trail patterns, late entries, repeated corrections, or unexpected changes. However, the company still needs a defined audit trail review strategy and human review for GMP significance.</p>
-<h2>Conclusion: AI Can Improve Batch Review, but Batch Release Must Remain a Human GMP Decision</h2>
-<p>AI for batch record review by exception is one of the most practical and high-impact applications of artificial intelligence in pharmaceutical quality operations. Batch review is repetitive, data-heavy, time-sensitive, and vulnerable to reviewer fatigue. AI can help identify exceptions, detect unusual process patterns, prioritize review workload, and connect batch records with process monitoring, deviations, audit trails, and equipment data. But AI does not replace the Quality Unit. FDA requires complete batch production and control records and Quality Unit review and approval before release or distribution (FDA, 21 CFR 211.188; FDA, 21 CFR 211.192). EMA’s AI reflection paper also reinforces that AI risk depends on context of use and the degree of influence the system exerts (EMA, 2024). The realistic future is not autonomous batch release. The realistic future is smarter QA review: fewer hours spent checking routine compliant entries, more attention on exceptions that actually matter, and stronger traceability for batch disposition decisions. For AIforQA.org, this is a strong cornerstone topic because it addresses a major operational pain point in pharmaceutical QA: how to release batches faster without lowering the standard of GMP review.</p>
-<h2>References</h2>
+<h2>A sensible first use</h2>
+<p>Start with a support task that helps reviewers locate information, such as checking for missing attachments or preparing a source-linked exception list. Keep the existing review and release process in place while people compare the tool’s output with the underlying records. Expand only when the organization has documented the intended use, risks, review steps, and required system controls.</p>
+<h2>Key takeaway</h2>
+<p>AI can make it easier to find information that deserves attention during batch review. It cannot turn a missing record into a complete one, prove that a batch is acceptable, or take responsibility away from the Quality Unit. Use alerts to guide a careful review of traceable source records, and make the batch decision through approved procedures.</p>
+<h2>Primary sources</h2>
 <ol class="references">
-<li>FDA. 21 CFR</li>
-<li>188 - Batch Production and Control Records. Requires batch production and control records for each batch, including complete production and control information such as
-equipment, components, in-process and laboratory results, yields, labeling records, sampling, checks, and investigations. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/ subpart-J/section-</li>
-<li>188</li>
-<li>FDA. 21 CFR</li>
-<li>192 - Production Record Review. Requires all drug product production and control records, including packaging and labeling, to be reviewed and approved by the Quality Control Unit before release or distribution, and requires unexplained discrepancies or batch failures to be thoroughly investigated. https://www.ecfr.gov/current/title-21/chapter-I/subchapter- C/part-211/subpart-J/section-</li>
-<li>192</li>
-<li>FDA. 21 CFR Part 11 - Electronic Records; Electronic Signatures. Establishes requirements for electronic records and electronic signatures, including controls for trustworthy and reliable electronic records. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>FDA. Data Integrity and Compliance With Drug CGMP: Questions and Answers - Guidance for Industry. FDA guidance addressing data integrity expectations for drug CGMP records and systems. <a href="https://www.fda.gov/media/119267/download" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>European Commission. EudraLex Volume 4, EU GMP Annex 11: Computerised Systems. Provides EU GMP expectations for computerized systems used as part of GMP-regulated activities. <a href="https://health.ec.europa.eu/system/files/2016-11/annex11_01-2011_en_" target="_blank" rel="noopener noreferrer">Source</a></li>
-<li>pdf</li>
-<li>European Medicines Agency. Reflection Paper on the Use of Artificial Intelligence in the Medicinal Product Lifecycle. Discusses AI/ML risk-based development, deployment, performance monitoring, context of use, data quality, degree of AI influence, and manufacturer responsibility for fit-for- purpose algorithms, models, datasets, and data processing pipelines. https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial- intelligence-ai-medicinal-product-lifecycle_en.pdf</li>
-</ol></section>
+<li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.188">21 CFR 211.188, Batch production and control records.</a></li>
+<li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-J/section-211.192">21 CFR 211.192, Production record review.</a></li>
+<li><a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/data-integrity-and-compliance-drug-cgmp-questions-and-answers">FDA, Data Integrity and Compliance With Drug CGMP: Questions and Answers</a> (2018; guidance).</li>
+<li><a href="https://www.ema.europa.eu/en/scientific-guidelines/use-artificial-intelligence-ai-medicinal-product-lifecycle">EMA, Reflection paper on the use of Artificial Intelligence (AI) in the medicinal product lifecycle</a> (2024).</li>
+<li><a href="https://www.fda.gov/drugs/guidances-drugs/questions-and-answers-current-good-manufacturing-practice-requirements-records-and-reports">FDA, Questions and Answers on Current Good Manufacturing Practice Requirements—Records and Reports.</a></li>
+</ol>
+<h2>Disclaimer</h2>
+<p>This educational article is not legal or regulatory advice. Confirm the requirements for the product, process, system, and jurisdiction with qualified quality and regulatory professionals.</p>
+</section>
 </div>
 <aside aria-label="Table of contents" class="toc" id="toc">
 <div class="tocTitle">On this page</div>
