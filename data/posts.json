@@ -53,10 +53,10 @@
   {
     "slug": "ai-for-change-control-impact-assessments",
     "title": "AI for Change Control Impact Assessments",
-    "summary": "How AI can improve risk evaluation and impact assessment quality in pharmaceutical quality systems, enabling faster and more consistent change control decisions.",
+    "summary": "How AI can help gather evidence for change-impact reviews while people assess risks, approve changes, and confirm results.",
     "category": "Compliance",
     "date": "2026-05-31",
-    "readingTime": "13 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Change Control",
@@ -392,10 +392,10 @@
   {
     "slug": "ai-change-control-risk-assessment",
     "title": "AI and Change Control Risk Assessment",
-    "summary": "Using AI tools to streamline change control processes in pharmaceutical operations — risk scoring, impact assessment automation, and maintaining GMP compliance throughout change management.",
+    "summary": "How AI can support change-risk discussions by organizing evidence, while experts set assumptions, assess uncertainty, and approve actions.",
     "category": "Compliance",
     "date": "2026-03-14",
-    "readingTime": "12 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Change Control",
@@ -425,10 +425,10 @@
   {
     "slug": "capa-systems-ai-machine-intelligence",
     "title": "CAPA Systems and AI: Can Machine Intelligence Prevent Recurring Issues?",
-    "summary": "An in-depth look at how AI-powered CAPA systems can identify root causes, predict recurrence, and help pharmaceutical quality teams close corrective actions more effectively.",
+    "summary": "How AI may help find related CAPA records and organize evidence while people investigate causes, approve actions, and check effectiveness.",
     "category": "Compliance",
     "date": "2026-03-14",
-    "readingTime": "13 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "CAPA",
@@ -442,10 +442,10 @@
   {
     "slug": "ai-assisted-deviation-investigations-pharma",
     "title": "AI-Assisted Deviation Investigations in Pharma",
-    "summary": "How AI can accelerate pharmaceutical deviation investigations — from automated root cause analysis and historical pattern matching to documentation support and regulatory-ready reporting.",
+    "summary": "How AI can help search deviation records and organize evidence while investigators verify causes, product impact, and corrective actions.",
     "category": "Compliance",
     "date": "2026-03-14",
-    "readingTime": "12 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Deviations",
