@@ -1,43 +1,41 @@
 # AI for QA Content Guide
 
-This site is now a static GitHub Pages website. Primary article content should be crawlable HTML, not JavaScript-injected content.
+Primary article content must be crawlable static HTML, not JavaScript-injected content. The current publishing model uses article pages and tool landing pages.
 
-## Final publishing structure
+## Publishing structure
 
 ```text
-/articles/<slug>.html       # Full static article HTML page
-/pdfs/<slug>.pdf            # Optional PDF download
-/articles.html              # Static article listing page
-/resources.html             # PDF/resource listing page
-/data/posts.json            # Metadata used by related-article widgets
+/articles/<slug>.html       # Full article page
+/articles.html              # Article index
+/data/posts.json            # Article metadata and related-card data
+/tools/<slug>.html          # Downloadable tool landing page
+/tools/<file>               # PDF/DOCX companion files
+/tools/index.html           # Tool directory
 /sitemap.xml                # Canonical URLs for search engines
 ```
 
-## Add a new article
+`/resources.html` is retained as a legacy redirect to `/articles.html`; do not use it as a resource directory. Do not use the retired `/pdfs/` or `/posts/` paths for new content unless the repository architecture is deliberately changed and reviewed.
 
-1. Create the article page at `/articles/<slug>.html`.
-2. Add a card for the article to `/articles.html`.
-3. Add metadata to `/data/posts.json`.
-4. If a PDF exists, place it at `/pdfs/<slug>.pdf` and add the PDF link to `/resources.html`.
-5. Add the article URL to `/sitemap.xml`.
+## Add an article
 
-## PDF convention
+1. Create `/articles/<slug>.html` using the current article template.
+2. Add the article to `articles.html`.
+3. Add its title, summary, category, date, reading time, publication state, and useful tags to `data/posts.json`.
+4. Add the canonical URL to `sitemap.xml`.
+5. If providing a PDF or DOCX companion, store it under `/tools/` and link it from the article. Do not create a download link without a matching file.
+6. Check the article's citations, canonical URL, robots directive, headings, responsive layout, and related links.
 
-Use this naming pattern:
+## Add a downloadable tool
 
-```text
-/pdfs/<slug>.pdf
-```
+1. Create a useful explanatory landing page at `/tools/<slug>.html`.
+2. Store the PDF/DOCX file under `/tools/` and add a working download link on the landing page.
+3. Add the landing-page card to `/tools/index.html` and its canonical URL to `sitemap.xml`.
+4. Keep the download available to readers even if search engines choose not to index the binary file.
 
-Article pages should link to PDFs from inside `/articles/` using:
-
-```html
-<a href="../pdfs/<slug>.pdf" download>Download PDF</a>
-```
-
-## Deprecated legacy pages
+## Legacy routes
 
 - `post.html?p=<slug>` redirects to `/articles/<slug>.html`.
 - `best-of.html` redirects to `/articles.html`.
+- `/resources.html` redirects to `/articles.html`; it is not a resource directory.
 
-These files are kept only to protect old links.
+Retain these only to preserve useful incoming links. New pages should link directly to canonical article/tool landing pages.
