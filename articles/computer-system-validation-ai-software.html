@@ -14,7 +14,7 @@
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8632401241613937"></script>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Computer System Validation for AI Software • AI for QA</title>
-<meta content="A practical guide to validating AI-enabled software in pharmaceutical quality systems: intended use, risk-based testing, evidence, change control, and FDA sources." name="description"/>
+<meta content="How to show an AI-enabled GxP system works for its intended job, with risk-based checks, records, and change control." name="description"/>
   <meta name="robots" content="index, follow" />
 <link href="https://www.aiforqa.org/articles/computer-system-validation-ai-software.html" rel="canonical"/>
 <meta content="article" property="og:type"/>
@@ -35,7 +35,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Computer System Validation for AI Software",
-  "description": "A practical guide to validating AI-enabled software in pharmaceutical quality systems: intended use, risk-based testing, evidence, change control, and FDA sources.",
+  "description": "How to show an AI-enabled GxP system works for its intended job, with risk-based checks, records, and change control.",
   "datePublished": "2026-03-14",
   "dateModified": "2026-11-26",
   "author": {
@@ -86,7 +86,7 @@
 <div class="metaLine">
 <span>2026-03-14</span>
 <span class="sep">•</span>
-<span>8 min read</span>
+<span>4 min read</span>
 <span class="sep">•</span>
 <span>Reviewed November 26, 2026</span>
 </div>
@@ -101,73 +101,31 @@
 </div>
 <div class="articleContent">
 <section class="article-body">
-<h2>What Computer System Validation Means</h2>
-<p>Computer system validation is documented evidence that a computerized system performs its intended use reliably. In pharmaceutical work, the important question is not “Did we test every button?” It is “Does this configured system and workflow do the job we rely on it to do, and can we detect when it does not?”</p>
-<p>FDA’s 2018 <em>Data Integrity and Compliance With Drug CGMP</em> guidance says that a CGMP workflow on a computer system—such as creating an electronic master production record—is an intended use to check through validation. The amount of testing should match the risk. Qualifying a software platform alone does not prove that a particular workflow, calculation, report, or interface is correct.</p>
-<p>The applicable requirements depend on the system and its use. For drug CGMP systems, <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-G/section-211.68">21 CFR 211.68</a> addresses controls for automatic, mechanical, and electronic equipment. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11">21 CFR Part 11</a> applies to certain electronic records and signatures. Part 11 is not a rule that every AI tool automatically falls under; first identify the records, signatures, and predicate-rule duties involved.</p>
-<p>FDA’s Part 11 scope guidance also describes enforcement discretion for certain Part 11 provisions, including the validation requirement in §11.10(a), while explaining that applicable predicate-rule requirements still apply. The guidance does not repeal Part 11 or create a general exemption. See the <a href="https://www.fda.gov/media/75414/download">FDA Scope and Application guidance</a> and the current rules before setting a site strategy.</p>
-<h2>Why AI Needs a Clear Intended Use</h2>
-<p>AI features can produce different outputs when the prompt, input data, configuration, or underlying model changes. A language model may also give a confident answer that leaves out a source, invents a detail, or applies the wrong procedure. These characteristics affect how a team should test and monitor the feature; they do not create one universal “AI validation” recipe.</p>
-<p>Write down the job the AI is allowed to do, the information it can use, who checks its output, and what decisions it must not make. For example, “summarize approved SOP text for a trained employee to review” is more specific than “help with GMP.” If the output can change a controlled record, affect an investigation, or influence a product-quality decision, include that effect in the risk assessment.</p>
-<p>FDA’s January 2025 AI draft guidance uses a risk-based “context of use” framework for AI-generated information intended to support regulatory decisions about drug or biological-product safety, effectiveness, or quality. FDA labels it “not for implementation.” It is not a general validation rule for workplace AI, though its focus on describing the model’s role and use can help teams frame an assessment.</p>
-<h2>A Practical Validation Plan</h2>
-<p>The steps below are a planning aid, not a mandatory FDA checklist. Adapt them to the applicable requirements and your site’s approved procedures.</p>
-<ol>
-<li><strong>Describe the workflow.</strong> Identify users, inputs, system boundaries, interfaces, outputs, reviewers, and the records or decisions affected. Include connected systems and vendor-hosted services.</li>
-<li><strong>Set the boundaries.</strong> State what the feature may do and what it may not do. Decide whether the output is a draft, a search aid, an alert, or an input to a formal decision. Define who can accept or reject it.</li>
-<li><strong>Assess the risk.</strong> Consider what could happen if the feature is wrong, incomplete, delayed, or unavailable. Include patient and product impact, data integrity, record retention, user access, and the chance that a person may over-trust the output. Use the site’s quality-risk process.</li>
-<li><strong>Define evidence and acceptance criteria.</strong> Decide what “good enough for this use” means before testing. Measures might include correct retrieval, omission rate, false alerts, unsupported statements, or whether a reviewer can trace claims back to approved source material. Set limits that match the workflow’s consequences.</li>
-<li><strong>Test realistic examples.</strong> Use representative inputs, difficult cases, missing data, conflicting sources, and examples that should be refused or escalated. Have qualified reviewers compare outputs with authoritative source records. For variable outputs, evaluate a defined set of runs and criteria rather than expecting one exact sentence every time.</li>
-<li><strong>Approve and train for use.</strong> Document results, unresolved limits, required human checks, user roles, procedures, and the decision to release the workflow. Train users to verify sources and report errors.</li>
-</ol>
-<p>Testing a feature separately is not enough if its output passes through other systems or gets copied into a controlled record. Check the full workflow—including data transfer, calculations, permissions, auditability, report generation, and the human review step.</p>
-<h2>What to Keep as Evidence</h2>
-<p>Keep records that let the site explain what was approved and what was tested. Depending on the use and procedures, that may include:</p>
+<h2>Validation answers one practical question</h2>
+<p>Computer system validation is documented evidence that a configured system works reliably for the job the company uses it to do. The goal is not to test every button. It is to show that important workflows give dependable results, protect records, and have controls that catch problems.</p>
+<p>For drug CGMP, FDA points to the intended use of the computer system and the risk to product quality and patient safety. 21 CFR 211.68 also requires appropriate controls over computerized equipment and related systems. The company remains responsible even when a vendor supplies the software.</p>
+<h2>Define the intended use before testing</h2>
+<p>Write down what the system may do, what it must not do, who uses it, and which decisions depend on it. For an AI feature, be specific: does it search approved procedures, draft text for review, classify incoming records, or calculate a value? “Uses AI for quality” is too vague to validate.</p>
+<p>Draw the workflow boundary. Include data sources, model or service, configuration, connected systems, user review, final record, and any export or interface. Identify which output is advisory and which action creates or changes a controlled record.</p>
+<h2>Test the risks that matter</h2>
 <ul>
-<li>the intended-use statement, system boundary, requirements, and risk assessment;</li>
-<li>supplier and service information used in the assessment, including relevant change notices and data-handling terms;</li>
-<li>test cases, representative inputs, output samples, acceptance criteria, reviewer decisions, deviations, and final conclusions;</li>
-<li>model or feature version, configuration, prompts or templates where controlled, connected data sources, and relevant user actions;</li>
-<li>the approved operating procedure, training evidence, release approval, and monitoring or escalation plan.</li>
+<li>Use representative examples, including unusual but realistic inputs.</li>
+<li>Check that source data, units, dates, and context are carried through correctly.</li>
+<li>Try incomplete, conflicting, or misleading inputs and confirm the workflow stops or asks for review.</li>
+<li>Confirm user permissions, approvals, audit trails, record copies, backup, and retrieval work as designed.</li>
+<li>Check the handoff to connected systems and make sure an AI suggestion cannot silently become an approved decision.</li>
 </ul>
-<p>This is a practical evidence list, not a claim that each item is separately required in every situation. The site should identify which records are CGMP records and apply the relevant controls and retention rules. FDA’s CGMP data-integrity guidance explains that records and associated metadata must be maintained so the activity can be reconstructed.</p>
-<h2>Maintaining the Validated State</h2>
-<p>After release, decide how changes will be assessed. Changes may include a vendor’s model update, a new configuration, a different prompt, a changed source library, an interface update, or a new use of the output. Not every change needs the same response: evaluate its potential effect, document the decision, and perform focused regression testing or broader revalidation when the risk assessment calls for it.</p>
-<p>Monitor whether the feature continues to perform within its approved limits. Define what errors, missing records, performance shifts, or service outages require escalation. If the feature fails or the vendor changes something important, follow the site’s procedures to pause or limit use, assess affected records, and restore a controlled state.</p>
-<h2>Examples: Match the Evidence to the Use</h2>
-<table>
-<thead><tr><th>AI use</th><th>Useful evidence to consider</th></tr></thead>
-<tbody>
-<tr><td>Drafting a summary of an approved procedure</td><td>Check that key steps and cautions are preserved, sources are traceable, and the reviewer can correct the draft before it enters a controlled record.</td></tr>
-<tr><td>Finding possible issues in a large record set</td><td>Test whether important examples are found and whether irrelevant records are flagged; document that a qualified person reviews the findings.</td></tr>
-<tr><td>Recommending or triggering a quality action</td><td>Assess the decision’s consequences, required evidence, access controls, human authority, failure handling, and whether the workflow can be stopped safely.</td></tr>
-</tbody>
-</table>
-<p>These examples do not assign universal “low,” “medium,” or “high” regulatory categories. A site should make and document its own decision based on the actual use, affected records, and possible consequences.</p>
-<h2>Questions to Ask an AI Vendor</h2>
+<p>Document the test, expected result, actual result, reviewer, and resolution of failures. Match the depth of testing to the risk. A tool that only searches public material has a different risk from one that writes into a batch record or changes a quality status.</p>
+<h2>Keep it in a controlled state</h2>
+<p>Set rules for changes to the model, prompts, configuration, source documents, and vendor service. Decide what changes require impact assessment or additional testing. Monitor performance and user-reported errors, and define when to suspend the feature. Keep the version and configuration used for important work identifiable.</p>
+<p>Vendor testing can help, but it does not prove the company’s own configured workflow is suitable. The company should retain enough evidence to explain how the system was assessed and why it is fit for its intended use.</p>
+<h2>Key takeaway</h2>
+<p>Validate the whole job the AI feature performs in your process: inputs, output, human check, recordkeeping, and system connections. Keep the scope focused on intended use and risk.</p>
+<h2>Sources</h2>
 <ul>
-<li>What exact model, feature, and service version is in use, and how are updates announced?</li>
-<li>What data is sent to the service, where is it processed, and how are inputs and outputs retained?</li>
-<li>What logs, version information, and test evidence can the customer access?</li>
-<li>What are the known limitations, and how does the system signal uncertainty, missing information, or failure?</li>
-<li>Can the customer test the configured workflow before an update or new use goes live?</li>
-</ul>
-<p>Vendor documents can support an assessment, but do not replace the site’s review of its intended use and workflow. A platform’s “compliant” label does not prove that a customer’s configuration or process is validated.</p>
-<div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Use the <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> as a starting point for documenting intended use and risk. Tailor it to your site’s approved procedures and applicable rules.</p></div>
-<h2>Key Takeaways</h2>
-<ul>
-<li>Validate the actual intended workflow, not just the platform or vendor.</li>
-<li>Choose tests and evidence based on risk and the role the output plays.</li>
-<li>For AI, define sources, boundaries, human review, version changes, and failure handling.</li>
-<li>Part 11 and CGMP requirements depend on the records and uses involved; AI use alone does not automatically determine scope.</li>
-</ul>
-<h2>References</h2>
-<ul class="references">
-<li><a href="https://www.fda.gov/media/119267/download">FDA, Data Integrity and Compliance With Drug CGMP: Questions and Answers (2018)</a></li>
-<li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-G/section-211.68">21 CFR 211.68 — Automatic, Mechanical, and Electronic Equipment</a></li>
-<li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11">21 CFR Part 11 — Electronic Records; Electronic Signatures</a></li>
-<li><a href="https://www.fda.gov/media/75414/download">FDA, Part 11 Scope and Application guidance</a></li>
-<li><a href="https://www.fda.gov/media/184830/download">FDA Draft Guidance (2025), AI to Support Regulatory Decision-Making for Drug and Biological Products — not for implementation</a></li>
+<li><a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/data-integrity-and-compliance-drug-cgmp-questions-and-answers">FDA, Data Integrity and Compliance With Drug CGMP: Questions and Answers</a></li>
+<li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/section-211.68">21 CFR 211.68, automatic, mechanical, and electronic equipment</a></li>
+<li><a href="https://www.govinfo.gov/content/pkg/CFR-2025-title21-vol1/pdf/CFR-2025-title21-vol1-sec11-10.pdf">21 CFR 11.10, controls for covered electronic records</a></li>
 </ul>
 </section>
 </div>
