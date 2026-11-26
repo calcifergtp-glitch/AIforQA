@@ -2,10 +2,10 @@
   {
     "slug": "ai-in-pharmaceutical-maintenance-and-calibration-programs",
     "title": "AI in Pharmaceutical Maintenance and Calibration Programs",
-    "summary": "How predictive analytics, calibration intelligence, and smart equipment monitoring can improve GMP operations and enhance pharmaceutical maintenance and calibration programs.",
+    "summary": "Practical guidance on AI-assisted maintenance and calibration planning, with limits on equipment decisions, interval changes, and GMP records.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
-    "readingTime": "14 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "GMP",
@@ -87,10 +87,10 @@
   {
     "slug": "ai-in-pharmaceutical-complaint-trending-and-signal-detection",
     "title": "AI in Pharmaceutical Complaint Trending and Signal Detection",
-    "summary": "How AI can analyze pharmaceutical complaint data, detect quality signals, and support early warning systems for post-market quality monitoring and pharmacovigilance.",
+    "summary": "How AI can support complaint sorting and trend review while preserving human investigation, safety reporting, and product-quality decisions.",
     "category": "Compliance",
     "date": "2026-05-31",
-    "readingTime": "13 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "CAPA",
@@ -223,10 +223,10 @@
   {
     "slug": "ai-in-stability-programs-and-shelf-life-monitoring",
     "title": "Artificial Intelligence in Stability Programs and Shelf-Life Monitoring",
-    "summary": "How AI can improve stability programs with predictive degradation modeling, early out-of-trend detection, and stronger shelf-life monitoring aligned with ICH expectations.",
+    "summary": "How AI can help organize stability data and flag trends for expert review while preserving approved protocols and shelf-life decisions.",
     "category": "GxP & Validation",
     "date": "2026-05-29",
-    "readingTime": "16 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Stability Programs",
