@@ -70,10 +70,10 @@
   {
     "slug": "ai-gmp-document-review-and-approval-workflows",
     "title": "AI in GMP Document Review and Approval Workflows",
-    "summary": "How AI can assist SOP review, improve document consistency, and reduce approval bottlenecks in GMP document management and controlled document workflows.",
+    "summary": "Where AI can help review controlled GMP documents, and the human checks that keep approvals and versions under control.",
     "category": "Compliance",
     "date": "2026-05-31",
-    "readingTime": "14 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "GMP",
@@ -104,10 +104,10 @@
   {
     "slug": "using-ai-for-regulatory-intelligence",
     "title": "Using AI for Regulatory Intelligence",
-    "summary": "How AI can help pharmaceutical QA and regulatory affairs teams track FDA, EMA, and global GMP guidance updates more efficiently and respond to regulatory changes faster.",
+    "summary": "How AI can help find regulatory updates while people confirm the source, status, jurisdiction, and impact.",
     "category": "Compliance",
     "date": "2026-05-31",
-    "readingTime": "14 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "FDA",
@@ -155,10 +155,10 @@
   {
     "slug": "ai-and-gmp-knowledge-management",
     "title": "Artificial Intelligence and GMP Knowledge Management",
-    "summary": "How AI can help pharmaceutical organizations preserve critical expertise, capture institutional knowledge, and build more resilient GMP knowledge management systems.",
+    "summary": "How AI can help staff find approved GMP knowledge while keeping sources, versions, and expert ownership clear.",
     "category": "Compliance",
     "date": "2026-05-31",
-    "readingTime": "13 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Knowledge Management",
@@ -291,10 +291,10 @@
   {
     "slug": "ai-in-pharmaceutical-quality-assurance",
     "title": "AI in Pharmaceutical Quality Assurance: Opportunities, Risks, and Real Tools",
-    "summary": "A practical guide to where AI genuinely helps pharmaceutical QA teams, where it creates compliance risk, and which tools are plausibly deployable in regulated GxP environments today.",
+    "summary": "Practical ways AI can support pharmaceutical QA while people retain required authority and make quality decisions.",
     "category": "GxP & Validation",
     "date": "2026-03-10",
-    "readingTime": "18 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Quality Management System",
@@ -359,10 +359,10 @@
   {
     "slug": "ai-equipment-qualification-iq-oq-pq",
     "title": "AI for Equipment Qualification (IQ, OQ, PQ)",
-    "summary": "Practical guidance on incorporating AI tools into Installation Qualification, Operational Qualification, and Performance Qualification protocols for pharmaceutical manufacturing equipment.",
+    "summary": "How AI can help prepare qualification work while qualified staff verify equipment, test evidence, and acceptance decisions.",
     "category": "GxP & Validation",
     "date": "2026-03-14",
-    "readingTime": "12 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Validation",
