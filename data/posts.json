@@ -325,10 +325,10 @@
   {
     "slug": "computer-system-validation-ai-software",
     "title": "Computer System Validation for AI Software",
-    "summary": "How to apply Computer System Validation (CSV) frameworks to AI software in GxP pharmaceutical environments, covering risk-based approaches, documentation requirements, and the validation lifecycle.",
+    "summary": "A practical guide to validating AI-enabled software in pharma: intended use, risk-based testing, evidence, change control, and FDA sources.",
     "category": "GxP & Validation",
     "date": "2026-03-14",
-    "readingTime": "14 min read",
+    "readingTime": "8 min read",
     "published": true,
     "tags": [
       "Computer System Validation",
