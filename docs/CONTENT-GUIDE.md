@@ -14,7 +14,7 @@ Primary article content must be crawlable static HTML, not JavaScript-injected c
 /sitemap.xml                # Canonical URLs for search engines
 ```
 
-Do not use the retired `/pdfs/`, `/posts/`, or `resources.html` paths for new content unless the repository architecture is deliberately changed and reviewed.
+`/resources.html` is retained as a legacy redirect to `/articles.html`; do not use it as a resource directory. Do not use the retired `/pdfs/` or `/posts/` paths for new content unless the repository architecture is deliberately changed and reviewed.
 
 ## Add an article
 
@@ -36,5 +36,6 @@ Do not use the retired `/pdfs/`, `/posts/`, or `resources.html` paths for new co
 
 - `post.html?p=<slug>` redirects to `/articles/<slug>.html`.
 - `best-of.html` redirects to `/articles.html`.
+- `/resources.html` redirects to `/articles.html`; it is not a resource directory.
 
 Retain these only to preserve useful incoming links. New pages should link directly to canonical article/tool landing pages.
