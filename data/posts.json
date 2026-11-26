@@ -36,10 +36,10 @@
   {
     "slug": "how-ai-could-support-continued-process-verification-cpv",
     "title": "How AI Could Support Continued Process Verification (CPV)",
-    "summary": "A practical GMP perspective on how AI could enhance process monitoring, trend detection, and APR/PQR integration within the pharmaceutical process validation lifecycle.",
+    "summary": "How AI can support continued process verification by organizing trends and flagging signals for trained review without replacing process understanding.",
     "category": "GxP & Validation",
     "date": "2026-05-31",
-    "readingTime": "14 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Continued Process Verification",
@@ -121,10 +121,10 @@
   {
     "slug": "ai-assisted-root-cause-analysis-pharmaceutical-investigations",
     "title": "AI-Assisted Root Cause Analysis in Pharmaceutical Investigations",
-    "summary": "How AI can improve pharmaceutical deviation investigations through pattern recognition, automated root cause analysis support, and more effective CAPA development.",
+    "summary": "A practical guide to using AI to find related investigation records and organize evidence while people determine root cause and approve CAPA.",
     "category": "Compliance",
     "date": "2026-05-31",
-    "readingTime": "14 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Root Cause Analysis",
@@ -257,10 +257,10 @@
   {
     "slug": "ai-in-pharmaceutical-training-systems",
     "title": "The Role of AI in Pharmaceutical Training Systems",
-    "summary": "How AI can make pharmaceutical training systems more adaptive by targeting competency gaps, improving knowledge retention, and supporting role-based GMP learning.",
+    "summary": "How AI can help organize role-based GMP learning and draft training materials while people verify accuracy and assess competence.",
     "category": "Compliance",
     "date": "2026-05-29",
-    "readingTime": "14 min read",
+    "readingTime": "3 min read",
     "published": true,
     "tags": [
       "Training",
