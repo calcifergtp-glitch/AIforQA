@@ -14,7 +14,7 @@
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8632401241613937"></script>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>21 CFR Part 11 and AI in Pharmaceutical Systems • AI for QA</title>
-<meta content="An in-depth analysis of 21 CFR Part 11 regulations and their impact on incorporating AI in pharmaceutical environments." name="description"/>
+<meta content="Learn when FDA Part 11 applies to electronic records, what controls it requires, and how to assess AI-assisted workflows without assuming every AI tool is automatically in scope." name="description"/>
   <meta name="robots" content="index, follow" />
 <link href="https://www.aiforqa.org/articles/21-cfr-part-11-ai-pharmaceutical-compliance.html" rel="canonical"/>
 <meta content="article" property="og:type"/>
@@ -37,6 +37,7 @@
   "headline": "21 CFR Part 11 and AI in Pharmaceutical Systems",
   "description": "An in-depth analysis of 21 CFR Part 11 regulations and their impact on incorporating AI in pharmaceutical environments.",
   "datePublished": "2026-03-07",
+  "dateModified": "2026-11-26",
   "author": {
     "@type": "Organization",
     "name": "AI for Pharmaceutical QA",
@@ -86,6 +87,8 @@
 <span>2026-03-07</span>
 <span class="sep">•</span>
 <span>15 min read</span>
+<span class="sep">•</span>
+<span>Reviewed November 26, 2026</span>
 </div>
 </div>
 <div class="articleTags">
@@ -99,8 +102,8 @@
 <div class="articleContent">
 <section class="article-body">
 <h2>Regulatory Foundation for Part 11 in GxP System Landscapes</h2>
-<p>21 CFR Part 11 is a regulation that describes when and how the Food and Drug Administration will consider electronic records and electronic signatures to be trustworthy, reliable, and generally equivalent to paper records and handwritten signatures. In other words, Part 11 is not "a software quality standard" in isolation; it is a legal framework that lets regulated organizations replace paper-based GxP evidence with electronic evidence—if specific controls are in place.</p>
-<p>Part 11 is triggered by predicate rules . FDA uses "predicate rules" to mean the underlying statutes and FDA regulations that require certain records, signatures, and retention (e.g., CGMP, GLP, GCP–related requirements). If a record is required by a predicate rule and you choose to keep it electronically, Part 11 applies to that electronic record lifecycle (create/modify/maintain/archive/retrieve/transmit).</p><p>This is also why Part 11 discussions almost always converge on broader GxP computerized system expectations—especially <a href="ai-data-integrity-alcoa-plus.html">data integrity</a> and <a href="computer-system-validation-ai-software.html">computer system validation</a> (CSV)—because predicate rules (not Part 11 alone) can still be enforced even when Part 11 enforcement discretion applies to certain technical provisions.</p>
+<p>21 CFR Part 11 sets requirements for electronic records and electronic signatures that fall within its scope. It works alongside the FDA regulations that require particular records or signatures (often called <em>predicate rules</em>). Whether a specific record or workflow is covered depends on the applicable rule, how the organization keeps or uses the record, and whether it relies on an electronic signature.</p>
+<p>In general, Part 11 applies to electronic records required by FDA predicate rules or submitted to FDA when they are created, modified, maintained, archived, retrieved, or transmitted electronically, and to electronic signatures used in place of handwritten signatures. FDA’s scope guidance explains how the agency interprets that coverage. The underlying predicate-rule duties still apply whether a firm uses paper, electronic records, or a hybrid process.</p><p>This is also why Part 11 discussions almost always converge on broader GxP computerized system expectations—especially <a href="ai-data-integrity-alcoa-plus.html">data integrity</a> and <a href="computer-system-validation-ai-software.html">computer system validation</a> (CSV)—because predicate rules (not Part 11 alone) can still be enforced even when Part 11 enforcement discretion applies to certain technical provisions.</p>
 <p>A practical, inspection-relevant way to frame the regulation is:</p>
 <ul>
 <li><strong>Part 11</strong> governs acceptance of electronic records/signatures as equivalents (what controls must exist for e-records/e-sigs to be reliable and attributable).</li>
@@ -113,7 +116,7 @@
 <li>An <strong>open system</strong> is one where system access is not controlled by those responsible for record content, and therefore requires additional safeguards beyond closed-system controls.</li>
 </ul>
 <h3>Scope Limitations and "Paper-on-Glass" Misconceptions</h3>
-<p>The FDA's long-standing "Scope and Application" guidance emphasizes a narrow interpretation: Part 11 generally applies when you are genuinely using electronic records in place of paper records (or relying on the electronic record to perform regulated activities). If the organization uses computers only to generate printouts and relies on the paper record to perform the regulated activity, Part 11 is generally not triggered by that computer use alone. This distinction is operationally critical for QA because it forces an intended-use decision: <em>What is the official, relied-upon record?</em>—and it drives the validation and procedural control strategy.</p>
+<p>FDA’s <em>Part 11, Electronic Records; Electronic Signatures—Scope and Application</em> guidance describes a narrow interpretation of Part 11’s scope. A printout does not automatically make a process paper-based: if people rely on the electronic record to carry out regulated work, the electronic record may still be in scope. If the paper record is the one used for the regulated activity and the electronic version is not relied upon, the analysis may differ. Document which record is authoritative and check the applicable predicate rule; do not decide from the file format alone.</p>
 <h3>Electronic Records vs Electronic Signatures</h3>
 <p>Part 11 defines:</p>
 <ul>
@@ -131,7 +134,7 @@
 <h3>Security, Access Control, and Authority Checks</h3>
 <p>Part 11 mandates limiting system access to authorized individuals, and it additionally requires "authority checks" to ensure only authorized individuals can use the system, sign records, access devices, alter records, or perform operations. In practice, this is where many firms fail: warning letters repeatedly cite lack of unique usernames/passwords, uncontrolled administrator privileges, and weak segregation between people who generate data and those who can alter or delete it.</p>
 <h3>Operational Checks and Device Checks</h3>
-<p>Operational checks enforce permitted sequencing of steps and events (e.g., required completion of Step A before Step B in an electronic batch record). Device checks ensure the validity of the source of data input or operational instruction (e.g., verifying an authorized instrument or terminal is used). These controls are frequently "invisible" until an investigation reveals that an MES allows workarounds, overrides, or offline transcriptions that undermine contemporaneous recording and traceability.</p>
+<p>For closed systems, §11.10(f) calls for operational checks, as appropriate, to enforce permitted sequencing of steps and events; §11.10(h) similarly addresses device checks, as appropriate, for determining the validity of the source of data or instructions. The controls should fit the system’s actual use. A regulation does not require every system to use the same workflow design.</p>
 <h3>Record Retention, Retrieval, and Inspection Accessibility</h3>
 <p>Part 11 requires:</p>
 <ul>
@@ -140,7 +143,7 @@
 </ul>
 <p>FDA warning letters and guidance repeatedly show that "we can print a report" is not an acceptable proxy for retention of complete original electronic records and metadata, especially for dynamic data where printouts cannot represent the full original record context.</p>
 <h3>Validation (What Regulators Mean by "It Must Be Validated")</h3>
-<p>Part 11 explicitly requires system validation (accuracy, reliability, consistent intended performance, discern invalid/altered records). FDA's data integrity Q&amp;A clarifies an important nuance: validating a platform is not the same as validating a workflow for intended use (e.g., qualifying the MES platform does not demonstrate that a generated master batch record contains correct calculations).</p>
+<p>For closed systems, §11.10(a) requires validation to ensure accuracy, reliability, consistent intended performance, and the ability to discern invalid or altered records. FDA’s CGMP data-integrity guidance separately says that each CGMP workflow on a computer system should be checked for its intended use, with the rigor appropriate to risk. A platform-level qualification alone may not show that a particular regulated workflow performs as intended.</p>
 <h3>Electronic Signature Accountability, Manifestations, and Linkage</h3>
 <p>Part 11 signature controls are split across subparts:</p>
 <ul>
@@ -150,7 +153,7 @@
 <li><strong>Two-component signatures</strong> (if not biometric): identification code + password (with procedural controls for series of signings).</li>
 <li><strong>Controls for IDs/passwords:</strong> uniqueness, periodic checks/revisions, loss/compromise handling, and safeguards to detect unauthorized use.</li>
 </ul>
-<p>A frequently misunderstood element is certification to FDA regarding electronic signatures as legally binding equivalents (commonly operationalized through letters of non-repudiation for certain FDA submission contexts). FDA has an explicit mechanism and instructions for non-repudiation agreement letters in its submission infrastructure context, and §11.100 references this certification requirement.</p>
+<p>Under §11.100(c), a firm using electronic signatures to satisfy FDA signature requirements must certify to FDA that those signatures are intended to be the legally binding equivalent of handwritten signatures. This is a specific regulatory certification requirement; it should not be confused with general vendor claims about “non-repudiation.”</p>
 <h3>Open Systems</h3>
 <p>For open systems, Part 11 requires the §11.10 controls plus additional measures as needed (commonly interpreted as encryption and/or digital signature safeguards) to ensure authenticity, integrity, and appropriate confidentiality across the record lifecycle.</p>
 <div class="callout" style="margin:2rem 0; padding:1.2rem 1.5rem; border-radius:.75rem; background:rgba(168,85,247,.06); border:1px solid rgba(168,85,247,.18);"><div style="font-weight:600; margin-bottom:.4rem;">📋 Related Tool</div><p style="margin:0;">Looking for a practical starting point? Download our free <a href="../tools/gmp-ai-risk-assessment-template.html"><strong>GMP AI Risk Assessment Template</strong></a> — a structured checklist for evaluating AI tools in GMP-regulated pharmaceutical environments.</p></div>
@@ -260,19 +263,19 @@
 </ul>
 <h2>Validation, Compliance Strategy, Inspection Perspective, and Best AI Tools</h2>
 <h3>Do AI Tools in Part 11 Workflows Require Validation?</h3>
-<p>If an AI component is used to create, modify, maintain, or transmit electronic records that are required by predicate rules—or if it produces outputs that are relied upon for regulated decisions—then it is difficult to justify excluding it from the validated/controlled system boundary. Part 11 requires validation of systems for accuracy, reliability, consistent intended performance, and the ability to discern invalid/altered records. FDA's CGMP data integrity guidance reinforces that validation should cover each CGMP workflow for intended use, with rigor commensurate with risk.</p>
-<p>For AI specifically, FDA's 2025 draft guidance on AI used to support regulatory decision-making proposes a risk-based credibility assessment framework based on a defined "context of use," and it explicitly includes lifecycle maintenance considerations for AI outputs in certain contexts. While this guidance is aimed at regulatory decision-making for drugs/biologics, the framing is highly useful for QA: define intended use, assess risk, generate credibility/validation evidence proportional to impact, and manage lifecycle change.</p>
+<p>Start by defining the AI feature’s intended use and its connection to regulated records or decisions. If its output becomes part of a required electronic record, or influences a regulated decision, assess the feature, interfaces, data, and human review within the appropriate control and validation strategy. The fact that a team uses AI does not by itself establish that every AI service is subject to Part 11; scope depends on the records, signatures, and predicate rules involved.</p>
+<p>FDA’s January 2025 draft guidance on AI for regulatory decision-making concerns AI-generated information or data used to support decisions about the safety, effectiveness, or quality of drugs and biological products. It is draft guidance, is not a Part 11 rule, and does not set a universal validation recipe for all workplace AI. Its risk-based “context of use” approach can still be a useful planning lens: describe what the AI does, what decision it informs, and what evidence is appropriate for that use.</p>
 <h3>Drafting Aid vs Decision Engine: How Intended Use Changes the Compliance Burden</h3>
-<p>A practical QA classification that reliably maps to validation scope is:</p>
+<p>This simple distinction helps start a risk discussion; it does not replace a system-specific assessment or determine Part 11 scope by itself:</p>
 <ul>
-<li><strong>Drafting aid (low-to-moderate risk):</strong> AI produces a draft narrative, summary, or checklist; a trained human reviews, corrects, and approves; the controlled record is the final human-reviewed version under document control. This is often a realistic "Phase 1" approach.</li>
-<li><strong>Decision engine (high risk):</strong> AI output directly determines accept/reject, batch disposition, deviation closure, or data exclusion. Here, validation expectations escalate because the AI becomes part of the regulated control mechanism, and credibility evidence must be far stronger and more reproducible.</li>
+<li><strong>Assistive use:</strong> AI drafts or summarizes material that a qualified person checks before it is adopted. Define what may be copied into controlled records and how the review is documented.</li>
+<li><strong>Decision-influencing use:</strong> AI output can affect acceptance, batch disposition, deviation closure, or data exclusion. This can have greater consequences and calls for stronger evidence, controls, and oversight. The organization should assess the actual intended use rather than relying on these labels alone.</li>
 </ul>
 <h3>Change Management and Continuously Learning AI</h3>
-<p>AI introduces "change velocity" risk: model updates, prompt changes, retrieval corpus changes, and tuning can materially alter outputs without obvious UI changes. FDA's AI credibility framework explicitly calls out lifecycle maintenance of credibility for AI outputs in some contexts of use. From a QA standpoint, continuously learning systems can be higher complexity because the "validated state" can drift unless learning is bounded, monitored, and governed under <a href="ai-change-control-risk-assessment.html">change control</a>.</p>
+<p>Model, prompt, configuration, and retrieval-data changes can alter outputs. Decide what changes could affect the intended use, how they will be assessed and approved, and what monitoring is needed. FDA’s 2025 draft guidance discusses maintaining credibility over time for the regulatory-decision contexts it covers; it should not be read as a blanket rule for every AI system used in quality operations.</p>
 <h3>How FDA Inspectors and Auditors May View AI in Part 11-Relevant Environments</h3>
 <p>FDA inspectional materials direct investigators to assess whether firms using electronic records/e-signatures comply with Part 11, ensure record accessibility, and assess employee accountability; they also note that significant Part 11 deviations can cause FDA not to accept electronic records/e-signatures for meeting predicate rule requirements. In warning letters, FDA's questions often converge on practical controls: unique credentials, audit trails enabled and reviewed, segregation of admin privileges, validation status, and backup/retention adequacy.</p>
-<p>In an AI-enabled scenario, common inspector questions are likely to include:</p>
+<p>For inspection readiness, a firm may choose to prepare clear answers to questions such as:</p>
 <ul>
 <li><strong>Intended use and boundaries:</strong> "What GMP decision does the AI influence? Is it advisory or determinative?"</li>
 <li><strong>Data governance:</strong> "What data is the AI allowed to access? How do you prevent exposure of regulated data outside controlled systems?"</li>
@@ -280,92 +283,22 @@
 <li><strong>Validation/credibility evidence:</strong> "What testing shows the AI is credible for this context of use, and what is your ongoing monitoring plan?"</li>
 <li><strong>Human accountability:</strong> "Who reviews AI outputs, and how is that review documented and signed?"</li>
 </ul>
-<p>AI will generally look high-risk when it creates or alters regulated records directly, performs autonomous dispositioning, uses uncontrolled external tools, or cannot produce auditable evidence of how outputs were generated and accepted.</p>
-<h2>Top AI Tools That Can Realistically Help QA Specialists with Part 11-Related Activities</h2>
-<h3>Veeva AI</h3>
-<ul>
-<li><strong>Vendor/company:</strong> Veeva Systems</li>
-<li><strong>Primary function:</strong> Agentic AI embedded in the Vault platform and AI agents across Veeva applications (life sciences–specific).</li>
-<li><strong>Most Part 11-relevant use cases:</strong> Drafting/assistance inside controlled content/workflows (e.g., document or record interaction), workflow support, and cross-record search within the Vault ecosystem (with strongest fit where Vault already hosts controlled records).</li>
-<li><strong>Strengths:</strong> Tight integration potential with an existing regulated content and workflow platform; vendor positioning emphasizes secure/compliant AI for life sciences; roadmap indicates broader availability across R&amp;D and quality in 2026.</li>
-<li><strong>Weaknesses:</strong> "AI inside the QMS" can move quickly from drafting aid to regulated decision influence; rollout timing and feature maturity may vary by module, and configuration/governance/validation planning becomes critical.</li>
-<li><strong>Likely fit in regulated environments:</strong> Strong when used as assistive functionality within validated Vault workflows and under procedural controls defining what outputs may be used as records.</li>
-<li><strong>Privacy/security considerations:</strong> Depends on implementation and tenant governance; treat vendor "secure/compliant" claims as a starting point for <a href="ai-for-supplier-quality-management-in-pharmaceuticals.html">supplier qualification</a>, not as validation evidence.</li>
-<li><strong>Best suited for:</strong> Workflow support + drafting/knowledge assistance in controlled repositories.</li>
-</ul>
-<h3>MasterControl GxPAssist AI</h3>
-<ul>
-<li><strong>Vendor/company:</strong> MasterControl</li>
-<li><strong>Primary function:</strong> A suite of purpose-built generative AI tools for quality/manufacturing professionals (e.g., document summarization, translation, exam generation).</li>
-<li><strong>Most Part 11-relevant use cases:</strong> Document review assistance (summaries, change summaries), training content/exam generation support, and workload reduction for QMS artifact preparation—where outputs are reviewed and adopted under document control.</li>
-<li><strong>Strengths:</strong> Explicit positioning as assistive tools for quality/manufacturing; clear low-risk entry points (summarization, draft generation) that naturally support "human-in-the-loop" review.</li>
-<li><strong>Weaknesses:</strong> Like any generative AI, hallucination risk and variability require strong review discipline; benefit depends on how tightly the tool is constrained to authoritative sources.</li>
-<li><strong>Likely fit in regulated environments:</strong> Strong when AI outputs are treated as drafts and promoted to controlled records only after review and approval.</li>
-<li><strong>Privacy/security considerations:</strong> Must be evaluated during supplier qualification; ensure governance around regulated data inputs and retention of any AI interaction logs that become records.</li>
-<li><strong>Best suited for:</strong> Drafting + workflow acceleration (especially documentation and training artifacts).</li>
-</ul>
-<h3>Microsoft 365 Copilot and Azure-Hosted Generative AI Services</h3>
-<ul>
-<li><strong>Vendor/company:</strong> Microsoft</li>
-<li><strong>Primary function:</strong> Enterprise productivity AI (Copilot) and controllable AI services hosted in Azure for building internal assistants and analytics over enterprise data. Microsoft documentation states that customer data/prompts/completions for its Azure-hosted model services are not used to train foundation models without permission and are not available to other customers or model providers.</li>
-<li><strong>Most Part 11-relevant use cases:</strong> AI drafting aid for validation documents, SOP summaries, periodic review reports; internal knowledge assistants grounded in controlled SharePoint/QMS exports; analytics support over audit trail exports (when engineered with logging and governance).</li>
-<li><strong>Strengths:</strong> High integration potential with common enterprise identity/access controls, eDiscovery/retention ecosystems, and controlled internal knowledge sources; strong published statements about data handling for enterprise contexts.</li>
-<li><strong>Weaknesses:</strong> As tools become broadly available, "shadow AI" use can proliferate without governance; explainability remains limited for many generative tasks, requiring strict procedural controls on what can be accepted into GxP records.</li>
-<li><strong>Likely fit in regulated environments:</strong> Strong for assistive drafting and retrieval when deployed with clear boundaries, access controls, and SOP-defined review/approval steps.</li>
-<li><strong>Privacy/security considerations:</strong> Understand data residency, retention, and logging; ensure configurations match your regulated data classification and supplier qualification expectations.</li>
-<li><strong>Best suited for:</strong> Drafting + enterprise knowledge assistance; more advanced audit trail analytics requires engineered solutions and validation evidence.</li>
-</ul>
-<h3>Top-3 Tool Comparison</h3>
-<div class="tool-comparison">
+<p>Uses that directly create or alter required records, influence high-consequence decisions, or lack traceable review deserve careful risk assessment. The level of control should follow the actual intended use and applicable requirements.</p>
+<h2>How to Evaluate AI Features for Part 11-Relevant Workflows</h2>
+<p>There is no FDA “Part 11-certified AI tool” category, and a vendor’s compliance language is not proof that a feature is suitable for a specific regulated use. Product capabilities and availability change, so evaluate the exact feature, configuration, and intended use your organization plans to adopt.</p>
+<p>Ask vendors for evidence you can review and assess it within your own quality system:</p>
 <table>
-<thead>
-<tr>
-<th>Criterion</th>
-<th>Veeva AI</th>
-<th>MasterControl GxPAssist AI</th>
-<th>Microsoft 365 Copilot / Azure-hosted AI</th>
-</tr>
-</thead>
+<thead><tr><th>What to assess</th><th>Questions to ask</th></tr></thead>
 <tbody>
-<tr>
-<td>Best use case</td>
-<td>AI assistance inside Vault-controlled quality/R&amp;D workflows</td>
-<td>Draft acceleration for QMS documentation and training artifacts</td>
-<td>Broad drafting + internal knowledge assistance; custom assistants for controlled corpora</td>
-</tr>
-<tr>
-<td>Compliance friendliness</td>
-<td>High if used as assistive within validated Vault workflows</td>
-<td>High for low-risk assistive features with explicit human review</td>
-<td>High for assistive use with strong tenant governance; variable for custom high-impact use</td>
-</tr>
-<tr>
-<td>Ease of implementation</td>
-<td>Easier for Vault-centric organizations</td>
-<td>Easier for MasterControl customers</td>
-<td>Easier for Microsoft-first enterprises; harder for custom AI solutions</td>
-</tr>
-<tr>
-<td>Explainability</td>
-<td>Moderate (agent outputs still need human verification)</td>
-<td>Moderate (summaries/drafts need human verification)</td>
-<td>Moderate (drafting/retrieval explainability depends on grounding and logging)</td>
-</tr>
-<tr>
-<td>Integration potential</td>
-<td>Highest in the Veeva ecosystem</td>
-<td>Highest in the MasterControl ecosystem</td>
-<td>Highest across enterprise IT ecosystems (identity, content, logging)</td>
-</tr>
-<tr>
-<td>Key risks</td>
-<td>Blurring into decision-making; governance/validation effort as scope expands</td>
-<td>Hallucinations; uncontrolled adoption without SOP guardrails</td>
-<td>Shadow AI usage; data leakage if misconfigured; reproducibility challenges for high-impact use</td>
-</tr>
+<tr><td>Intended use</td><td>What tasks does this feature support? What decisions is it explicitly not designed to make?</td></tr>
+<tr><td>Data handling</td><td>What information is sent to the service? Where is it processed and stored? How long are prompts, outputs, and source documents retained?</td></tr>
+<tr><td>Access and records</td><td>Can access be limited by role? Which user actions, inputs, outputs, and approvals are logged? Can records and logs be retrieved for the required retention period?</td></tr>
+<tr><td>Performance evidence</td><td>What testing, known limitations, and intended-use documentation can the vendor provide? What testing must the customer perform in its own workflow?</td></tr>
+<tr><td>Change control</td><td>How are model, feature, and configuration changes announced? Can the customer assess a change before it affects a controlled workflow?</td></tr>
+<tr><td>Human review</td><td>Can a qualified person verify the source material, correct the output, and document approval before it is used?</td></tr>
 </tbody>
 </table>
-</div>
+<p>Compare the vendor’s answers with your requirements, data classification, supplier controls, and intended-use assessment. A product can offer useful technical controls, but the organization remains responsible for deciding whether the configured workflow is appropriate and controlled.</p>
 <h2>Practical Guidance for QA Specialists: Where AI Helps, Where Caution Is Essential</h2>
 <p>AI can support Part 11 compliance without undermining it when it is deployed in a way that reinforces (not replaces) the core compliance pillars: attributable human accountability, complete auditability, validated intended use, and controlled record lifecycle.</p>
 <p><strong>Where AI can realistically help today:</strong></p>
@@ -387,7 +320,7 @@
 </ul>
 <h2>Key References</h2>
 <ul class="references">
-<li><a href="https://www.fda.gov/media/184830/download" rel="noopener noreferrer" target="_blank">FDA AI Action Plan and Related Guidance</a></li>
+<li><a href="https://www.fda.gov/media/184830/download" rel="noopener noreferrer" target="_blank">FDA Draft Guidance (January 2025): Considerations for the Use of Artificial Intelligence to Support Regulatory Decision-Making for Drug and Biological Products</a></li>
 <li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11" rel="noopener noreferrer" target="_blank">21 CFR Part 11 – Electronic Records; Electronic Signatures (eCFR)</a></li>
 <li><a href="https://www.fda.gov/media/75414/download" rel="noopener noreferrer" target="_blank">FDA Guidance: Scope and Application of 21 CFR Part 11</a></li>
 <li><a href="https://assets.publishing.service.gov.uk/media/5aa2b9ede5274a3e391e37f3/MHRA_GxP_data_integrity_guide_March_edited_Final.pdf" rel="noopener noreferrer" target="_blank">MHRA GxP Data Integrity Guidance</a></li>
@@ -396,7 +329,7 @@
 <li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11/subpart-B/section-11.70" rel="noopener noreferrer" target="_blank">21 CFR §11.70 – Signature/Record Linking</a></li>
 <li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11/subpart-C/section-11.100" rel="noopener noreferrer" target="_blank">21 CFR §11.100 – General Electronic Signature Requirements</a></li>
 <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" rel="noopener noreferrer" target="_blank">NIST AI 600-1: Generative AI Risk Management Profile</a></li>
-<li><a href="https://www.fda.gov/media/165743/download" rel="noopener noreferrer" target="_blank">FDA Draft Guidance: Artificial Intelligence in Drug Manufacturing</a></li>
+<li><a href="https://www.fda.gov/media/165743/download" rel="noopener noreferrer" target="_blank">FDA Discussion Paper (2023): Artificial Intelligence in Drug Manufacturing</a></li>
 <li><a href="https://database.ich.org/sites/default/files/ICH_Q9%28R1%29_Guideline_Step4_2022_1219.pdf" rel="noopener noreferrer" target="_blank">ICH Q9(R1) Quality Risk Management</a></li>
 <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf" rel="noopener noreferrer" target="_blank">NIST AI 100-1: Artificial Intelligence Risk Management Framework</a></li>
 <li><a href="https://www.veeva.com/products/veeva-ai/" rel="noopener noreferrer" target="_blank">Veeva AI – Product Information</a></li>
