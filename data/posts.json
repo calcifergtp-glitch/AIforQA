@@ -274,10 +274,10 @@
   {
     "slug": "ai-data-integrity-alcoa-plus",
     "title": "AI and Data Integrity: Enforcing ALCOA+ in Pharmaceutical Systems",
-    "summary": "Practical guidance on using AI to maintain ALCOA+ data integrity principles in pharmaceutical QA systems",
+    "summary": "How to use AI around GMP records without losing source, timing, authorship, context, or a reliable history of changes.",
     "category": "GxP & Validation",
     "date": "2026-03-10",
-    "readingTime": "14 min read",
+    "readingTime": "4 min read",
     "published": true,
     "tags": [
       "Data Integrity",
@@ -308,10 +308,10 @@
   {
     "slug": "21-cfr-part-11-ai-pharmaceutical-compliance",
     "title": "21 CFR Part 11 and AI in Pharmaceutical Systems",
-    "summary": "Explains Part 11 scope, predicate rules, FDA enforcement discretion, and practical controls for AI-assisted pharmaceutical workflows.",
+    "summary": "A plain-language guide to when Part 11 applies to electronic GMP records and what controls an AI-assisted workflow may need.",
     "category": "Compliance",
     "date": "2026-03-07",
-    "readingTime": "15 min read",
+    "readingTime": "4 min read",
     "published": true,
     "tags": [
       "21 CFR Part 11",
@@ -325,10 +325,10 @@
   {
     "slug": "computer-system-validation-ai-software",
     "title": "Computer System Validation for AI Software",
-    "summary": "A practical guide to validating AI-enabled software in pharma: intended use, risk-based testing, evidence, change control, and FDA sources.",
+    "summary": "How to show an AI-enabled GxP system works for its intended job, with risk-based checks, records, and change control.",
     "category": "GxP & Validation",
     "date": "2026-03-14",
-    "readingTime": "8 min read",
+    "readingTime": "4 min read",
     "published": true,
     "tags": [
       "Computer System Validation",
@@ -342,10 +342,10 @@
   {
     "slug": "validating-ai-systems-pharma",
     "title": "Validating AI Systems in Pharma",
-    "summary": "A comprehensive guide to validation strategies for AI systems in pharmaceutical manufacturing and quality operations, including prospective, concurrent and retrospective approaches.",
+    "summary": "A risk-based way to assess AI in pharma: set limits, check real examples, keep humans responsible, and control updates.",
     "category": "GxP & Validation",
     "date": "2026-03-14",
-    "readingTime": "13 min read",
+    "readingTime": "4 min read",
     "published": true,
     "tags": [
       "Validation",
