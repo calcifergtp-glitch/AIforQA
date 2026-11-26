@@ -8,7 +8,10 @@ Static website publishing practical content about artificial intelligence in pha
 /
 ├── index.html                 # Homepage
 ├── articles.html              # Static article listing
-├── articles/                  # Full crawlable article pages and legacy routes
+├── post.html                  # Legacy query-route redirect
+├── best-of.html               # Legacy redirect to articles.html
+├── resources.html             # Legacy redirect to articles.html
+├── articles/                  # Full article pages and legacy filename redirects
 ├── tools/index.html           # Downloadable tools directory
 ├── tools/                     # Tool landing pages and downloadable PDF/DOCX files
 ├── about.html                 # Site and author information
@@ -26,7 +29,7 @@ Static website publishing practical content about artificial intelligence in pha
 └── .github/workflows/         # GitHub Pages deployment workflow
 ```
 
-There is no current `resources.html`, `pdfs/`, or `posts/` publishing directory. Article PDFs and tool PDF/DOCX downloads currently live under `tools/`.
+`resources.html` is retained as a legacy redirect to `articles.html`; `/pdfs/` and `/posts/` are not current publishing directories. Article PDFs and tool PDF/DOCX downloads currently live under `/tools/`.
 
 ## Adding an article
 
@@ -56,6 +59,7 @@ There is no current `resources.html`, `pdfs/`, or `posts/` publishing directory.
 
 - `post.html?p=<slug>` redirects to `/articles/<slug>.html`.
 - `best-of.html` redirects to `/articles.html`.
+- `/resources.html` redirects to `/articles.html`; it is not a resource directory.
 
 Keep legacy redirects only where they preserve useful existing links; do not introduce new links to the legacy route.
 
