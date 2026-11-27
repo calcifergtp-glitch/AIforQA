@@ -436,5 +436,5 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
   <script src="script.js?v=20261127"></script>
-</body>
+<script>(()=>{const q=document.querySelector('[data-article-search]'),cat=document.querySelector('[data-article-category]'),cards=[...document.querySelectorAll('[data-article-card]')],status=document.querySelector('[data-article-status]');function update(){const term=(q.value||'').trim().toLowerCase(),topic=cat.value;let shown=0;cards.forEach(card=>{const keep=(!term||card.textContent.toLowerCase().includes(term))&&(!topic||card.dataset.category===topic);card.hidden=!keep;if(keep)shown++});status.textContent=shown+(shown===1?' article':' articles')}q.addEventListener('input',update);cat.addEventListener('change',update);update()})();</script></body>
 </html>
