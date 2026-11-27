@@ -39,3 +39,5 @@ if(menuBtn && mainNav){
     }
   });
 }
+
+const articleSearch=document.querySelector('[data-article-search]'),articleCategory=document.querySelector('[data-article-category]'),articleCards=[...document.querySelectorAll('[data-article-card]')],articleStatus=document.querySelector('[data-article-status]');function filterArticles(){if(!articleCards.length)return;const q=(articleSearch?.value||'').trim().toLowerCase(),cat=articleCategory?.value||'';let n=0;articleCards.forEach(c=>{const show=(!q||c.textContent.toLowerCase().includes(q))&&(!cat||c.dataset.category===cat);c.hidden=!show;if(show)n++});if(articleStatus)articleStatus.textContent=n+(n===1?' article':' articles')}articleSearch?.addEventListener('input',filterArticles);articleCategory?.addEventListener('change',filterArticles);filterArticles();

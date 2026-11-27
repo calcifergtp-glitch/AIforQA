@@ -1,5 +1,21 @@
 [
   {
+    "slug": "ai-service-provider-assessment-gmp",
+    "title": "Assessing AI Service Providers for GMP Use: Questions for Pharmaceutical QA",
+    "summary": "Practical due diligence on intended use, data handling, service changes, evidence, responsibilities, and oversight for AI services in GMP work.",
+    "category": "AI Governance",
+    "date": "2026-11-27",
+    "readingTime": "7 min read",
+    "published": true,
+    "tags": [
+      "AI Governance",
+      "Risk Assessment",
+      "GMP",
+      "Compliance",
+      "Data Integrity"
+    ]
+  },
+  {
     "slug": "ai-in-pharmaceutical-maintenance-and-calibration-programs",
     "title": "AI in Pharmaceutical Maintenance and Calibration Programs",
     "summary": "Practical guidance on AI-assisted maintenance and calibration planning, with limits on equipment decisions, interval changes, and GMP records.",
