@@ -789,40 +789,11 @@ th{ background: rgba(255,255,255,.96); color: rgba(11,16,32,.72); font-weight: 8
 .articleContent a:hover{ color: var(--c2); border-bottom-color: rgba(168,85,247,.40); }
 .glowCardCta{ color: #005a7a; }
 
-/* ─── Reduced motion ─── */
-@media (prefers-reduced-motion: reduce){
-  .pulse{ animation: none; }
-  .bg::before{ animation: none; }
-  .btn,
-  .glowCard,
-  .card,
-  .menuBtn span,
-
-/* Tags display */
-.articleTags{
-  display:flex; flex-wrap:wrap; gap:.5rem;
-  margin-bottom:1rem;
-}
-.articleTags .pill.small{
-  text-decoration:none;
-  transition: background .2s;
-}
-.articleTags .pill.small:hover{
-  background:rgba(99,102,241,.15);
-}
-
-/* Tag cloud on tags.html */
-.tagCloud{
-  display:flex; flex-wrap:wrap; gap:.5rem;
-  margin:1.5rem 0 2rem;
-}
-.tagCloud .pill.small{
-  text-decoration:none;
-  transition: background .2s;
-}
-.tagCloud .pill.small:hover{
-  background:rgba(99,102,241,.15);
-}
-.tagCount{
-  opacity:.6; font-size:.85em;
-}
+/* Reduced motion support */
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+.articleTags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}.articleTags .pill.small,.tagCloud .pill.small{text-decoration:none}.tagCloud{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 2rem}.tagCount{opacity:.72;font-size:.85em}
+.articleTools{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap;padding:1rem;border:1px solid var(--stroke);border-radius:var(--radius2);background:#fff;margin:0 auto 1.25rem;max-width:var(--max)}.articleSearch{flex:1 1 260px}.articleTools input,.articleTools select{font:inherit;color:var(--ink);min-height:46px;padding:.7rem .85rem;border:1px solid #cbd5e1;border-radius:10px;background:#fff}.articleTools input{width:100%}.articleTools select{min-width:200px}.articleTools input:focus,.articleTools select:focus{outline:3px solid rgba(15,118,110,.18);border-color:var(--c1)}.searchStatus{margin:.2rem 0 1rem;color:var(--muted)}[hidden][data-article-card]{display:none!important}
+.builderLayout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.85fr);gap:1.2rem;align-items:start}.builderForm,.builderOutput{padding:1.2rem;border:1px solid var(--stroke);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow2)}.builderForm label{display:block;font-weight:650;margin:.9rem 0 .35rem}.builderForm input,.builderForm select,.builderForm textarea{font:inherit;color:var(--ink);width:100%;min-height:46px;padding:.7rem .85rem;border:1px solid #cbd5e1;border-radius:10px;background:#fff}.builderForm textarea{min-height:100px;resize:vertical}.builderForm input:focus,.builderForm select:focus,.builderForm textarea:focus{outline:3px solid rgba(15,118,110,.18);border-color:var(--c1)}.builderActions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}.builderOutput{position:sticky;top:90px}.builderOutput h2{margin-top:0}.builderOutput pre{white-space:pre-wrap;font:inherit;line-height:1.55;color:var(--ink);margin:0}.builderNote{border-left:4px solid var(--c3);padding:.8rem 1rem;background:#f0fdfa;border-radius:0 10px 10px 0}
+@media(max-width:760px){.builderLayout{grid-template-columns:1fr}.builderOutput{position:static}.articleTools select{width:100%}}
+:root{--bg:#f7f9fb;--ink:#162638;--muted:#526274;--stroke:rgba(22,38,56,.13);--shadow:0 18px 50px rgba(22,38,56,.08);--shadow2:0 8px 24px rgba(22,38,56,.07);--c1:#0f766e;--c2:#1e4265;--c3:#15806f;--c4:#ae7b35}
+body{background:var(--bg);line-height:1.6}.lines{opacity:.16}.topbar{background:rgba(247,249,251,.94)}.brandMark{background:linear-gradient(135deg,var(--c1),var(--c2))}.nav a{color:#34475a}.nav a:hover{background:rgba(15,118,110,.08)}.btn{border-color:rgba(15,118,110,.26);background:linear-gradient(135deg,#e5f4f1,#edf3f8);color:#15334a;box-shadow:0 8px 22px rgba(22,38,56,.07)}.btn.ghost{background:#fff}.pill{border-color:rgba(15,118,110,.22);box-shadow:none;color:#334a5d}.card,.glowCard,.article{border-color:var(--stroke);box-shadow:var(--shadow2)}.articleContent a,.glowCardCta,.link{color:#075e59}
