@@ -13,3 +13,8 @@
 ## Follow-up
 
 The older JSON audit files in this directory describe earlier snapshots and are retained as history. Added `/references.html`, a curated regulatory-reference hub with official FDA, EU, EMA, and ICH sources, scope notes, document-type labels, and a review date.
+
+
+## Article footer navigation and structure
+
+Added a `Regulatory References` footer link to all 31 published articles. While checking the pages, fixed the CPV article’s malformed closing markup and restored its standard footer and shared navigation script.
