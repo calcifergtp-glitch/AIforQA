@@ -36,7 +36,15 @@ Primary article content must be crawlable static HTML, not JavaScript-injected c
 
 - `post.html?p=<slug>` redirects to `/articles/<slug>.html`.
 - `best-of.html` redirects to `/articles.html`.
-- `/resources.html` redirects to `/articles.html`; it is not a resource directory.
+- `/resources.html` redirects to `/references.html` as a legacy entry point; the regulatory reference library lives at `/references.html`.
 - Older mixed-case, spaced, or underscore article filenames are redirect aliases to their lowercase canonical article URLs. Keep them only to preserve existing incoming links; each alias must use a permanent redirect, `noindex,follow`, and stay out of the sitemap and internal navigation.
 
 Retain these only to preserve useful incoming links. New pages should link directly to canonical article/tool landing pages.
+
+
+## Regulatory reference library
+
+- Keep entries linked to official agency or ICH sources.
+- Label regulations, final guidance, discussion papers, and harmonized guidelines accurately; do not describe nonbinding guidance as law.
+- Include each source’s jurisdiction and scope, plus a page-level review date.
+- Verify the source’s current version and regional applicability before publishing edits.
