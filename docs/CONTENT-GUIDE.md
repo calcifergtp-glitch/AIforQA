@@ -37,5 +37,6 @@ Primary article content must be crawlable static HTML, not JavaScript-injected c
 - `post.html?p=<slug>` redirects to `/articles/<slug>.html`.
 - `best-of.html` redirects to `/articles.html`.
 - `/resources.html` redirects to `/articles.html`; it is not a resource directory.
+- Older mixed-case, spaced, or underscore article filenames are redirect aliases to their lowercase canonical article URLs. Keep them only to preserve existing incoming links; each alias must use a permanent redirect, `noindex,follow`, and stay out of the sitemap and internal navigation.
 
 Retain these only to preserve useful incoming links. New pages should link directly to canonical article/tool landing pages.
