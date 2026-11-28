@@ -12,4 +12,4 @@
 
 ## Follow-up
 
-The older JSON audit files in this directory describe earlier snapshots and are retained as history. A useful future content improvement is a curated regulatory-reference hub that labels each source by document type and shows when the page was last reviewed.
+The older JSON audit files in this directory describe earlier snapshots and are retained as history. Added `/references.html`, a curated regulatory-reference hub with official FDA, EU, EMA, and ICH sources, scope notes, document-type labels, and a review date.
